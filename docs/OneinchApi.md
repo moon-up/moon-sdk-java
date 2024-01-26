@@ -21,12 +21,12 @@ All URIs are relative to *https://vault-api.usemoon.ai*
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.OneinchApi;
+import org.usemoonai.moonsdk.client.ApiClient;
+import org.usemoonai.moonsdk.client.ApiException;
+import org.usemoonai.moonsdk.client.Configuration;
+import org.usemoonai.moonsdk.client.auth.*;
+import org.usemoonai.moonsdk.client.models.*;
+import org.usemoonai.moonsdk.api.OneinchApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -94,12 +94,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.OneinchApi;
+import org.usemoonai.moonsdk.client.ApiClient;
+import org.usemoonai.moonsdk.client.ApiException;
+import org.usemoonai.moonsdk.client.Configuration;
+import org.usemoonai.moonsdk.client.auth.*;
+import org.usemoonai.moonsdk.client.models.*;
+import org.usemoonai.moonsdk.api.OneinchApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -167,12 +167,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.OneinchApi;
+import org.usemoonai.moonsdk.client.ApiClient;
+import org.usemoonai.moonsdk.client.ApiException;
+import org.usemoonai.moonsdk.client.Configuration;
+import org.usemoonai.moonsdk.client.auth.*;
+import org.usemoonai.moonsdk.client.models.*;
+import org.usemoonai.moonsdk.api.OneinchApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -240,12 +240,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.OneinchApi;
+import org.usemoonai.moonsdk.client.ApiClient;
+import org.usemoonai.moonsdk.client.ApiException;
+import org.usemoonai.moonsdk.client.Configuration;
+import org.usemoonai.moonsdk.client.auth.*;
+import org.usemoonai.moonsdk.client.models.*;
+import org.usemoonai.moonsdk.api.OneinchApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -313,12 +313,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.OneinchApi;
+import org.usemoonai.moonsdk.client.ApiClient;
+import org.usemoonai.moonsdk.client.ApiException;
+import org.usemoonai.moonsdk.client.Configuration;
+import org.usemoonai.moonsdk.client.auth.*;
+import org.usemoonai.moonsdk.client.models.*;
+import org.usemoonai.moonsdk.api.OneinchApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -390,12 +390,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.OneinchApi;
+import org.usemoonai.moonsdk.client.ApiClient;
+import org.usemoonai.moonsdk.client.ApiException;
+import org.usemoonai.moonsdk.client.Configuration;
+import org.usemoonai.moonsdk.client.auth.*;
+import org.usemoonai.moonsdk.client.models.*;
+import org.usemoonai.moonsdk.api.OneinchApi;
 
 public class Example {
   public static void main(String[] args) {

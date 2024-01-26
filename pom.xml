@@ -1,13 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.openapitools</groupId>
-    <artifactId>openapi-java-client</artifactId>
+    <groupId>org.usemoonai</groupId>
+    <artifactId>moonsdk-java</artifactId>
     <packaging>jar</packaging>
-    <name>openapi-java-client</name>
+    <name>moonsdk-java</name>
     <version>1.0.0</version>
-    <url>https://github.com/openapitools/openapi-generator</url>
-    <description>OpenAPI Java</description>
+    <url>https://github.com/moon-up/moon-sdk-java</url>
+    <description>moonsdk</description>
     <scm>
         <connection>scm:git:git@github.com:openapitools/openapi-generator.git</connection>
         <developerConnection>scm:git:git@github.com:openapitools/openapi-generator.git</developerConnection>
@@ -24,10 +24,10 @@
 
     <developers>
         <developer>
-            <name>OpenAPI-Generator Contributors</name>
-            <email>team@openapitools.org</email>
-            <organization>OpenAPITools.org</organization>
-            <organizationUrl>http://openapitools.org</organizationUrl>
+            <name>0xEwhal</name>
+            <email>ewhal@bytemasons.com</email>
+            <organization>UsemoonAi</organization>
+            <organizationUrl>https://usemoon.ai</organizationUrl>
         </developer>
     </developers>
 
