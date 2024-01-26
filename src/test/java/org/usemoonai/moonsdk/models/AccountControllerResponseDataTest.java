@@ -439,16 +439,7 @@ public class AccountControllerResponseDataTest {
     public void contractAddressTest() {
         // TODO: test contractAddress
     }
-
-    /**
-     * Test the property 'balanceOf'
-     */
-    @Test
-    public void balanceOfTest() {
-        // TODO: test balanceOf
-    }
-
-    /**
+    /*
      * Test the property 'allowance'
      */
     @Test
