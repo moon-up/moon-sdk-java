@@ -1,6 +1,6 @@
 # Erc1155Api
 
-All URIs are relative to *https://vault-api.usemoon.ai*
+All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -14,7 +14,7 @@ All URIs are relative to *https://vault-api.usemoon.ai*
 
 <a id="balanceOf"></a>
 # **balanceOf**
-> AccountControllerResponse balanceOf(name, authorization, erc1155Request)
+> TransactionAPIResponse balanceOf(name, authorization, erc1155Request)
 
 
 
@@ -31,7 +31,7 @@ import org.usemoonai.moonsdk.api.Erc1155Api;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -50,7 +50,7 @@ public class Example {
     String authorization = "authorization_example"; // String | 
     Erc1155Request erc1155Request = new Erc1155Request(); // Erc1155Request | 
     try {
-      AccountControllerResponse result = apiInstance.balanceOf(name, authorization, erc1155Request);
+      TransactionAPIResponse result = apiInstance.balanceOf(name, authorization, erc1155Request);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling Erc1155Api#balanceOf");
@@ -73,7 +73,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 
@@ -91,7 +91,7 @@ public class Example {
 
 <a id="balanceOfBatch"></a>
 # **balanceOfBatch**
-> AccountControllerResponse balanceOfBatch(name, authorization, erc1155Request)
+> TransactionAPIResponse balanceOfBatch(name, authorization, erc1155Request)
 
 
 
@@ -108,7 +108,7 @@ import org.usemoonai.moonsdk.api.Erc1155Api;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -127,7 +127,7 @@ public class Example {
     String authorization = "authorization_example"; // String | 
     Erc1155Request erc1155Request = new Erc1155Request(); // Erc1155Request | 
     try {
-      AccountControllerResponse result = apiInstance.balanceOfBatch(name, authorization, erc1155Request);
+      TransactionAPIResponse result = apiInstance.balanceOfBatch(name, authorization, erc1155Request);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling Erc1155Api#balanceOfBatch");
@@ -150,7 +150,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 
@@ -168,7 +168,7 @@ public class Example {
 
 <a id="isApprovedForAll"></a>
 # **isApprovedForAll**
-> AccountControllerResponse isApprovedForAll(name, authorization, erc1155Request)
+> TransactionAPIResponse isApprovedForAll(name, authorization, erc1155Request)
 
 
 
@@ -185,7 +185,7 @@ import org.usemoonai.moonsdk.api.Erc1155Api;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -204,7 +204,7 @@ public class Example {
     String authorization = "authorization_example"; // String | 
     Erc1155Request erc1155Request = new Erc1155Request(); // Erc1155Request | 
     try {
-      AccountControllerResponse result = apiInstance.isApprovedForAll(name, authorization, erc1155Request);
+      TransactionAPIResponse result = apiInstance.isApprovedForAll(name, authorization, erc1155Request);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling Erc1155Api#isApprovedForAll");
@@ -227,7 +227,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 
@@ -245,7 +245,7 @@ public class Example {
 
 <a id="safeBatchTransferFrom"></a>
 # **safeBatchTransferFrom**
-> AccountControllerResponse safeBatchTransferFrom(name, authorization, erc1155Request)
+> TransactionAPIResponse safeBatchTransferFrom(name, authorization, erc1155Request)
 
 
 
@@ -262,7 +262,7 @@ import org.usemoonai.moonsdk.api.Erc1155Api;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -281,7 +281,7 @@ public class Example {
     String authorization = "authorization_example"; // String | 
     Erc1155Request erc1155Request = new Erc1155Request(); // Erc1155Request | 
     try {
-      AccountControllerResponse result = apiInstance.safeBatchTransferFrom(name, authorization, erc1155Request);
+      TransactionAPIResponse result = apiInstance.safeBatchTransferFrom(name, authorization, erc1155Request);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling Erc1155Api#safeBatchTransferFrom");
@@ -304,7 +304,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 
@@ -322,7 +322,7 @@ public class Example {
 
 <a id="safeTransferFrom"></a>
 # **safeTransferFrom**
-> AccountControllerResponse safeTransferFrom(name, authorization, erc1155Request)
+> TransactionAPIResponse safeTransferFrom(name, authorization, erc1155Request)
 
 
 
@@ -339,7 +339,7 @@ import org.usemoonai.moonsdk.api.Erc1155Api;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -358,7 +358,7 @@ public class Example {
     String authorization = "authorization_example"; // String | 
     Erc1155Request erc1155Request = new Erc1155Request(); // Erc1155Request | 
     try {
-      AccountControllerResponse result = apiInstance.safeTransferFrom(name, authorization, erc1155Request);
+      TransactionAPIResponse result = apiInstance.safeTransferFrom(name, authorization, erc1155Request);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling Erc1155Api#safeTransferFrom");
@@ -381,7 +381,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 
@@ -399,7 +399,7 @@ public class Example {
 
 <a id="setApprovalForAll"></a>
 # **setApprovalForAll**
-> AccountControllerResponse setApprovalForAll(name, authorization, erc1155Request)
+> TransactionAPIResponse setApprovalForAll(name, authorization, erc1155Request)
 
 
 
@@ -416,7 +416,7 @@ import org.usemoonai.moonsdk.api.Erc1155Api;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -435,7 +435,7 @@ public class Example {
     String authorization = "authorization_example"; // String | 
     Erc1155Request erc1155Request = new Erc1155Request(); // Erc1155Request | 
     try {
-      AccountControllerResponse result = apiInstance.setApprovalForAll(name, authorization, erc1155Request);
+      TransactionAPIResponse result = apiInstance.setApprovalForAll(name, authorization, erc1155Request);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling Erc1155Api#setApprovalForAll");
@@ -458,7 +458,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 

@@ -27,8 +27,9 @@ import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 
 
-import org.usemoonai.moonsdk.models.AccountControllerResponse;
+import org.usemoonai.moonsdk.models.AccountAPIResponse;
 import org.usemoonai.moonsdk.models.InputBody;
+import org.usemoonai.moonsdk.models.TransactionAPIResponse;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -164,7 +165,7 @@ public class Erc4337Api {
      * @param authorization  (required)
      * @param accountName  (required)
      * @param inputBody  (required)
-     * @return AccountControllerResponse
+     * @return AccountAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -172,8 +173,8 @@ public class Erc4337Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse getAddress(String authorization, String accountName, InputBody inputBody) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = getAddressWithHttpInfo(authorization, accountName, inputBody);
+    public AccountAPIResponse getAddress(String authorization, String accountName, InputBody inputBody) throws ApiException {
+        ApiResponse<AccountAPIResponse> localVarResp = getAddressWithHttpInfo(authorization, accountName, inputBody);
         return localVarResp.getData();
     }
 
@@ -183,7 +184,7 @@ public class Erc4337Api {
      * @param authorization  (required)
      * @param accountName  (required)
      * @param inputBody  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;AccountAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -191,9 +192,9 @@ public class Erc4337Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> getAddressWithHttpInfo(String authorization, String accountName, InputBody inputBody) throws ApiException {
+    public ApiResponse<AccountAPIResponse> getAddressWithHttpInfo(String authorization, String accountName, InputBody inputBody) throws ApiException {
         okhttp3.Call localVarCall = getAddressValidateBeforeCall(authorization, accountName, inputBody, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -212,10 +213,10 @@ public class Erc4337Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getAddressAsync(String authorization, String accountName, InputBody inputBody, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call getAddressAsync(String authorization, String accountName, InputBody inputBody, final ApiCallback<AccountAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = getAddressValidateBeforeCall(authorization, accountName, inputBody, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -310,7 +311,7 @@ public class Erc4337Api {
      * @param authorization  (required)
      * @param accountName  (required)
      * @param inputBody  (required)
-     * @return AccountControllerResponse
+     * @return TransactionAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -318,8 +319,8 @@ public class Erc4337Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse signBroadcastUserOpTx(String authorization, String accountName, InputBody inputBody) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = signBroadcastUserOpTxWithHttpInfo(authorization, accountName, inputBody);
+    public TransactionAPIResponse signBroadcastUserOpTx(String authorization, String accountName, InputBody inputBody) throws ApiException {
+        ApiResponse<TransactionAPIResponse> localVarResp = signBroadcastUserOpTxWithHttpInfo(authorization, accountName, inputBody);
         return localVarResp.getData();
     }
 
@@ -329,7 +330,7 @@ public class Erc4337Api {
      * @param authorization  (required)
      * @param accountName  (required)
      * @param inputBody  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;TransactionAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -337,9 +338,9 @@ public class Erc4337Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> signBroadcastUserOpTxWithHttpInfo(String authorization, String accountName, InputBody inputBody) throws ApiException {
+    public ApiResponse<TransactionAPIResponse> signBroadcastUserOpTxWithHttpInfo(String authorization, String accountName, InputBody inputBody) throws ApiException {
         okhttp3.Call localVarCall = signBroadcastUserOpTxValidateBeforeCall(authorization, accountName, inputBody, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -358,10 +359,10 @@ public class Erc4337Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call signBroadcastUserOpTxAsync(String authorization, String accountName, InputBody inputBody, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call signBroadcastUserOpTxAsync(String authorization, String accountName, InputBody inputBody, final ApiCallback<TransactionAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = signBroadcastUserOpTxValidateBeforeCall(authorization, accountName, inputBody, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

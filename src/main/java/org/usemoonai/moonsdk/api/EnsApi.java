@@ -27,7 +27,7 @@ import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 
 
-import org.usemoonai.moonsdk.models.AccountControllerResponse;
+import org.usemoonai.moonsdk.models.EnsResolveAPIResponse;
 import org.usemoonai.moonsdk.models.EnsResolveInput;
 
 import java.lang.reflect.Type;
@@ -156,7 +156,7 @@ public class EnsApi {
      * 
      * @param authorization  (required)
      * @param ensResolveInput  (required)
-     * @return AccountControllerResponse
+     * @return EnsResolveAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -164,8 +164,8 @@ public class EnsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse resolve(String authorization, EnsResolveInput ensResolveInput) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = resolveWithHttpInfo(authorization, ensResolveInput);
+    public EnsResolveAPIResponse resolve(String authorization, EnsResolveInput ensResolveInput) throws ApiException {
+        ApiResponse<EnsResolveAPIResponse> localVarResp = resolveWithHttpInfo(authorization, ensResolveInput);
         return localVarResp.getData();
     }
 
@@ -174,7 +174,7 @@ public class EnsApi {
      * 
      * @param authorization  (required)
      * @param ensResolveInput  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;EnsResolveAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -182,9 +182,9 @@ public class EnsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> resolveWithHttpInfo(String authorization, EnsResolveInput ensResolveInput) throws ApiException {
+    public ApiResponse<EnsResolveAPIResponse> resolveWithHttpInfo(String authorization, EnsResolveInput ensResolveInput) throws ApiException {
         okhttp3.Call localVarCall = resolveValidateBeforeCall(authorization, ensResolveInput, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<EnsResolveAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -202,10 +202,10 @@ public class EnsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call resolveAsync(String authorization, EnsResolveInput ensResolveInput, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call resolveAsync(String authorization, EnsResolveInput ensResolveInput, final ApiCallback<EnsResolveAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = resolveValidateBeforeCall(authorization, ensResolveInput, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<EnsResolveAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

@@ -1,6 +1,6 @@
 # RippleApi
 
-All URIs are relative to *https://vault-api.usemoon.ai*
+All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -12,7 +12,7 @@ All URIs are relative to *https://vault-api.usemoon.ai*
 
 <a id="createRippleAccount"></a>
 # **createRippleAccount**
-> AccountControllerResponse createRippleAccount(authorization, rippleInput)
+> AccountAPIResponse createRippleAccount(authorization, rippleInput)
 
 
 
@@ -29,7 +29,7 @@ import org.usemoonai.moonsdk.api.RippleApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -47,7 +47,7 @@ public class Example {
     String authorization = "authorization_example"; // String | 
     RippleInput rippleInput = new RippleInput(); // RippleInput | 
     try {
-      AccountControllerResponse result = apiInstance.createRippleAccount(authorization, rippleInput);
+      AccountAPIResponse result = apiInstance.createRippleAccount(authorization, rippleInput);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling RippleApi#createRippleAccount");
@@ -69,7 +69,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**AccountAPIResponse**](AccountAPIResponse.md)
 
 ### Authorization
 
@@ -87,7 +87,7 @@ public class Example {
 
 <a id="getRippleAccount"></a>
 # **getRippleAccount**
-> AccountControllerResponse getRippleAccount(authorization, accountName)
+> AccountAPIResponse getRippleAccount(authorization, accountName)
 
 
 
@@ -104,7 +104,7 @@ import org.usemoonai.moonsdk.api.RippleApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -122,7 +122,7 @@ public class Example {
     String authorization = "authorization_example"; // String | 
     String accountName = "accountName_example"; // String | 
     try {
-      AccountControllerResponse result = apiInstance.getRippleAccount(authorization, accountName);
+      AccountAPIResponse result = apiInstance.getRippleAccount(authorization, accountName);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling RippleApi#getRippleAccount");
@@ -144,7 +144,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**AccountAPIResponse**](AccountAPIResponse.md)
 
 ### Authorization
 
@@ -162,7 +162,7 @@ public class Example {
 
 <a id="listRippleAccounts"></a>
 # **listRippleAccounts**
-> AccountControllerResponse listRippleAccounts(authorization)
+> AccountAPIResponse listRippleAccounts(authorization)
 
 
 
@@ -179,7 +179,7 @@ import org.usemoonai.moonsdk.api.RippleApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -196,7 +196,7 @@ public class Example {
     RippleApi apiInstance = new RippleApi(defaultClient);
     String authorization = "authorization_example"; // String | 
     try {
-      AccountControllerResponse result = apiInstance.listRippleAccounts(authorization);
+      AccountAPIResponse result = apiInstance.listRippleAccounts(authorization);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling RippleApi#listRippleAccounts");
@@ -217,7 +217,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**AccountAPIResponse**](AccountAPIResponse.md)
 
 ### Authorization
 
@@ -235,7 +235,7 @@ public class Example {
 
 <a id="signRippleTransaction"></a>
 # **signRippleTransaction**
-> AccountControllerResponse signRippleTransaction(authorization, accountName, rippleTransactionInput)
+> RippleAPIResponse signRippleTransaction(authorization, accountName, rippleTransactionInput)
 
 
 
@@ -252,7 +252,7 @@ import org.usemoonai.moonsdk.api.RippleApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -271,7 +271,7 @@ public class Example {
     String accountName = "accountName_example"; // String | 
     RippleTransactionInput rippleTransactionInput = new RippleTransactionInput(); // RippleTransactionInput | 
     try {
-      AccountControllerResponse result = apiInstance.signRippleTransaction(authorization, accountName, rippleTransactionInput);
+      RippleAPIResponse result = apiInstance.signRippleTransaction(authorization, accountName, rippleTransactionInput);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling RippleApi#signRippleTransaction");
@@ -294,7 +294,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**RippleAPIResponse**](RippleAPIResponse.md)
 
 ### Authorization
 

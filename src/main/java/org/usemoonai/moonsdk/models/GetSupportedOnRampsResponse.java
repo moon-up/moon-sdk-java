@@ -52,7 +52,7 @@ import org.usemoonai.moonsdk.client.JSON;
 /**
  * GetSupportedOnRampsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-01-26T19:21:21.691562056+10:00[Australia/Brisbane]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-03-18T13:51:42.356170421+10:00[Australia/Brisbane]")
 public class GetSupportedOnRampsResponse {
   public static final String SERIALIZED_NAME_MESSAGE = "message";
   @SerializedName(SERIALIZED_NAME_MESSAGE)

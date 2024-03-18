@@ -28,7 +28,8 @@ import java.io.IOException;
 
 
 import org.usemoonai.moonsdk.models.AaveInput;
-import org.usemoonai.moonsdk.models.AccountControllerResponse;
+import org.usemoonai.moonsdk.models.AaveReservesAPIResponse;
+import org.usemoonai.moonsdk.models.TransactionAPIResponse;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -164,7 +165,7 @@ public class AaveApi {
      * @param authorization  (required)
      * @param name  (required)
      * @param aaveInput  (required)
-     * @return AccountControllerResponse
+     * @return TransactionAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -172,8 +173,8 @@ public class AaveApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse borrow(String authorization, String name, AaveInput aaveInput) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = borrowWithHttpInfo(authorization, name, aaveInput);
+    public TransactionAPIResponse borrow(String authorization, String name, AaveInput aaveInput) throws ApiException {
+        ApiResponse<TransactionAPIResponse> localVarResp = borrowWithHttpInfo(authorization, name, aaveInput);
         return localVarResp.getData();
     }
 
@@ -183,7 +184,7 @@ public class AaveApi {
      * @param authorization  (required)
      * @param name  (required)
      * @param aaveInput  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;TransactionAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -191,9 +192,9 @@ public class AaveApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> borrowWithHttpInfo(String authorization, String name, AaveInput aaveInput) throws ApiException {
+    public ApiResponse<TransactionAPIResponse> borrowWithHttpInfo(String authorization, String name, AaveInput aaveInput) throws ApiException {
         okhttp3.Call localVarCall = borrowValidateBeforeCall(authorization, name, aaveInput, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -212,10 +213,10 @@ public class AaveApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call borrowAsync(String authorization, String name, AaveInput aaveInput, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call borrowAsync(String authorization, String name, AaveInput aaveInput, final ApiCallback<TransactionAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = borrowValidateBeforeCall(authorization, name, aaveInput, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -310,7 +311,7 @@ public class AaveApi {
      * @param authorization  (required)
      * @param name  (required)
      * @param aaveInput  (required)
-     * @return AccountControllerResponse
+     * @return TransactionAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -318,8 +319,8 @@ public class AaveApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse lend(String authorization, String name, AaveInput aaveInput) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = lendWithHttpInfo(authorization, name, aaveInput);
+    public TransactionAPIResponse lend(String authorization, String name, AaveInput aaveInput) throws ApiException {
+        ApiResponse<TransactionAPIResponse> localVarResp = lendWithHttpInfo(authorization, name, aaveInput);
         return localVarResp.getData();
     }
 
@@ -329,7 +330,7 @@ public class AaveApi {
      * @param authorization  (required)
      * @param name  (required)
      * @param aaveInput  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;TransactionAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -337,9 +338,9 @@ public class AaveApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> lendWithHttpInfo(String authorization, String name, AaveInput aaveInput) throws ApiException {
+    public ApiResponse<TransactionAPIResponse> lendWithHttpInfo(String authorization, String name, AaveInput aaveInput) throws ApiException {
         okhttp3.Call localVarCall = lendValidateBeforeCall(authorization, name, aaveInput, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -358,10 +359,10 @@ public class AaveApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call lendAsync(String authorization, String name, AaveInput aaveInput, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call lendAsync(String authorization, String name, AaveInput aaveInput, final ApiCallback<TransactionAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = lendValidateBeforeCall(authorization, name, aaveInput, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -456,7 +457,7 @@ public class AaveApi {
      * @param authorization  (required)
      * @param name  (required)
      * @param aaveInput  (required)
-     * @return AccountControllerResponse
+     * @return TransactionAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -464,8 +465,8 @@ public class AaveApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse repay(String authorization, String name, AaveInput aaveInput) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = repayWithHttpInfo(authorization, name, aaveInput);
+    public TransactionAPIResponse repay(String authorization, String name, AaveInput aaveInput) throws ApiException {
+        ApiResponse<TransactionAPIResponse> localVarResp = repayWithHttpInfo(authorization, name, aaveInput);
         return localVarResp.getData();
     }
 
@@ -475,7 +476,7 @@ public class AaveApi {
      * @param authorization  (required)
      * @param name  (required)
      * @param aaveInput  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;TransactionAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -483,9 +484,9 @@ public class AaveApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> repayWithHttpInfo(String authorization, String name, AaveInput aaveInput) throws ApiException {
+    public ApiResponse<TransactionAPIResponse> repayWithHttpInfo(String authorization, String name, AaveInput aaveInput) throws ApiException {
         okhttp3.Call localVarCall = repayValidateBeforeCall(authorization, name, aaveInput, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -504,10 +505,10 @@ public class AaveApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call repayAsync(String authorization, String name, AaveInput aaveInput, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call repayAsync(String authorization, String name, AaveInput aaveInput, final ApiCallback<TransactionAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = repayValidateBeforeCall(authorization, name, aaveInput, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -602,7 +603,7 @@ public class AaveApi {
      * @param authorization  (required)
      * @param name  (required)
      * @param aaveInput  (required)
-     * @return AccountControllerResponse
+     * @return AaveReservesAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -610,8 +611,8 @@ public class AaveApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse userReserveData(String authorization, String name, AaveInput aaveInput) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = userReserveDataWithHttpInfo(authorization, name, aaveInput);
+    public AaveReservesAPIResponse userReserveData(String authorization, String name, AaveInput aaveInput) throws ApiException {
+        ApiResponse<AaveReservesAPIResponse> localVarResp = userReserveDataWithHttpInfo(authorization, name, aaveInput);
         return localVarResp.getData();
     }
 
@@ -621,7 +622,7 @@ public class AaveApi {
      * @param authorization  (required)
      * @param name  (required)
      * @param aaveInput  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;AaveReservesAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -629,9 +630,9 @@ public class AaveApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> userReserveDataWithHttpInfo(String authorization, String name, AaveInput aaveInput) throws ApiException {
+    public ApiResponse<AaveReservesAPIResponse> userReserveDataWithHttpInfo(String authorization, String name, AaveInput aaveInput) throws ApiException {
         okhttp3.Call localVarCall = userReserveDataValidateBeforeCall(authorization, name, aaveInput, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AaveReservesAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -650,10 +651,10 @@ public class AaveApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call userReserveDataAsync(String authorization, String name, AaveInput aaveInput, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call userReserveDataAsync(String authorization, String name, AaveInput aaveInput, final ApiCallback<AaveReservesAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = userReserveDataValidateBeforeCall(authorization, name, aaveInput, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AaveReservesAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

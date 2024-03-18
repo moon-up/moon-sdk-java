@@ -1,6 +1,6 @@
 # Erc4337Api
 
-All URIs are relative to *https://vault-api.usemoon.ai*
+All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -10,7 +10,7 @@ All URIs are relative to *https://vault-api.usemoon.ai*
 
 <a id="getAddress"></a>
 # **getAddress**
-> AccountControllerResponse getAddress(authorization, accountName, inputBody)
+> AccountAPIResponse getAddress(authorization, accountName, inputBody)
 
 
 
@@ -27,7 +27,7 @@ import org.usemoonai.moonsdk.api.Erc4337Api;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -46,7 +46,7 @@ public class Example {
     String accountName = "accountName_example"; // String | 
     InputBody inputBody = new InputBody(); // InputBody | 
     try {
-      AccountControllerResponse result = apiInstance.getAddress(authorization, accountName, inputBody);
+      AccountAPIResponse result = apiInstance.getAddress(authorization, accountName, inputBody);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling Erc4337Api#getAddress");
@@ -69,7 +69,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**AccountAPIResponse**](AccountAPIResponse.md)
 
 ### Authorization
 
@@ -87,7 +87,7 @@ public class Example {
 
 <a id="signBroadcastUserOpTx"></a>
 # **signBroadcastUserOpTx**
-> AccountControllerResponse signBroadcastUserOpTx(authorization, accountName, inputBody)
+> TransactionAPIResponse signBroadcastUserOpTx(authorization, accountName, inputBody)
 
 
 
@@ -104,7 +104,7 @@ import org.usemoonai.moonsdk.api.Erc4337Api;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -123,7 +123,7 @@ public class Example {
     String accountName = "accountName_example"; // String | 
     InputBody inputBody = new InputBody(); // InputBody | 
     try {
-      AccountControllerResponse result = apiInstance.signBroadcastUserOpTx(authorization, accountName, inputBody);
+      TransactionAPIResponse result = apiInstance.signBroadcastUserOpTx(authorization, accountName, inputBody);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling Erc4337Api#signBroadcastUserOpTx");
@@ -146,7 +146,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 

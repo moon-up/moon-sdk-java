@@ -66,10 +66,10 @@ import org.usemoonai.moonsdk.client.auth.OAuthFlow;
  */
 public class ApiClient {
 
-    private String basePath = "https://vault-api.usemoon.ai";
+    private String basePath = "https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app";
     protected List<ServerConfiguration> servers = new ArrayList<ServerConfiguration>(Arrays.asList(
     new ServerConfiguration(
-      "https://vault-api.usemoon.ai",
+      "https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app",
       "No description provided",
       new HashMap<String, ServerVariable>()
     )
@@ -235,7 +235,7 @@ public class ApiClient {
     /**
      * Set base path
      *
-     * @param basePath Base path of the URL (e.g https://vault-api.usemoon.ai
+     * @param basePath Base path of the URL (e.g https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app
      * @return An instance of OkHttpClient
      */
     public ApiClient setBasePath(String basePath) {

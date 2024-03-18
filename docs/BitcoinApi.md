@@ -1,6 +1,6 @@
 # BitcoinApi
 
-All URIs are relative to *https://vault-api.usemoon.ai*
+All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -12,7 +12,7 @@ All URIs are relative to *https://vault-api.usemoon.ai*
 
 <a id="createBitcoinAccount"></a>
 # **createBitcoinAccount**
-> AccountControllerResponse createBitcoinAccount(authorization, bitcoinInput)
+> AccountAPIResponse createBitcoinAccount(authorization, bitcoinInput)
 
 
 
@@ -29,7 +29,7 @@ import org.usemoonai.moonsdk.api.BitcoinApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -47,7 +47,7 @@ public class Example {
     String authorization = "authorization_example"; // String | 
     BitcoinInput bitcoinInput = new BitcoinInput(); // BitcoinInput | 
     try {
-      AccountControllerResponse result = apiInstance.createBitcoinAccount(authorization, bitcoinInput);
+      AccountAPIResponse result = apiInstance.createBitcoinAccount(authorization, bitcoinInput);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling BitcoinApi#createBitcoinAccount");
@@ -69,7 +69,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**AccountAPIResponse**](AccountAPIResponse.md)
 
 ### Authorization
 
@@ -87,7 +87,7 @@ public class Example {
 
 <a id="getBitcoinAccount"></a>
 # **getBitcoinAccount**
-> AccountControllerResponse getBitcoinAccount(authorization, accountName)
+> AccountAPIResponse getBitcoinAccount(authorization, accountName)
 
 
 
@@ -104,7 +104,7 @@ import org.usemoonai.moonsdk.api.BitcoinApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -122,7 +122,7 @@ public class Example {
     String authorization = "authorization_example"; // String | 
     String accountName = "accountName_example"; // String | 
     try {
-      AccountControllerResponse result = apiInstance.getBitcoinAccount(authorization, accountName);
+      AccountAPIResponse result = apiInstance.getBitcoinAccount(authorization, accountName);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling BitcoinApi#getBitcoinAccount");
@@ -144,7 +144,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**AccountAPIResponse**](AccountAPIResponse.md)
 
 ### Authorization
 
@@ -162,7 +162,7 @@ public class Example {
 
 <a id="listBitcoinAccounts"></a>
 # **listBitcoinAccounts**
-> AccountControllerResponse listBitcoinAccounts(authorization)
+> AccountAPIResponse listBitcoinAccounts(authorization)
 
 
 
@@ -179,7 +179,7 @@ import org.usemoonai.moonsdk.api.BitcoinApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -196,7 +196,7 @@ public class Example {
     BitcoinApi apiInstance = new BitcoinApi(defaultClient);
     String authorization = "authorization_example"; // String | 
     try {
-      AccountControllerResponse result = apiInstance.listBitcoinAccounts(authorization);
+      AccountAPIResponse result = apiInstance.listBitcoinAccounts(authorization);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling BitcoinApi#listBitcoinAccounts");
@@ -217,7 +217,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**AccountAPIResponse**](AccountAPIResponse.md)
 
 ### Authorization
 
@@ -235,7 +235,7 @@ public class Example {
 
 <a id="signBitcoinTransaction"></a>
 # **signBitcoinTransaction**
-> AccountControllerResponse signBitcoinTransaction(authorization, accountName, bitcoinTransactionInput)
+> BitcoinAPIResponse signBitcoinTransaction(authorization, accountName, bitcoinTransactionInput)
 
 
 
@@ -252,7 +252,7 @@ import org.usemoonai.moonsdk.api.BitcoinApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -271,7 +271,7 @@ public class Example {
     String accountName = "accountName_example"; // String | 
     BitcoinTransactionInput bitcoinTransactionInput = new BitcoinTransactionInput(); // BitcoinTransactionInput | 
     try {
-      AccountControllerResponse result = apiInstance.signBitcoinTransaction(authorization, accountName, bitcoinTransactionInput);
+      BitcoinAPIResponse result = apiInstance.signBitcoinTransaction(authorization, accountName, bitcoinTransactionInput);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling BitcoinApi#signBitcoinTransaction");
@@ -294,7 +294,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**BitcoinAPIResponse**](BitcoinAPIResponse.md)
 
 ### Authorization
 

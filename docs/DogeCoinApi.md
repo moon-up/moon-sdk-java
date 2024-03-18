@@ -1,6 +1,6 @@
 # DogeCoinApi
 
-All URIs are relative to *https://vault-api.usemoon.ai*
+All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -12,7 +12,7 @@ All URIs are relative to *https://vault-api.usemoon.ai*
 
 <a id="createDogeCoinAccount"></a>
 # **createDogeCoinAccount**
-> AccountControllerResponse createDogeCoinAccount(authorization, dogeCoinInput)
+> AccountAPIResponse createDogeCoinAccount(authorization, dogeCoinInput)
 
 
 
@@ -29,7 +29,7 @@ import org.usemoonai.moonsdk.api.DogeCoinApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -47,7 +47,7 @@ public class Example {
     String authorization = "authorization_example"; // String | 
     DogeCoinInput dogeCoinInput = new DogeCoinInput(); // DogeCoinInput | 
     try {
-      AccountControllerResponse result = apiInstance.createDogeCoinAccount(authorization, dogeCoinInput);
+      AccountAPIResponse result = apiInstance.createDogeCoinAccount(authorization, dogeCoinInput);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling DogeCoinApi#createDogeCoinAccount");
@@ -69,7 +69,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**AccountAPIResponse**](AccountAPIResponse.md)
 
 ### Authorization
 
@@ -87,7 +87,7 @@ public class Example {
 
 <a id="getDogeCoinAccount"></a>
 # **getDogeCoinAccount**
-> AccountControllerResponse getDogeCoinAccount(authorization, accountName)
+> AccountAPIResponse getDogeCoinAccount(authorization, accountName)
 
 
 
@@ -104,7 +104,7 @@ import org.usemoonai.moonsdk.api.DogeCoinApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -122,7 +122,7 @@ public class Example {
     String authorization = "authorization_example"; // String | 
     String accountName = "accountName_example"; // String | 
     try {
-      AccountControllerResponse result = apiInstance.getDogeCoinAccount(authorization, accountName);
+      AccountAPIResponse result = apiInstance.getDogeCoinAccount(authorization, accountName);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling DogeCoinApi#getDogeCoinAccount");
@@ -144,7 +144,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**AccountAPIResponse**](AccountAPIResponse.md)
 
 ### Authorization
 
@@ -162,7 +162,7 @@ public class Example {
 
 <a id="listDogeCoinAccounts"></a>
 # **listDogeCoinAccounts**
-> AccountControllerResponse listDogeCoinAccounts(authorization)
+> AccountAPIResponse listDogeCoinAccounts(authorization)
 
 
 
@@ -179,7 +179,7 @@ import org.usemoonai.moonsdk.api.DogeCoinApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -196,7 +196,7 @@ public class Example {
     DogeCoinApi apiInstance = new DogeCoinApi(defaultClient);
     String authorization = "authorization_example"; // String | 
     try {
-      AccountControllerResponse result = apiInstance.listDogeCoinAccounts(authorization);
+      AccountAPIResponse result = apiInstance.listDogeCoinAccounts(authorization);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling DogeCoinApi#listDogeCoinAccounts");
@@ -217,7 +217,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**AccountAPIResponse**](AccountAPIResponse.md)
 
 ### Authorization
 
@@ -235,7 +235,7 @@ public class Example {
 
 <a id="signDogeCoinTransaction"></a>
 # **signDogeCoinTransaction**
-> AccountControllerResponse signDogeCoinTransaction(authorization, accountName, dogeCoinTransactionInput)
+> DogeCoinAPIResponse signDogeCoinTransaction(authorization, accountName, dogeCoinTransactionInput)
 
 
 
@@ -252,7 +252,7 @@ import org.usemoonai.moonsdk.api.DogeCoinApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -271,7 +271,7 @@ public class Example {
     String accountName = "accountName_example"; // String | 
     DogeCoinTransactionInput dogeCoinTransactionInput = new DogeCoinTransactionInput(); // DogeCoinTransactionInput | 
     try {
-      AccountControllerResponse result = apiInstance.signDogeCoinTransaction(authorization, accountName, dogeCoinTransactionInput);
+      DogeCoinAPIResponse result = apiInstance.signDogeCoinTransaction(authorization, accountName, dogeCoinTransactionInput);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling DogeCoinApi#signDogeCoinTransaction");
@@ -294,7 +294,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**DogeCoinAPIResponse**](DogeCoinAPIResponse.md)
 
 ### Authorization
 

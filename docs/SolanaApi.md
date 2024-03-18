@@ -1,6 +1,6 @@
 # SolanaApi
 
-All URIs are relative to *https://vault-api.usemoon.ai*
+All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -12,7 +12,7 @@ All URIs are relative to *https://vault-api.usemoon.ai*
 
 <a id="createSolanaAccount"></a>
 # **createSolanaAccount**
-> AccountControllerResponse createSolanaAccount(authorization, solanaInput)
+> AccountAPIResponse createSolanaAccount(authorization, solanaInput)
 
 
 
@@ -29,7 +29,7 @@ import org.usemoonai.moonsdk.api.SolanaApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -47,7 +47,7 @@ public class Example {
     String authorization = "authorization_example"; // String | 
     SolanaInput solanaInput = new SolanaInput(); // SolanaInput | 
     try {
-      AccountControllerResponse result = apiInstance.createSolanaAccount(authorization, solanaInput);
+      AccountAPIResponse result = apiInstance.createSolanaAccount(authorization, solanaInput);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling SolanaApi#createSolanaAccount");
@@ -69,7 +69,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**AccountAPIResponse**](AccountAPIResponse.md)
 
 ### Authorization
 
@@ -87,7 +87,7 @@ public class Example {
 
 <a id="getSolanaAccount"></a>
 # **getSolanaAccount**
-> AccountControllerResponse getSolanaAccount(authorization, accountName)
+> AccountAPIResponse getSolanaAccount(authorization, accountName)
 
 
 
@@ -104,7 +104,7 @@ import org.usemoonai.moonsdk.api.SolanaApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -122,7 +122,7 @@ public class Example {
     String authorization = "authorization_example"; // String | 
     String accountName = "accountName_example"; // String | 
     try {
-      AccountControllerResponse result = apiInstance.getSolanaAccount(authorization, accountName);
+      AccountAPIResponse result = apiInstance.getSolanaAccount(authorization, accountName);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling SolanaApi#getSolanaAccount");
@@ -144,7 +144,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**AccountAPIResponse**](AccountAPIResponse.md)
 
 ### Authorization
 
@@ -162,7 +162,7 @@ public class Example {
 
 <a id="listSolanaAccounts"></a>
 # **listSolanaAccounts**
-> AccountControllerResponse listSolanaAccounts(authorization)
+> AccountAPIResponse listSolanaAccounts(authorization)
 
 
 
@@ -179,7 +179,7 @@ import org.usemoonai.moonsdk.api.SolanaApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -196,7 +196,7 @@ public class Example {
     SolanaApi apiInstance = new SolanaApi(defaultClient);
     String authorization = "authorization_example"; // String | 
     try {
-      AccountControllerResponse result = apiInstance.listSolanaAccounts(authorization);
+      AccountAPIResponse result = apiInstance.listSolanaAccounts(authorization);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling SolanaApi#listSolanaAccounts");
@@ -217,7 +217,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**AccountAPIResponse**](AccountAPIResponse.md)
 
 ### Authorization
 
@@ -235,7 +235,7 @@ public class Example {
 
 <a id="signSolanaTransaction"></a>
 # **signSolanaTransaction**
-> AccountControllerResponse signSolanaTransaction(authorization, accountName, solanaTransactionInput)
+> SolanaAPIResponse signSolanaTransaction(authorization, accountName, solanaTransactionInput)
 
 
 
@@ -252,7 +252,7 @@ import org.usemoonai.moonsdk.api.SolanaApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -271,7 +271,7 @@ public class Example {
     String accountName = "accountName_example"; // String | 
     SolanaTransactionInput solanaTransactionInput = new SolanaTransactionInput(); // SolanaTransactionInput | 
     try {
-      AccountControllerResponse result = apiInstance.signSolanaTransaction(authorization, accountName, solanaTransactionInput);
+      SolanaAPIResponse result = apiInstance.signSolanaTransaction(authorization, accountName, solanaTransactionInput);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling SolanaApi#signSolanaTransaction");
@@ -294,7 +294,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**SolanaAPIResponse**](SolanaAPIResponse.md)
 
 ### Authorization
 

@@ -1,6 +1,6 @@
 # AaveApi
 
-All URIs are relative to *https://vault-api.usemoon.ai*
+All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -12,7 +12,7 @@ All URIs are relative to *https://vault-api.usemoon.ai*
 
 <a id="borrow"></a>
 # **borrow**
-> AccountControllerResponse borrow(authorization, name, aaveInput)
+> TransactionAPIResponse borrow(authorization, name, aaveInput)
 
 
 
@@ -29,7 +29,7 @@ import org.usemoonai.moonsdk.api.AaveApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -48,7 +48,7 @@ public class Example {
     String name = "name_example"; // String | 
     AaveInput aaveInput = new AaveInput(); // AaveInput | 
     try {
-      AccountControllerResponse result = apiInstance.borrow(authorization, name, aaveInput);
+      TransactionAPIResponse result = apiInstance.borrow(authorization, name, aaveInput);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AaveApi#borrow");
@@ -71,7 +71,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 
@@ -89,7 +89,7 @@ public class Example {
 
 <a id="lend"></a>
 # **lend**
-> AccountControllerResponse lend(authorization, name, aaveInput)
+> TransactionAPIResponse lend(authorization, name, aaveInput)
 
 
 
@@ -106,7 +106,7 @@ import org.usemoonai.moonsdk.api.AaveApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -125,7 +125,7 @@ public class Example {
     String name = "name_example"; // String | 
     AaveInput aaveInput = new AaveInput(); // AaveInput | 
     try {
-      AccountControllerResponse result = apiInstance.lend(authorization, name, aaveInput);
+      TransactionAPIResponse result = apiInstance.lend(authorization, name, aaveInput);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AaveApi#lend");
@@ -148,7 +148,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 
@@ -166,7 +166,7 @@ public class Example {
 
 <a id="repay"></a>
 # **repay**
-> AccountControllerResponse repay(authorization, name, aaveInput)
+> TransactionAPIResponse repay(authorization, name, aaveInput)
 
 
 
@@ -183,7 +183,7 @@ import org.usemoonai.moonsdk.api.AaveApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -202,7 +202,7 @@ public class Example {
     String name = "name_example"; // String | 
     AaveInput aaveInput = new AaveInput(); // AaveInput | 
     try {
-      AccountControllerResponse result = apiInstance.repay(authorization, name, aaveInput);
+      TransactionAPIResponse result = apiInstance.repay(authorization, name, aaveInput);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AaveApi#repay");
@@ -225,7 +225,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 
@@ -243,7 +243,7 @@ public class Example {
 
 <a id="userReserveData"></a>
 # **userReserveData**
-> AccountControllerResponse userReserveData(authorization, name, aaveInput)
+> AaveReservesAPIResponse userReserveData(authorization, name, aaveInput)
 
 
 
@@ -260,7 +260,7 @@ import org.usemoonai.moonsdk.api.AaveApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -279,7 +279,7 @@ public class Example {
     String name = "name_example"; // String | 
     AaveInput aaveInput = new AaveInput(); // AaveInput | 
     try {
-      AccountControllerResponse result = apiInstance.userReserveData(authorization, name, aaveInput);
+      AaveReservesAPIResponse result = apiInstance.userReserveData(authorization, name, aaveInput);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AaveApi#userReserveData");
@@ -302,7 +302,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**AaveReservesAPIResponse**](AaveReservesAPIResponse.md)
 
 ### Authorization
 

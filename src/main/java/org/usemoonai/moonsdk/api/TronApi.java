@@ -27,7 +27,8 @@ import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 
 
-import org.usemoonai.moonsdk.models.AccountControllerResponse;
+import org.usemoonai.moonsdk.models.AccountAPIResponse;
+import org.usemoonai.moonsdk.models.TronAPIResponse;
 import org.usemoonai.moonsdk.models.TronInput;
 import org.usemoonai.moonsdk.models.TronTransactionInput;
 
@@ -157,7 +158,7 @@ public class TronApi {
      * 
      * @param authorization  (required)
      * @param tronInput  (required)
-     * @return AccountControllerResponse
+     * @return AccountAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -165,8 +166,8 @@ public class TronApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse createTronAccount(String authorization, TronInput tronInput) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = createTronAccountWithHttpInfo(authorization, tronInput);
+    public AccountAPIResponse createTronAccount(String authorization, TronInput tronInput) throws ApiException {
+        ApiResponse<AccountAPIResponse> localVarResp = createTronAccountWithHttpInfo(authorization, tronInput);
         return localVarResp.getData();
     }
 
@@ -175,7 +176,7 @@ public class TronApi {
      * 
      * @param authorization  (required)
      * @param tronInput  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;AccountAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -183,9 +184,9 @@ public class TronApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> createTronAccountWithHttpInfo(String authorization, TronInput tronInput) throws ApiException {
+    public ApiResponse<AccountAPIResponse> createTronAccountWithHttpInfo(String authorization, TronInput tronInput) throws ApiException {
         okhttp3.Call localVarCall = createTronAccountValidateBeforeCall(authorization, tronInput, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -203,10 +204,10 @@ public class TronApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call createTronAccountAsync(String authorization, TronInput tronInput, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call createTronAccountAsync(String authorization, TronInput tronInput, final ApiCallback<AccountAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = createTronAccountValidateBeforeCall(authorization, tronInput, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -293,7 +294,7 @@ public class TronApi {
      * 
      * @param authorization  (required)
      * @param accountName  (required)
-     * @return AccountControllerResponse
+     * @return AccountAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -301,8 +302,8 @@ public class TronApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse getTronAccount(String authorization, String accountName) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = getTronAccountWithHttpInfo(authorization, accountName);
+    public AccountAPIResponse getTronAccount(String authorization, String accountName) throws ApiException {
+        ApiResponse<AccountAPIResponse> localVarResp = getTronAccountWithHttpInfo(authorization, accountName);
         return localVarResp.getData();
     }
 
@@ -311,7 +312,7 @@ public class TronApi {
      * 
      * @param authorization  (required)
      * @param accountName  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;AccountAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -319,9 +320,9 @@ public class TronApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> getTronAccountWithHttpInfo(String authorization, String accountName) throws ApiException {
+    public ApiResponse<AccountAPIResponse> getTronAccountWithHttpInfo(String authorization, String accountName) throws ApiException {
         okhttp3.Call localVarCall = getTronAccountValidateBeforeCall(authorization, accountName, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -339,10 +340,10 @@ public class TronApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getTronAccountAsync(String authorization, String accountName, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call getTronAccountAsync(String authorization, String accountName, final ApiCallback<AccountAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = getTronAccountValidateBeforeCall(authorization, accountName, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -421,7 +422,7 @@ public class TronApi {
      * 
      * 
      * @param authorization  (required)
-     * @return AccountControllerResponse
+     * @return AccountAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -429,8 +430,8 @@ public class TronApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse listTronAccounts(String authorization) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = listTronAccountsWithHttpInfo(authorization);
+    public AccountAPIResponse listTronAccounts(String authorization) throws ApiException {
+        ApiResponse<AccountAPIResponse> localVarResp = listTronAccountsWithHttpInfo(authorization);
         return localVarResp.getData();
     }
 
@@ -438,7 +439,7 @@ public class TronApi {
      * 
      * 
      * @param authorization  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;AccountAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -446,9 +447,9 @@ public class TronApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> listTronAccountsWithHttpInfo(String authorization) throws ApiException {
+    public ApiResponse<AccountAPIResponse> listTronAccountsWithHttpInfo(String authorization) throws ApiException {
         okhttp3.Call localVarCall = listTronAccountsValidateBeforeCall(authorization, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -465,10 +466,10 @@ public class TronApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call listTronAccountsAsync(String authorization, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call listTronAccountsAsync(String authorization, final ApiCallback<AccountAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = listTronAccountsValidateBeforeCall(authorization, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -563,7 +564,7 @@ public class TronApi {
      * @param authorization  (required)
      * @param accountName  (required)
      * @param tronTransactionInput  (required)
-     * @return AccountControllerResponse
+     * @return TronAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -571,8 +572,8 @@ public class TronApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse signTronTransaction(String authorization, String accountName, TronTransactionInput tronTransactionInput) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = signTronTransactionWithHttpInfo(authorization, accountName, tronTransactionInput);
+    public TronAPIResponse signTronTransaction(String authorization, String accountName, TronTransactionInput tronTransactionInput) throws ApiException {
+        ApiResponse<TronAPIResponse> localVarResp = signTronTransactionWithHttpInfo(authorization, accountName, tronTransactionInput);
         return localVarResp.getData();
     }
 
@@ -582,7 +583,7 @@ public class TronApi {
      * @param authorization  (required)
      * @param accountName  (required)
      * @param tronTransactionInput  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;TronAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -590,9 +591,9 @@ public class TronApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> signTronTransactionWithHttpInfo(String authorization, String accountName, TronTransactionInput tronTransactionInput) throws ApiException {
+    public ApiResponse<TronAPIResponse> signTronTransactionWithHttpInfo(String authorization, String accountName, TronTransactionInput tronTransactionInput) throws ApiException {
         okhttp3.Call localVarCall = signTronTransactionValidateBeforeCall(authorization, accountName, tronTransactionInput, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TronAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -611,10 +612,10 @@ public class TronApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call signTronTransactionAsync(String authorization, String accountName, TronTransactionInput tronTransactionInput, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call signTronTransactionAsync(String authorization, String accountName, TronTransactionInput tronTransactionInput, final ApiCallback<TronAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = signTronTransactionValidateBeforeCall(authorization, accountName, tronTransactionInput, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TronAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

@@ -27,13 +27,18 @@ import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 
 
-import org.usemoonai.moonsdk.models.AccountControllerResponse;
+import org.usemoonai.moonsdk.models.AccountAPIResponse;
+import org.usemoonai.moonsdk.models.BalanceAPIResponse;
+import org.usemoonai.moonsdk.models.BroadCastRawTransactionAPIResponse;
 import org.usemoonai.moonsdk.models.BroadcastInput;
 import org.usemoonai.moonsdk.models.CreateAccountInput;
 import org.usemoonai.moonsdk.models.DeployInput;
 import org.usemoonai.moonsdk.models.InputBody;
+import org.usemoonai.moonsdk.models.NonceAPIResponse;
 import org.usemoonai.moonsdk.models.SignMessage;
+import org.usemoonai.moonsdk.models.SignMessageAPIResponse;
 import org.usemoonai.moonsdk.models.SignTypedData;
+import org.usemoonai.moonsdk.models.TransactionAPIResponse;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -169,7 +174,7 @@ public class AccountsApi {
      * @param authorization  (required)
      * @param accountName  (required)
      * @param broadcastInput  (required)
-     * @return AccountControllerResponse
+     * @return BroadCastRawTransactionAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -177,8 +182,8 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse broadcastTx(String authorization, String accountName, BroadcastInput broadcastInput) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = broadcastTxWithHttpInfo(authorization, accountName, broadcastInput);
+    public BroadCastRawTransactionAPIResponse broadcastTx(String authorization, String accountName, BroadcastInput broadcastInput) throws ApiException {
+        ApiResponse<BroadCastRawTransactionAPIResponse> localVarResp = broadcastTxWithHttpInfo(authorization, accountName, broadcastInput);
         return localVarResp.getData();
     }
 
@@ -188,7 +193,7 @@ public class AccountsApi {
      * @param authorization  (required)
      * @param accountName  (required)
      * @param broadcastInput  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;BroadCastRawTransactionAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -196,9 +201,9 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> broadcastTxWithHttpInfo(String authorization, String accountName, BroadcastInput broadcastInput) throws ApiException {
+    public ApiResponse<BroadCastRawTransactionAPIResponse> broadcastTxWithHttpInfo(String authorization, String accountName, BroadcastInput broadcastInput) throws ApiException {
         okhttp3.Call localVarCall = broadcastTxValidateBeforeCall(authorization, accountName, broadcastInput, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<BroadCastRawTransactionAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -217,10 +222,10 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call broadcastTxAsync(String authorization, String accountName, BroadcastInput broadcastInput, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call broadcastTxAsync(String authorization, String accountName, BroadcastInput broadcastInput, final ApiCallback<BroadCastRawTransactionAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = broadcastTxValidateBeforeCall(authorization, accountName, broadcastInput, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<BroadCastRawTransactionAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -307,7 +312,7 @@ public class AccountsApi {
      * 
      * @param authorization  (required)
      * @param createAccountInput  (required)
-     * @return AccountControllerResponse
+     * @return AccountAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -315,8 +320,8 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse createAccount(String authorization, CreateAccountInput createAccountInput) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = createAccountWithHttpInfo(authorization, createAccountInput);
+    public AccountAPIResponse createAccount(String authorization, CreateAccountInput createAccountInput) throws ApiException {
+        ApiResponse<AccountAPIResponse> localVarResp = createAccountWithHttpInfo(authorization, createAccountInput);
         return localVarResp.getData();
     }
 
@@ -325,7 +330,7 @@ public class AccountsApi {
      * 
      * @param authorization  (required)
      * @param createAccountInput  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;AccountAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -333,9 +338,9 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> createAccountWithHttpInfo(String authorization, CreateAccountInput createAccountInput) throws ApiException {
+    public ApiResponse<AccountAPIResponse> createAccountWithHttpInfo(String authorization, CreateAccountInput createAccountInput) throws ApiException {
         okhttp3.Call localVarCall = createAccountValidateBeforeCall(authorization, createAccountInput, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -353,10 +358,10 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call createAccountAsync(String authorization, CreateAccountInput createAccountInput, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call createAccountAsync(String authorization, CreateAccountInput createAccountInput, final ApiCallback<AccountAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = createAccountValidateBeforeCall(authorization, createAccountInput, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -443,7 +448,7 @@ public class AccountsApi {
      * 
      * @param authorization  (required)
      * @param accountName  (required)
-     * @return AccountControllerResponse
+     * @return AccountAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -451,8 +456,8 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse deleteAccount(String authorization, String accountName) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = deleteAccountWithHttpInfo(authorization, accountName);
+    public AccountAPIResponse deleteAccount(String authorization, String accountName) throws ApiException {
+        ApiResponse<AccountAPIResponse> localVarResp = deleteAccountWithHttpInfo(authorization, accountName);
         return localVarResp.getData();
     }
 
@@ -461,7 +466,7 @@ public class AccountsApi {
      * 
      * @param authorization  (required)
      * @param accountName  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;AccountAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -469,9 +474,9 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> deleteAccountWithHttpInfo(String authorization, String accountName) throws ApiException {
+    public ApiResponse<AccountAPIResponse> deleteAccountWithHttpInfo(String authorization, String accountName) throws ApiException {
         okhttp3.Call localVarCall = deleteAccountValidateBeforeCall(authorization, accountName, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -489,10 +494,10 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call deleteAccountAsync(String authorization, String accountName, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call deleteAccountAsync(String authorization, String accountName, final ApiCallback<AccountAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = deleteAccountValidateBeforeCall(authorization, accountName, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -587,7 +592,7 @@ public class AccountsApi {
      * @param authorization  (required)
      * @param accountName  (required)
      * @param deployInput  (required)
-     * @return AccountControllerResponse
+     * @return TransactionAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -595,8 +600,8 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse deployContract(String authorization, String accountName, DeployInput deployInput) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = deployContractWithHttpInfo(authorization, accountName, deployInput);
+    public TransactionAPIResponse deployContract(String authorization, String accountName, DeployInput deployInput) throws ApiException {
+        ApiResponse<TransactionAPIResponse> localVarResp = deployContractWithHttpInfo(authorization, accountName, deployInput);
         return localVarResp.getData();
     }
 
@@ -606,7 +611,7 @@ public class AccountsApi {
      * @param authorization  (required)
      * @param accountName  (required)
      * @param deployInput  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;TransactionAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -614,9 +619,9 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> deployContractWithHttpInfo(String authorization, String accountName, DeployInput deployInput) throws ApiException {
+    public ApiResponse<TransactionAPIResponse> deployContractWithHttpInfo(String authorization, String accountName, DeployInput deployInput) throws ApiException {
         okhttp3.Call localVarCall = deployContractValidateBeforeCall(authorization, accountName, deployInput, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -635,10 +640,10 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call deployContractAsync(String authorization, String accountName, DeployInput deployInput, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call deployContractAsync(String authorization, String accountName, DeployInput deployInput, final ApiCallback<TransactionAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = deployContractValidateBeforeCall(authorization, accountName, deployInput, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -725,7 +730,7 @@ public class AccountsApi {
      * 
      * @param authorization  (required)
      * @param accountName  (required)
-     * @return AccountControllerResponse
+     * @return AccountAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -733,8 +738,8 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse getAccount(String authorization, String accountName) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = getAccountWithHttpInfo(authorization, accountName);
+    public AccountAPIResponse getAccount(String authorization, String accountName) throws ApiException {
+        ApiResponse<AccountAPIResponse> localVarResp = getAccountWithHttpInfo(authorization, accountName);
         return localVarResp.getData();
     }
 
@@ -743,7 +748,7 @@ public class AccountsApi {
      * 
      * @param authorization  (required)
      * @param accountName  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;AccountAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -751,9 +756,9 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> getAccountWithHttpInfo(String authorization, String accountName) throws ApiException {
+    public ApiResponse<AccountAPIResponse> getAccountWithHttpInfo(String authorization, String accountName) throws ApiException {
         okhttp3.Call localVarCall = getAccountValidateBeforeCall(authorization, accountName, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -771,10 +776,10 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getAccountAsync(String authorization, String accountName, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call getAccountAsync(String authorization, String accountName, final ApiCallback<AccountAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = getAccountValidateBeforeCall(authorization, accountName, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -872,7 +877,7 @@ public class AccountsApi {
      * @param accountName  (required)
      * @param authorization  (required)
      * @param chainId  (required)
-     * @return AccountControllerResponse
+     * @return BalanceAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -880,8 +885,8 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse getBalance(String accountName, String authorization, String chainId) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = getBalanceWithHttpInfo(accountName, authorization, chainId);
+    public BalanceAPIResponse getBalance(String accountName, String authorization, String chainId) throws ApiException {
+        ApiResponse<BalanceAPIResponse> localVarResp = getBalanceWithHttpInfo(accountName, authorization, chainId);
         return localVarResp.getData();
     }
 
@@ -891,7 +896,7 @@ public class AccountsApi {
      * @param accountName  (required)
      * @param authorization  (required)
      * @param chainId  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;BalanceAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -899,9 +904,9 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> getBalanceWithHttpInfo(String accountName, String authorization, String chainId) throws ApiException {
+    public ApiResponse<BalanceAPIResponse> getBalanceWithHttpInfo(String accountName, String authorization, String chainId) throws ApiException {
         okhttp3.Call localVarCall = getBalanceValidateBeforeCall(accountName, authorization, chainId, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<BalanceAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -920,10 +925,10 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getBalanceAsync(String accountName, String authorization, String chainId, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call getBalanceAsync(String accountName, String authorization, String chainId, final ApiCallback<BalanceAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = getBalanceValidateBeforeCall(accountName, authorization, chainId, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<BalanceAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -1010,7 +1015,7 @@ public class AccountsApi {
      * 
      * @param accountName  (required)
      * @param authorization  (required)
-     * @return AccountControllerResponse
+     * @return NonceAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -1018,8 +1023,8 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse getNonce(String accountName, String authorization) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = getNonceWithHttpInfo(accountName, authorization);
+    public NonceAPIResponse getNonce(String accountName, String authorization) throws ApiException {
+        ApiResponse<NonceAPIResponse> localVarResp = getNonceWithHttpInfo(accountName, authorization);
         return localVarResp.getData();
     }
 
@@ -1028,7 +1033,7 @@ public class AccountsApi {
      * 
      * @param accountName  (required)
      * @param authorization  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;NonceAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -1036,9 +1041,9 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> getNonceWithHttpInfo(String accountName, String authorization) throws ApiException {
+    public ApiResponse<NonceAPIResponse> getNonceWithHttpInfo(String accountName, String authorization) throws ApiException {
         okhttp3.Call localVarCall = getNonceValidateBeforeCall(accountName, authorization, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<NonceAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -1056,10 +1061,10 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getNonceAsync(String accountName, String authorization, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call getNonceAsync(String accountName, String authorization, final ApiCallback<NonceAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = getNonceValidateBeforeCall(accountName, authorization, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<NonceAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -1138,7 +1143,7 @@ public class AccountsApi {
      * 
      * 
      * @param authorization  (required)
-     * @return AccountControllerResponse
+     * @return AccountAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -1146,8 +1151,8 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse listAccounts(String authorization) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = listAccountsWithHttpInfo(authorization);
+    public AccountAPIResponse listAccounts(String authorization) throws ApiException {
+        ApiResponse<AccountAPIResponse> localVarResp = listAccountsWithHttpInfo(authorization);
         return localVarResp.getData();
     }
 
@@ -1155,7 +1160,7 @@ public class AccountsApi {
      * 
      * 
      * @param authorization  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;AccountAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -1163,9 +1168,9 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> listAccountsWithHttpInfo(String authorization) throws ApiException {
+    public ApiResponse<AccountAPIResponse> listAccountsWithHttpInfo(String authorization) throws ApiException {
         okhttp3.Call localVarCall = listAccountsValidateBeforeCall(authorization, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -1182,10 +1187,10 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call listAccountsAsync(String authorization, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call listAccountsAsync(String authorization, final ApiCallback<AccountAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = listAccountsValidateBeforeCall(authorization, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -1280,7 +1285,7 @@ public class AccountsApi {
      * @param accountName  (required)
      * @param authorization  (required)
      * @param signMessage  (required)
-     * @return AccountControllerResponse
+     * @return SignMessageAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -1288,8 +1293,8 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse signMessage(String accountName, String authorization, SignMessage signMessage) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = signMessageWithHttpInfo(accountName, authorization, signMessage);
+    public SignMessageAPIResponse signMessage(String accountName, String authorization, SignMessage signMessage) throws ApiException {
+        ApiResponse<SignMessageAPIResponse> localVarResp = signMessageWithHttpInfo(accountName, authorization, signMessage);
         return localVarResp.getData();
     }
 
@@ -1299,7 +1304,7 @@ public class AccountsApi {
      * @param accountName  (required)
      * @param authorization  (required)
      * @param signMessage  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;SignMessageAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -1307,9 +1312,9 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> signMessageWithHttpInfo(String accountName, String authorization, SignMessage signMessage) throws ApiException {
+    public ApiResponse<SignMessageAPIResponse> signMessageWithHttpInfo(String accountName, String authorization, SignMessage signMessage) throws ApiException {
         okhttp3.Call localVarCall = signMessageValidateBeforeCall(accountName, authorization, signMessage, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<SignMessageAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -1328,10 +1333,10 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call signMessageAsync(String accountName, String authorization, SignMessage signMessage, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call signMessageAsync(String accountName, String authorization, SignMessage signMessage, final ApiCallback<SignMessageAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = signMessageValidateBeforeCall(accountName, authorization, signMessage, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<SignMessageAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -1426,7 +1431,7 @@ public class AccountsApi {
      * @param accountName  (required)
      * @param authorization  (required)
      * @param inputBody  (required)
-     * @return AccountControllerResponse
+     * @return TransactionAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -1434,8 +1439,8 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse signTransaction(String accountName, String authorization, InputBody inputBody) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = signTransactionWithHttpInfo(accountName, authorization, inputBody);
+    public TransactionAPIResponse signTransaction(String accountName, String authorization, InputBody inputBody) throws ApiException {
+        ApiResponse<TransactionAPIResponse> localVarResp = signTransactionWithHttpInfo(accountName, authorization, inputBody);
         return localVarResp.getData();
     }
 
@@ -1445,7 +1450,7 @@ public class AccountsApi {
      * @param accountName  (required)
      * @param authorization  (required)
      * @param inputBody  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;TransactionAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -1453,9 +1458,9 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> signTransactionWithHttpInfo(String accountName, String authorization, InputBody inputBody) throws ApiException {
+    public ApiResponse<TransactionAPIResponse> signTransactionWithHttpInfo(String accountName, String authorization, InputBody inputBody) throws ApiException {
         okhttp3.Call localVarCall = signTransactionValidateBeforeCall(accountName, authorization, inputBody, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -1474,10 +1479,10 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call signTransactionAsync(String accountName, String authorization, InputBody inputBody, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call signTransactionAsync(String accountName, String authorization, InputBody inputBody, final ApiCallback<TransactionAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = signTransactionValidateBeforeCall(accountName, authorization, inputBody, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -1572,7 +1577,7 @@ public class AccountsApi {
      * @param accountName  (required)
      * @param authorization  (required)
      * @param signTypedData  (required)
-     * @return AccountControllerResponse
+     * @return SignMessageAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -1580,8 +1585,8 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse signTypedData(String accountName, String authorization, SignTypedData signTypedData) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = signTypedDataWithHttpInfo(accountName, authorization, signTypedData);
+    public SignMessageAPIResponse signTypedData(String accountName, String authorization, SignTypedData signTypedData) throws ApiException {
+        ApiResponse<SignMessageAPIResponse> localVarResp = signTypedDataWithHttpInfo(accountName, authorization, signTypedData);
         return localVarResp.getData();
     }
 
@@ -1591,7 +1596,7 @@ public class AccountsApi {
      * @param accountName  (required)
      * @param authorization  (required)
      * @param signTypedData  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;SignMessageAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -1599,9 +1604,9 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> signTypedDataWithHttpInfo(String accountName, String authorization, SignTypedData signTypedData) throws ApiException {
+    public ApiResponse<SignMessageAPIResponse> signTypedDataWithHttpInfo(String accountName, String authorization, SignTypedData signTypedData) throws ApiException {
         okhttp3.Call localVarCall = signTypedDataValidateBeforeCall(accountName, authorization, signTypedData, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<SignMessageAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -1620,10 +1625,10 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call signTypedDataAsync(String accountName, String authorization, SignTypedData signTypedData, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call signTypedDataAsync(String accountName, String authorization, SignTypedData signTypedData, final ApiCallback<SignMessageAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = signTypedDataValidateBeforeCall(accountName, authorization, signTypedData, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<SignMessageAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -1718,7 +1723,7 @@ public class AccountsApi {
      * @param accountName  (required)
      * @param authorization  (required)
      * @param inputBody  (required)
-     * @return AccountControllerResponse
+     * @return TransactionAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -1726,8 +1731,8 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse transferEth(String accountName, String authorization, InputBody inputBody) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = transferEthWithHttpInfo(accountName, authorization, inputBody);
+    public TransactionAPIResponse transferEth(String accountName, String authorization, InputBody inputBody) throws ApiException {
+        ApiResponse<TransactionAPIResponse> localVarResp = transferEthWithHttpInfo(accountName, authorization, inputBody);
         return localVarResp.getData();
     }
 
@@ -1737,7 +1742,7 @@ public class AccountsApi {
      * @param accountName  (required)
      * @param authorization  (required)
      * @param inputBody  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;TransactionAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -1745,9 +1750,9 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> transferEthWithHttpInfo(String accountName, String authorization, InputBody inputBody) throws ApiException {
+    public ApiResponse<TransactionAPIResponse> transferEthWithHttpInfo(String accountName, String authorization, InputBody inputBody) throws ApiException {
         okhttp3.Call localVarCall = transferEthValidateBeforeCall(accountName, authorization, inputBody, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -1766,10 +1771,10 @@ public class AccountsApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call transferEthAsync(String accountName, String authorization, InputBody inputBody, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call transferEthAsync(String accountName, String authorization, InputBody inputBody, final ApiCallback<TransactionAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = transferEthValidateBeforeCall(accountName, authorization, inputBody, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

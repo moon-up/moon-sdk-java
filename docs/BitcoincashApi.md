@@ -1,6 +1,6 @@
 # BitcoincashApi
 
-All URIs are relative to *https://vault-api.usemoon.ai*
+All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -12,7 +12,7 @@ All URIs are relative to *https://vault-api.usemoon.ai*
 
 <a id="createBitcoinCashAccount"></a>
 # **createBitcoinCashAccount**
-> AccountControllerResponse createBitcoinCashAccount(authorization, bitcoinCashInput)
+> AccountAPIResponse createBitcoinCashAccount(authorization, bitcoinCashInput)
 
 
 
@@ -29,7 +29,7 @@ import org.usemoonai.moonsdk.api.BitcoincashApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -47,7 +47,7 @@ public class Example {
     String authorization = "authorization_example"; // String | 
     BitcoinCashInput bitcoinCashInput = new BitcoinCashInput(); // BitcoinCashInput | 
     try {
-      AccountControllerResponse result = apiInstance.createBitcoinCashAccount(authorization, bitcoinCashInput);
+      AccountAPIResponse result = apiInstance.createBitcoinCashAccount(authorization, bitcoinCashInput);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling BitcoincashApi#createBitcoinCashAccount");
@@ -69,7 +69,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**AccountAPIResponse**](AccountAPIResponse.md)
 
 ### Authorization
 
@@ -87,7 +87,7 @@ public class Example {
 
 <a id="getBitcoinCashAccount"></a>
 # **getBitcoinCashAccount**
-> AccountControllerResponse getBitcoinCashAccount(authorization, accountName)
+> AccountAPIResponse getBitcoinCashAccount(authorization, accountName)
 
 
 
@@ -104,7 +104,7 @@ import org.usemoonai.moonsdk.api.BitcoincashApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -122,7 +122,7 @@ public class Example {
     String authorization = "authorization_example"; // String | 
     String accountName = "accountName_example"; // String | 
     try {
-      AccountControllerResponse result = apiInstance.getBitcoinCashAccount(authorization, accountName);
+      AccountAPIResponse result = apiInstance.getBitcoinCashAccount(authorization, accountName);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling BitcoincashApi#getBitcoinCashAccount");
@@ -144,7 +144,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**AccountAPIResponse**](AccountAPIResponse.md)
 
 ### Authorization
 
@@ -162,7 +162,7 @@ public class Example {
 
 <a id="listBitcoinCashAccounts"></a>
 # **listBitcoinCashAccounts**
-> AccountControllerResponse listBitcoinCashAccounts(authorization)
+> AccountAPIResponse listBitcoinCashAccounts(authorization)
 
 
 
@@ -179,7 +179,7 @@ import org.usemoonai.moonsdk.api.BitcoincashApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -196,7 +196,7 @@ public class Example {
     BitcoincashApi apiInstance = new BitcoincashApi(defaultClient);
     String authorization = "authorization_example"; // String | 
     try {
-      AccountControllerResponse result = apiInstance.listBitcoinCashAccounts(authorization);
+      AccountAPIResponse result = apiInstance.listBitcoinCashAccounts(authorization);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling BitcoincashApi#listBitcoinCashAccounts");
@@ -217,7 +217,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**AccountAPIResponse**](AccountAPIResponse.md)
 
 ### Authorization
 
@@ -235,7 +235,7 @@ public class Example {
 
 <a id="signBitcoinCashTransaction"></a>
 # **signBitcoinCashTransaction**
-> AccountControllerResponse signBitcoinCashTransaction(authorization, accountName, bitcoinCashTransactionInput)
+> BitcoinCashAPIResponse signBitcoinCashTransaction(authorization, accountName, bitcoinCashTransactionInput)
 
 
 
@@ -252,7 +252,7 @@ import org.usemoonai.moonsdk.api.BitcoincashApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -271,7 +271,7 @@ public class Example {
     String accountName = "accountName_example"; // String | 
     BitcoinCashTransactionInput bitcoinCashTransactionInput = new BitcoinCashTransactionInput(); // BitcoinCashTransactionInput | 
     try {
-      AccountControllerResponse result = apiInstance.signBitcoinCashTransaction(authorization, accountName, bitcoinCashTransactionInput);
+      BitcoinCashAPIResponse result = apiInstance.signBitcoinCashTransaction(authorization, accountName, bitcoinCashTransactionInput);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling BitcoincashApi#signBitcoinCashTransaction");
@@ -294,7 +294,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**BitcoinCashAPIResponse**](BitcoinCashAPIResponse.md)
 
 ### Authorization
 

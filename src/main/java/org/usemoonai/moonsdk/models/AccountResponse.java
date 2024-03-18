@@ -20,9 +20,8 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
+import org.usemoonai.moonsdk.models.AccountData;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -51,62 +50,31 @@ import org.usemoonai.moonsdk.client.JSON;
 /**
  * AccountResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-01-26T19:21:21.691562056+10:00[Australia/Brisbane]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-03-18T13:51:42.356170421+10:00[Australia/Brisbane]")
 public class AccountResponse {
-  public static final String SERIALIZED_NAME_KEYS = "keys";
-  @SerializedName(SERIALIZED_NAME_KEYS)
-  private List<String> keys;
-
-  public static final String SERIALIZED_NAME_ADDRESS = "address";
-  @SerializedName(SERIALIZED_NAME_ADDRESS)
-  private String address;
+  public static final String SERIALIZED_NAME_DATA = "data";
+  @SerializedName(SERIALIZED_NAME_DATA)
+  private AccountData data;
 
   public AccountResponse() {
   }
 
-  public AccountResponse keys(List<String> keys) {
-    this.keys = keys;
-    return this;
-  }
-
-  public AccountResponse addKeysItem(String keysItem) {
-    if (this.keys == null) {
-      this.keys = new ArrayList<>();
-    }
-    this.keys.add(keysItem);
+  public AccountResponse data(AccountData data) {
+    this.data = data;
     return this;
   }
 
    /**
-   * Get keys
-   * @return keys
+   * Get data
+   * @return data
   **/
-  @javax.annotation.Nullable
-  public List<String> getKeys() {
-    return keys;
+  @javax.annotation.Nonnull
+  public AccountData getData() {
+    return data;
   }
 
-  public void setKeys(List<String> keys) {
-    this.keys = keys;
-  }
-
-
-  public AccountResponse address(String address) {
-    this.address = address;
-    return this;
-  }
-
-   /**
-   * Get address
-   * @return address
-  **/
-  @javax.annotation.Nullable
-  public String getAddress() {
-    return address;
-  }
-
-  public void setAddress(String address) {
-    this.address = address;
+  public void setData(AccountData data) {
+    this.data = data;
   }
 
 
@@ -120,21 +88,19 @@ public class AccountResponse {
       return false;
     }
     AccountResponse accountResponse = (AccountResponse) o;
-    return Objects.equals(this.keys, accountResponse.keys) &&
-        Objects.equals(this.address, accountResponse.address);
+    return Objects.equals(this.data, accountResponse.data);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(keys, address);
+    return Objects.hash(data);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class AccountResponse {\n");
-    sb.append("    keys: ").append(toIndentedString(keys)).append("\n");
-    sb.append("    address: ").append(toIndentedString(address)).append("\n");
+    sb.append("    data: ").append(toIndentedString(data)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -157,11 +123,11 @@ public class AccountResponse {
   static {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
-    openapiFields.add("keys");
-    openapiFields.add("address");
+    openapiFields.add("data");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields.add("data");
   }
 
  /**
@@ -184,14 +150,16 @@ public class AccountResponse {
           throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `AccountResponse` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
+
+      // check to make sure all required properties/fields are present in the JSON string
+      for (String requiredField : AccountResponse.openapiRequiredFields) {
+        if (jsonElement.getAsJsonObject().get(requiredField) == null) {
+          throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
+        }
+      }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      // ensure the optional json data is an array if present
-      if (jsonObj.get("keys") != null && !jsonObj.get("keys").isJsonNull() && !jsonObj.get("keys").isJsonArray()) {
-        throw new IllegalArgumentException(String.format("Expected the field `keys` to be an array in the JSON string but got `%s`", jsonObj.get("keys").toString()));
-      }
-      if ((jsonObj.get("address") != null && !jsonObj.get("address").isJsonNull()) && !jsonObj.get("address").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `address` to be a primitive type in the JSON string but got `%s`", jsonObj.get("address").toString()));
-      }
+      // validate the required field `data`
+      AccountData.validateJsonElement(jsonObj.get("data"));
   }
 
   public static class CustomTypeAdapterFactory implements TypeAdapterFactory {

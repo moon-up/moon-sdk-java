@@ -27,7 +27,8 @@ import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 
 
-import org.usemoonai.moonsdk.models.AccountControllerResponse;
+import org.usemoonai.moonsdk.models.AccountAPIResponse;
+import org.usemoonai.moonsdk.models.BitcoinAPIResponse;
 import org.usemoonai.moonsdk.models.BitcoinInput;
 import org.usemoonai.moonsdk.models.BitcoinTransactionInput;
 
@@ -157,7 +158,7 @@ public class BitcoinApi {
      * 
      * @param authorization  (required)
      * @param bitcoinInput  (required)
-     * @return AccountControllerResponse
+     * @return AccountAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -165,8 +166,8 @@ public class BitcoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse createBitcoinAccount(String authorization, BitcoinInput bitcoinInput) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = createBitcoinAccountWithHttpInfo(authorization, bitcoinInput);
+    public AccountAPIResponse createBitcoinAccount(String authorization, BitcoinInput bitcoinInput) throws ApiException {
+        ApiResponse<AccountAPIResponse> localVarResp = createBitcoinAccountWithHttpInfo(authorization, bitcoinInput);
         return localVarResp.getData();
     }
 
@@ -175,7 +176,7 @@ public class BitcoinApi {
      * 
      * @param authorization  (required)
      * @param bitcoinInput  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;AccountAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -183,9 +184,9 @@ public class BitcoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> createBitcoinAccountWithHttpInfo(String authorization, BitcoinInput bitcoinInput) throws ApiException {
+    public ApiResponse<AccountAPIResponse> createBitcoinAccountWithHttpInfo(String authorization, BitcoinInput bitcoinInput) throws ApiException {
         okhttp3.Call localVarCall = createBitcoinAccountValidateBeforeCall(authorization, bitcoinInput, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -203,10 +204,10 @@ public class BitcoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call createBitcoinAccountAsync(String authorization, BitcoinInput bitcoinInput, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call createBitcoinAccountAsync(String authorization, BitcoinInput bitcoinInput, final ApiCallback<AccountAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = createBitcoinAccountValidateBeforeCall(authorization, bitcoinInput, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -293,7 +294,7 @@ public class BitcoinApi {
      * 
      * @param authorization  (required)
      * @param accountName  (required)
-     * @return AccountControllerResponse
+     * @return AccountAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -301,8 +302,8 @@ public class BitcoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse getBitcoinAccount(String authorization, String accountName) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = getBitcoinAccountWithHttpInfo(authorization, accountName);
+    public AccountAPIResponse getBitcoinAccount(String authorization, String accountName) throws ApiException {
+        ApiResponse<AccountAPIResponse> localVarResp = getBitcoinAccountWithHttpInfo(authorization, accountName);
         return localVarResp.getData();
     }
 
@@ -311,7 +312,7 @@ public class BitcoinApi {
      * 
      * @param authorization  (required)
      * @param accountName  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;AccountAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -319,9 +320,9 @@ public class BitcoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> getBitcoinAccountWithHttpInfo(String authorization, String accountName) throws ApiException {
+    public ApiResponse<AccountAPIResponse> getBitcoinAccountWithHttpInfo(String authorization, String accountName) throws ApiException {
         okhttp3.Call localVarCall = getBitcoinAccountValidateBeforeCall(authorization, accountName, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -339,10 +340,10 @@ public class BitcoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getBitcoinAccountAsync(String authorization, String accountName, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call getBitcoinAccountAsync(String authorization, String accountName, final ApiCallback<AccountAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = getBitcoinAccountValidateBeforeCall(authorization, accountName, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -421,7 +422,7 @@ public class BitcoinApi {
      * 
      * 
      * @param authorization  (required)
-     * @return AccountControllerResponse
+     * @return AccountAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -429,8 +430,8 @@ public class BitcoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse listBitcoinAccounts(String authorization) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = listBitcoinAccountsWithHttpInfo(authorization);
+    public AccountAPIResponse listBitcoinAccounts(String authorization) throws ApiException {
+        ApiResponse<AccountAPIResponse> localVarResp = listBitcoinAccountsWithHttpInfo(authorization);
         return localVarResp.getData();
     }
 
@@ -438,7 +439,7 @@ public class BitcoinApi {
      * 
      * 
      * @param authorization  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;AccountAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -446,9 +447,9 @@ public class BitcoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> listBitcoinAccountsWithHttpInfo(String authorization) throws ApiException {
+    public ApiResponse<AccountAPIResponse> listBitcoinAccountsWithHttpInfo(String authorization) throws ApiException {
         okhttp3.Call localVarCall = listBitcoinAccountsValidateBeforeCall(authorization, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -465,10 +466,10 @@ public class BitcoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call listBitcoinAccountsAsync(String authorization, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call listBitcoinAccountsAsync(String authorization, final ApiCallback<AccountAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = listBitcoinAccountsValidateBeforeCall(authorization, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -563,7 +564,7 @@ public class BitcoinApi {
      * @param authorization  (required)
      * @param accountName  (required)
      * @param bitcoinTransactionInput  (required)
-     * @return AccountControllerResponse
+     * @return BitcoinAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -571,8 +572,8 @@ public class BitcoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse signBitcoinTransaction(String authorization, String accountName, BitcoinTransactionInput bitcoinTransactionInput) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = signBitcoinTransactionWithHttpInfo(authorization, accountName, bitcoinTransactionInput);
+    public BitcoinAPIResponse signBitcoinTransaction(String authorization, String accountName, BitcoinTransactionInput bitcoinTransactionInput) throws ApiException {
+        ApiResponse<BitcoinAPIResponse> localVarResp = signBitcoinTransactionWithHttpInfo(authorization, accountName, bitcoinTransactionInput);
         return localVarResp.getData();
     }
 
@@ -582,7 +583,7 @@ public class BitcoinApi {
      * @param authorization  (required)
      * @param accountName  (required)
      * @param bitcoinTransactionInput  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;BitcoinAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -590,9 +591,9 @@ public class BitcoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> signBitcoinTransactionWithHttpInfo(String authorization, String accountName, BitcoinTransactionInput bitcoinTransactionInput) throws ApiException {
+    public ApiResponse<BitcoinAPIResponse> signBitcoinTransactionWithHttpInfo(String authorization, String accountName, BitcoinTransactionInput bitcoinTransactionInput) throws ApiException {
         okhttp3.Call localVarCall = signBitcoinTransactionValidateBeforeCall(authorization, accountName, bitcoinTransactionInput, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<BitcoinAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -611,10 +612,10 @@ public class BitcoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call signBitcoinTransactionAsync(String authorization, String accountName, BitcoinTransactionInput bitcoinTransactionInput, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call signBitcoinTransactionAsync(String authorization, String accountName, BitcoinTransactionInput bitcoinTransactionInput, final ApiCallback<BitcoinAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = signBitcoinTransactionValidateBeforeCall(authorization, accountName, bitcoinTransactionInput, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<BitcoinAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

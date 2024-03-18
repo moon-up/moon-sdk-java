@@ -27,7 +27,8 @@ import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 
 
-import org.usemoonai.moonsdk.models.AccountControllerResponse;
+import org.usemoonai.moonsdk.models.AccountAPIResponse;
+import org.usemoonai.moonsdk.models.EosAPIResponse;
 import org.usemoonai.moonsdk.models.EosInput;
 import org.usemoonai.moonsdk.models.EosTransactionInput;
 
@@ -157,7 +158,7 @@ public class EosApi {
      * 
      * @param authorization  (required)
      * @param eosInput  (required)
-     * @return AccountControllerResponse
+     * @return AccountAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -165,8 +166,8 @@ public class EosApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse createEosAccount(String authorization, EosInput eosInput) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = createEosAccountWithHttpInfo(authorization, eosInput);
+    public AccountAPIResponse createEosAccount(String authorization, EosInput eosInput) throws ApiException {
+        ApiResponse<AccountAPIResponse> localVarResp = createEosAccountWithHttpInfo(authorization, eosInput);
         return localVarResp.getData();
     }
 
@@ -175,7 +176,7 @@ public class EosApi {
      * 
      * @param authorization  (required)
      * @param eosInput  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;AccountAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -183,9 +184,9 @@ public class EosApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> createEosAccountWithHttpInfo(String authorization, EosInput eosInput) throws ApiException {
+    public ApiResponse<AccountAPIResponse> createEosAccountWithHttpInfo(String authorization, EosInput eosInput) throws ApiException {
         okhttp3.Call localVarCall = createEosAccountValidateBeforeCall(authorization, eosInput, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -203,10 +204,10 @@ public class EosApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call createEosAccountAsync(String authorization, EosInput eosInput, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call createEosAccountAsync(String authorization, EosInput eosInput, final ApiCallback<AccountAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = createEosAccountValidateBeforeCall(authorization, eosInput, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -293,7 +294,7 @@ public class EosApi {
      * 
      * @param authorization  (required)
      * @param accountName  (required)
-     * @return AccountControllerResponse
+     * @return AccountAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -301,8 +302,8 @@ public class EosApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse getEosAccount(String authorization, String accountName) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = getEosAccountWithHttpInfo(authorization, accountName);
+    public AccountAPIResponse getEosAccount(String authorization, String accountName) throws ApiException {
+        ApiResponse<AccountAPIResponse> localVarResp = getEosAccountWithHttpInfo(authorization, accountName);
         return localVarResp.getData();
     }
 
@@ -311,7 +312,7 @@ public class EosApi {
      * 
      * @param authorization  (required)
      * @param accountName  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;AccountAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -319,9 +320,9 @@ public class EosApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> getEosAccountWithHttpInfo(String authorization, String accountName) throws ApiException {
+    public ApiResponse<AccountAPIResponse> getEosAccountWithHttpInfo(String authorization, String accountName) throws ApiException {
         okhttp3.Call localVarCall = getEosAccountValidateBeforeCall(authorization, accountName, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -339,10 +340,10 @@ public class EosApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getEosAccountAsync(String authorization, String accountName, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call getEosAccountAsync(String authorization, String accountName, final ApiCallback<AccountAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = getEosAccountValidateBeforeCall(authorization, accountName, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -421,7 +422,7 @@ public class EosApi {
      * 
      * 
      * @param authorization  (required)
-     * @return AccountControllerResponse
+     * @return AccountAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -429,8 +430,8 @@ public class EosApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse listEosAccounts(String authorization) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = listEosAccountsWithHttpInfo(authorization);
+    public AccountAPIResponse listEosAccounts(String authorization) throws ApiException {
+        ApiResponse<AccountAPIResponse> localVarResp = listEosAccountsWithHttpInfo(authorization);
         return localVarResp.getData();
     }
 
@@ -438,7 +439,7 @@ public class EosApi {
      * 
      * 
      * @param authorization  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;AccountAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -446,9 +447,9 @@ public class EosApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> listEosAccountsWithHttpInfo(String authorization) throws ApiException {
+    public ApiResponse<AccountAPIResponse> listEosAccountsWithHttpInfo(String authorization) throws ApiException {
         okhttp3.Call localVarCall = listEosAccountsValidateBeforeCall(authorization, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -465,10 +466,10 @@ public class EosApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call listEosAccountsAsync(String authorization, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call listEosAccountsAsync(String authorization, final ApiCallback<AccountAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = listEosAccountsValidateBeforeCall(authorization, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -563,7 +564,7 @@ public class EosApi {
      * @param authorization  (required)
      * @param accountName  (required)
      * @param eosTransactionInput  (required)
-     * @return AccountControllerResponse
+     * @return EosAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -571,8 +572,8 @@ public class EosApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse signEosTransaction(String authorization, String accountName, EosTransactionInput eosTransactionInput) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = signEosTransactionWithHttpInfo(authorization, accountName, eosTransactionInput);
+    public EosAPIResponse signEosTransaction(String authorization, String accountName, EosTransactionInput eosTransactionInput) throws ApiException {
+        ApiResponse<EosAPIResponse> localVarResp = signEosTransactionWithHttpInfo(authorization, accountName, eosTransactionInput);
         return localVarResp.getData();
     }
 
@@ -582,7 +583,7 @@ public class EosApi {
      * @param authorization  (required)
      * @param accountName  (required)
      * @param eosTransactionInput  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;EosAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -590,9 +591,9 @@ public class EosApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> signEosTransactionWithHttpInfo(String authorization, String accountName, EosTransactionInput eosTransactionInput) throws ApiException {
+    public ApiResponse<EosAPIResponse> signEosTransactionWithHttpInfo(String authorization, String accountName, EosTransactionInput eosTransactionInput) throws ApiException {
         okhttp3.Call localVarCall = signEosTransactionValidateBeforeCall(authorization, accountName, eosTransactionInput, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<EosAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -611,10 +612,10 @@ public class EosApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call signEosTransactionAsync(String authorization, String accountName, EosTransactionInput eosTransactionInput, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call signEosTransactionAsync(String authorization, String accountName, EosTransactionInput eosTransactionInput, final ApiCallback<EosAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = signEosTransactionValidateBeforeCall(authorization, accountName, eosTransactionInput, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<EosAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

@@ -27,8 +27,8 @@ import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 
 
-import org.usemoonai.moonsdk.models.AccountControllerResponse;
 import org.usemoonai.moonsdk.models.Erc721Request;
+import org.usemoonai.moonsdk.models.TransactionAPIResponse;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -164,7 +164,7 @@ public class Erc721Api {
      * @param authorization  (required)
      * @param name  (required)
      * @param erc721Request  (required)
-     * @return AccountControllerResponse
+     * @return TransactionAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -172,8 +172,8 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse approve(String authorization, String name, Erc721Request erc721Request) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = approveWithHttpInfo(authorization, name, erc721Request);
+    public TransactionAPIResponse approve(String authorization, String name, Erc721Request erc721Request) throws ApiException {
+        ApiResponse<TransactionAPIResponse> localVarResp = approveWithHttpInfo(authorization, name, erc721Request);
         return localVarResp.getData();
     }
 
@@ -183,7 +183,7 @@ public class Erc721Api {
      * @param authorization  (required)
      * @param name  (required)
      * @param erc721Request  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;TransactionAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -191,9 +191,9 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> approveWithHttpInfo(String authorization, String name, Erc721Request erc721Request) throws ApiException {
+    public ApiResponse<TransactionAPIResponse> approveWithHttpInfo(String authorization, String name, Erc721Request erc721Request) throws ApiException {
         okhttp3.Call localVarCall = approveValidateBeforeCall(authorization, name, erc721Request, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -212,10 +212,10 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call approveAsync(String authorization, String name, Erc721Request erc721Request, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call approveAsync(String authorization, String name, Erc721Request erc721Request, final ApiCallback<TransactionAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = approveValidateBeforeCall(authorization, name, erc721Request, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -310,7 +310,7 @@ public class Erc721Api {
      * @param authorization  (required)
      * @param name  (required)
      * @param erc721Request  (required)
-     * @return AccountControllerResponse
+     * @return TransactionAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -318,8 +318,8 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse balanceOf(String authorization, String name, Erc721Request erc721Request) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = balanceOfWithHttpInfo(authorization, name, erc721Request);
+    public TransactionAPIResponse balanceOf(String authorization, String name, Erc721Request erc721Request) throws ApiException {
+        ApiResponse<TransactionAPIResponse> localVarResp = balanceOfWithHttpInfo(authorization, name, erc721Request);
         return localVarResp.getData();
     }
 
@@ -329,7 +329,7 @@ public class Erc721Api {
      * @param authorization  (required)
      * @param name  (required)
      * @param erc721Request  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;TransactionAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -337,9 +337,9 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> balanceOfWithHttpInfo(String authorization, String name, Erc721Request erc721Request) throws ApiException {
+    public ApiResponse<TransactionAPIResponse> balanceOfWithHttpInfo(String authorization, String name, Erc721Request erc721Request) throws ApiException {
         okhttp3.Call localVarCall = balanceOfValidateBeforeCall(authorization, name, erc721Request, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -358,10 +358,10 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call balanceOfAsync(String authorization, String name, Erc721Request erc721Request, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call balanceOfAsync(String authorization, String name, Erc721Request erc721Request, final ApiCallback<TransactionAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = balanceOfValidateBeforeCall(authorization, name, erc721Request, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -456,7 +456,7 @@ public class Erc721Api {
      * @param authorization  (required)
      * @param name  (required)
      * @param erc721Request  (required)
-     * @return AccountControllerResponse
+     * @return TransactionAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -464,8 +464,8 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse getApproved(String authorization, String name, Erc721Request erc721Request) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = getApprovedWithHttpInfo(authorization, name, erc721Request);
+    public TransactionAPIResponse getApproved(String authorization, String name, Erc721Request erc721Request) throws ApiException {
+        ApiResponse<TransactionAPIResponse> localVarResp = getApprovedWithHttpInfo(authorization, name, erc721Request);
         return localVarResp.getData();
     }
 
@@ -475,7 +475,7 @@ public class Erc721Api {
      * @param authorization  (required)
      * @param name  (required)
      * @param erc721Request  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;TransactionAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -483,9 +483,9 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> getApprovedWithHttpInfo(String authorization, String name, Erc721Request erc721Request) throws ApiException {
+    public ApiResponse<TransactionAPIResponse> getApprovedWithHttpInfo(String authorization, String name, Erc721Request erc721Request) throws ApiException {
         okhttp3.Call localVarCall = getApprovedValidateBeforeCall(authorization, name, erc721Request, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -504,10 +504,10 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getApprovedAsync(String authorization, String name, Erc721Request erc721Request, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call getApprovedAsync(String authorization, String name, Erc721Request erc721Request, final ApiCallback<TransactionAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = getApprovedValidateBeforeCall(authorization, name, erc721Request, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -602,7 +602,7 @@ public class Erc721Api {
      * @param authorization  (required)
      * @param name  (required)
      * @param erc721Request  (required)
-     * @return AccountControllerResponse
+     * @return TransactionAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -610,8 +610,8 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse isApprovedForAll(String authorization, String name, Erc721Request erc721Request) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = isApprovedForAllWithHttpInfo(authorization, name, erc721Request);
+    public TransactionAPIResponse isApprovedForAll(String authorization, String name, Erc721Request erc721Request) throws ApiException {
+        ApiResponse<TransactionAPIResponse> localVarResp = isApprovedForAllWithHttpInfo(authorization, name, erc721Request);
         return localVarResp.getData();
     }
 
@@ -621,7 +621,7 @@ public class Erc721Api {
      * @param authorization  (required)
      * @param name  (required)
      * @param erc721Request  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;TransactionAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -629,9 +629,9 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> isApprovedForAllWithHttpInfo(String authorization, String name, Erc721Request erc721Request) throws ApiException {
+    public ApiResponse<TransactionAPIResponse> isApprovedForAllWithHttpInfo(String authorization, String name, Erc721Request erc721Request) throws ApiException {
         okhttp3.Call localVarCall = isApprovedForAllValidateBeforeCall(authorization, name, erc721Request, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -650,10 +650,10 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call isApprovedForAllAsync(String authorization, String name, Erc721Request erc721Request, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call isApprovedForAllAsync(String authorization, String name, Erc721Request erc721Request, final ApiCallback<TransactionAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = isApprovedForAllValidateBeforeCall(authorization, name, erc721Request, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -748,7 +748,7 @@ public class Erc721Api {
      * @param authorization  (required)
      * @param name  (required)
      * @param erc721Request  (required)
-     * @return AccountControllerResponse
+     * @return TransactionAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -756,8 +756,8 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse name(String authorization, String name, Erc721Request erc721Request) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = nameWithHttpInfo(authorization, name, erc721Request);
+    public TransactionAPIResponse name(String authorization, String name, Erc721Request erc721Request) throws ApiException {
+        ApiResponse<TransactionAPIResponse> localVarResp = nameWithHttpInfo(authorization, name, erc721Request);
         return localVarResp.getData();
     }
 
@@ -767,7 +767,7 @@ public class Erc721Api {
      * @param authorization  (required)
      * @param name  (required)
      * @param erc721Request  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;TransactionAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -775,9 +775,9 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> nameWithHttpInfo(String authorization, String name, Erc721Request erc721Request) throws ApiException {
+    public ApiResponse<TransactionAPIResponse> nameWithHttpInfo(String authorization, String name, Erc721Request erc721Request) throws ApiException {
         okhttp3.Call localVarCall = nameValidateBeforeCall(authorization, name, erc721Request, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -796,10 +796,10 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call nameAsync(String authorization, String name, Erc721Request erc721Request, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call nameAsync(String authorization, String name, Erc721Request erc721Request, final ApiCallback<TransactionAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = nameValidateBeforeCall(authorization, name, erc721Request, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -894,7 +894,7 @@ public class Erc721Api {
      * @param authorization  (required)
      * @param name  (required)
      * @param erc721Request  (required)
-     * @return AccountControllerResponse
+     * @return TransactionAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -902,8 +902,8 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse ownerOf(String authorization, String name, Erc721Request erc721Request) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = ownerOfWithHttpInfo(authorization, name, erc721Request);
+    public TransactionAPIResponse ownerOf(String authorization, String name, Erc721Request erc721Request) throws ApiException {
+        ApiResponse<TransactionAPIResponse> localVarResp = ownerOfWithHttpInfo(authorization, name, erc721Request);
         return localVarResp.getData();
     }
 
@@ -913,7 +913,7 @@ public class Erc721Api {
      * @param authorization  (required)
      * @param name  (required)
      * @param erc721Request  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;TransactionAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -921,9 +921,9 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> ownerOfWithHttpInfo(String authorization, String name, Erc721Request erc721Request) throws ApiException {
+    public ApiResponse<TransactionAPIResponse> ownerOfWithHttpInfo(String authorization, String name, Erc721Request erc721Request) throws ApiException {
         okhttp3.Call localVarCall = ownerOfValidateBeforeCall(authorization, name, erc721Request, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -942,10 +942,10 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call ownerOfAsync(String authorization, String name, Erc721Request erc721Request, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call ownerOfAsync(String authorization, String name, Erc721Request erc721Request, final ApiCallback<TransactionAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = ownerOfValidateBeforeCall(authorization, name, erc721Request, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -1040,7 +1040,7 @@ public class Erc721Api {
      * @param authorization  (required)
      * @param name  (required)
      * @param erc721Request  (required)
-     * @return AccountControllerResponse
+     * @return TransactionAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -1048,8 +1048,8 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse safeTransferFrom(String authorization, String name, Erc721Request erc721Request) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = safeTransferFromWithHttpInfo(authorization, name, erc721Request);
+    public TransactionAPIResponse safeTransferFrom(String authorization, String name, Erc721Request erc721Request) throws ApiException {
+        ApiResponse<TransactionAPIResponse> localVarResp = safeTransferFromWithHttpInfo(authorization, name, erc721Request);
         return localVarResp.getData();
     }
 
@@ -1059,7 +1059,7 @@ public class Erc721Api {
      * @param authorization  (required)
      * @param name  (required)
      * @param erc721Request  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;TransactionAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -1067,9 +1067,9 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> safeTransferFromWithHttpInfo(String authorization, String name, Erc721Request erc721Request) throws ApiException {
+    public ApiResponse<TransactionAPIResponse> safeTransferFromWithHttpInfo(String authorization, String name, Erc721Request erc721Request) throws ApiException {
         okhttp3.Call localVarCall = safeTransferFromValidateBeforeCall(authorization, name, erc721Request, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -1088,10 +1088,10 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call safeTransferFromAsync(String authorization, String name, Erc721Request erc721Request, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call safeTransferFromAsync(String authorization, String name, Erc721Request erc721Request, final ApiCallback<TransactionAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = safeTransferFromValidateBeforeCall(authorization, name, erc721Request, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -1186,7 +1186,7 @@ public class Erc721Api {
      * @param authorization  (required)
      * @param name  (required)
      * @param erc721Request  (required)
-     * @return AccountControllerResponse
+     * @return TransactionAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -1194,8 +1194,8 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse setApprovalForAll(String authorization, String name, Erc721Request erc721Request) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = setApprovalForAllWithHttpInfo(authorization, name, erc721Request);
+    public TransactionAPIResponse setApprovalForAll(String authorization, String name, Erc721Request erc721Request) throws ApiException {
+        ApiResponse<TransactionAPIResponse> localVarResp = setApprovalForAllWithHttpInfo(authorization, name, erc721Request);
         return localVarResp.getData();
     }
 
@@ -1205,7 +1205,7 @@ public class Erc721Api {
      * @param authorization  (required)
      * @param name  (required)
      * @param erc721Request  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;TransactionAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -1213,9 +1213,9 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> setApprovalForAllWithHttpInfo(String authorization, String name, Erc721Request erc721Request) throws ApiException {
+    public ApiResponse<TransactionAPIResponse> setApprovalForAllWithHttpInfo(String authorization, String name, Erc721Request erc721Request) throws ApiException {
         okhttp3.Call localVarCall = setApprovalForAllValidateBeforeCall(authorization, name, erc721Request, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -1234,10 +1234,10 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call setApprovalForAllAsync(String authorization, String name, Erc721Request erc721Request, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call setApprovalForAllAsync(String authorization, String name, Erc721Request erc721Request, final ApiCallback<TransactionAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = setApprovalForAllValidateBeforeCall(authorization, name, erc721Request, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -1332,7 +1332,7 @@ public class Erc721Api {
      * @param authorization  (required)
      * @param name  (required)
      * @param erc721Request  (required)
-     * @return AccountControllerResponse
+     * @return TransactionAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -1340,8 +1340,8 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse symbol(String authorization, String name, Erc721Request erc721Request) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = symbolWithHttpInfo(authorization, name, erc721Request);
+    public TransactionAPIResponse symbol(String authorization, String name, Erc721Request erc721Request) throws ApiException {
+        ApiResponse<TransactionAPIResponse> localVarResp = symbolWithHttpInfo(authorization, name, erc721Request);
         return localVarResp.getData();
     }
 
@@ -1351,7 +1351,7 @@ public class Erc721Api {
      * @param authorization  (required)
      * @param name  (required)
      * @param erc721Request  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;TransactionAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -1359,9 +1359,9 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> symbolWithHttpInfo(String authorization, String name, Erc721Request erc721Request) throws ApiException {
+    public ApiResponse<TransactionAPIResponse> symbolWithHttpInfo(String authorization, String name, Erc721Request erc721Request) throws ApiException {
         okhttp3.Call localVarCall = symbolValidateBeforeCall(authorization, name, erc721Request, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -1380,10 +1380,10 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call symbolAsync(String authorization, String name, Erc721Request erc721Request, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call symbolAsync(String authorization, String name, Erc721Request erc721Request, final ApiCallback<TransactionAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = symbolValidateBeforeCall(authorization, name, erc721Request, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -1478,7 +1478,7 @@ public class Erc721Api {
      * @param authorization  (required)
      * @param name  (required)
      * @param erc721Request  (required)
-     * @return AccountControllerResponse
+     * @return TransactionAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -1486,8 +1486,8 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse tokenUri(String authorization, String name, Erc721Request erc721Request) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = tokenUriWithHttpInfo(authorization, name, erc721Request);
+    public TransactionAPIResponse tokenUri(String authorization, String name, Erc721Request erc721Request) throws ApiException {
+        ApiResponse<TransactionAPIResponse> localVarResp = tokenUriWithHttpInfo(authorization, name, erc721Request);
         return localVarResp.getData();
     }
 
@@ -1497,7 +1497,7 @@ public class Erc721Api {
      * @param authorization  (required)
      * @param name  (required)
      * @param erc721Request  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;TransactionAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -1505,9 +1505,9 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> tokenUriWithHttpInfo(String authorization, String name, Erc721Request erc721Request) throws ApiException {
+    public ApiResponse<TransactionAPIResponse> tokenUriWithHttpInfo(String authorization, String name, Erc721Request erc721Request) throws ApiException {
         okhttp3.Call localVarCall = tokenUriValidateBeforeCall(authorization, name, erc721Request, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -1526,10 +1526,10 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call tokenUriAsync(String authorization, String name, Erc721Request erc721Request, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call tokenUriAsync(String authorization, String name, Erc721Request erc721Request, final ApiCallback<TransactionAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = tokenUriValidateBeforeCall(authorization, name, erc721Request, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -1624,7 +1624,7 @@ public class Erc721Api {
      * @param authorization  (required)
      * @param name  (required)
      * @param erc721Request  (required)
-     * @return AccountControllerResponse
+     * @return TransactionAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -1632,8 +1632,8 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse transfer(String authorization, String name, Erc721Request erc721Request) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = transferWithHttpInfo(authorization, name, erc721Request);
+    public TransactionAPIResponse transfer(String authorization, String name, Erc721Request erc721Request) throws ApiException {
+        ApiResponse<TransactionAPIResponse> localVarResp = transferWithHttpInfo(authorization, name, erc721Request);
         return localVarResp.getData();
     }
 
@@ -1643,7 +1643,7 @@ public class Erc721Api {
      * @param authorization  (required)
      * @param name  (required)
      * @param erc721Request  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;TransactionAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -1651,9 +1651,9 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> transferWithHttpInfo(String authorization, String name, Erc721Request erc721Request) throws ApiException {
+    public ApiResponse<TransactionAPIResponse> transferWithHttpInfo(String authorization, String name, Erc721Request erc721Request) throws ApiException {
         okhttp3.Call localVarCall = transferValidateBeforeCall(authorization, name, erc721Request, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -1672,10 +1672,10 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call transferAsync(String authorization, String name, Erc721Request erc721Request, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call transferAsync(String authorization, String name, Erc721Request erc721Request, final ApiCallback<TransactionAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = transferValidateBeforeCall(authorization, name, erc721Request, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -1770,7 +1770,7 @@ public class Erc721Api {
      * @param authorization  (required)
      * @param name  (required)
      * @param erc721Request  (required)
-     * @return AccountControllerResponse
+     * @return TransactionAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -1778,8 +1778,8 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse transferFrom(String authorization, String name, Erc721Request erc721Request) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = transferFromWithHttpInfo(authorization, name, erc721Request);
+    public TransactionAPIResponse transferFrom(String authorization, String name, Erc721Request erc721Request) throws ApiException {
+        ApiResponse<TransactionAPIResponse> localVarResp = transferFromWithHttpInfo(authorization, name, erc721Request);
         return localVarResp.getData();
     }
 
@@ -1789,7 +1789,7 @@ public class Erc721Api {
      * @param authorization  (required)
      * @param name  (required)
      * @param erc721Request  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;TransactionAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -1797,9 +1797,9 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> transferFromWithHttpInfo(String authorization, String name, Erc721Request erc721Request) throws ApiException {
+    public ApiResponse<TransactionAPIResponse> transferFromWithHttpInfo(String authorization, String name, Erc721Request erc721Request) throws ApiException {
         okhttp3.Call localVarCall = transferFromValidateBeforeCall(authorization, name, erc721Request, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -1818,10 +1818,10 @@ public class Erc721Api {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call transferFromAsync(String authorization, String name, Erc721Request erc721Request, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call transferFromAsync(String authorization, String name, Erc721Request erc721Request, final ApiCallback<TransactionAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = transferFromValidateBeforeCall(authorization, name, erc721Request, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

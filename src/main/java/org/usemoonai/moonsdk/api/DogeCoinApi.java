@@ -27,7 +27,8 @@ import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 
 
-import org.usemoonai.moonsdk.models.AccountControllerResponse;
+import org.usemoonai.moonsdk.models.AccountAPIResponse;
+import org.usemoonai.moonsdk.models.DogeCoinAPIResponse;
 import org.usemoonai.moonsdk.models.DogeCoinInput;
 import org.usemoonai.moonsdk.models.DogeCoinTransactionInput;
 
@@ -157,7 +158,7 @@ public class DogeCoinApi {
      * 
      * @param authorization  (required)
      * @param dogeCoinInput  (required)
-     * @return AccountControllerResponse
+     * @return AccountAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -165,8 +166,8 @@ public class DogeCoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse createDogeCoinAccount(String authorization, DogeCoinInput dogeCoinInput) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = createDogeCoinAccountWithHttpInfo(authorization, dogeCoinInput);
+    public AccountAPIResponse createDogeCoinAccount(String authorization, DogeCoinInput dogeCoinInput) throws ApiException {
+        ApiResponse<AccountAPIResponse> localVarResp = createDogeCoinAccountWithHttpInfo(authorization, dogeCoinInput);
         return localVarResp.getData();
     }
 
@@ -175,7 +176,7 @@ public class DogeCoinApi {
      * 
      * @param authorization  (required)
      * @param dogeCoinInput  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;AccountAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -183,9 +184,9 @@ public class DogeCoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> createDogeCoinAccountWithHttpInfo(String authorization, DogeCoinInput dogeCoinInput) throws ApiException {
+    public ApiResponse<AccountAPIResponse> createDogeCoinAccountWithHttpInfo(String authorization, DogeCoinInput dogeCoinInput) throws ApiException {
         okhttp3.Call localVarCall = createDogeCoinAccountValidateBeforeCall(authorization, dogeCoinInput, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -203,10 +204,10 @@ public class DogeCoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call createDogeCoinAccountAsync(String authorization, DogeCoinInput dogeCoinInput, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call createDogeCoinAccountAsync(String authorization, DogeCoinInput dogeCoinInput, final ApiCallback<AccountAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = createDogeCoinAccountValidateBeforeCall(authorization, dogeCoinInput, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -293,7 +294,7 @@ public class DogeCoinApi {
      * 
      * @param authorization  (required)
      * @param accountName  (required)
-     * @return AccountControllerResponse
+     * @return AccountAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -301,8 +302,8 @@ public class DogeCoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse getDogeCoinAccount(String authorization, String accountName) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = getDogeCoinAccountWithHttpInfo(authorization, accountName);
+    public AccountAPIResponse getDogeCoinAccount(String authorization, String accountName) throws ApiException {
+        ApiResponse<AccountAPIResponse> localVarResp = getDogeCoinAccountWithHttpInfo(authorization, accountName);
         return localVarResp.getData();
     }
 
@@ -311,7 +312,7 @@ public class DogeCoinApi {
      * 
      * @param authorization  (required)
      * @param accountName  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;AccountAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -319,9 +320,9 @@ public class DogeCoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> getDogeCoinAccountWithHttpInfo(String authorization, String accountName) throws ApiException {
+    public ApiResponse<AccountAPIResponse> getDogeCoinAccountWithHttpInfo(String authorization, String accountName) throws ApiException {
         okhttp3.Call localVarCall = getDogeCoinAccountValidateBeforeCall(authorization, accountName, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -339,10 +340,10 @@ public class DogeCoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getDogeCoinAccountAsync(String authorization, String accountName, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call getDogeCoinAccountAsync(String authorization, String accountName, final ApiCallback<AccountAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = getDogeCoinAccountValidateBeforeCall(authorization, accountName, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -421,7 +422,7 @@ public class DogeCoinApi {
      * 
      * 
      * @param authorization  (required)
-     * @return AccountControllerResponse
+     * @return AccountAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -429,8 +430,8 @@ public class DogeCoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse listDogeCoinAccounts(String authorization) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = listDogeCoinAccountsWithHttpInfo(authorization);
+    public AccountAPIResponse listDogeCoinAccounts(String authorization) throws ApiException {
+        ApiResponse<AccountAPIResponse> localVarResp = listDogeCoinAccountsWithHttpInfo(authorization);
         return localVarResp.getData();
     }
 
@@ -438,7 +439,7 @@ public class DogeCoinApi {
      * 
      * 
      * @param authorization  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;AccountAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -446,9 +447,9 @@ public class DogeCoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> listDogeCoinAccountsWithHttpInfo(String authorization) throws ApiException {
+    public ApiResponse<AccountAPIResponse> listDogeCoinAccountsWithHttpInfo(String authorization) throws ApiException {
         okhttp3.Call localVarCall = listDogeCoinAccountsValidateBeforeCall(authorization, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -465,10 +466,10 @@ public class DogeCoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call listDogeCoinAccountsAsync(String authorization, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call listDogeCoinAccountsAsync(String authorization, final ApiCallback<AccountAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = listDogeCoinAccountsValidateBeforeCall(authorization, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -563,7 +564,7 @@ public class DogeCoinApi {
      * @param authorization  (required)
      * @param accountName  (required)
      * @param dogeCoinTransactionInput  (required)
-     * @return AccountControllerResponse
+     * @return DogeCoinAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -571,8 +572,8 @@ public class DogeCoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse signDogeCoinTransaction(String authorization, String accountName, DogeCoinTransactionInput dogeCoinTransactionInput) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = signDogeCoinTransactionWithHttpInfo(authorization, accountName, dogeCoinTransactionInput);
+    public DogeCoinAPIResponse signDogeCoinTransaction(String authorization, String accountName, DogeCoinTransactionInput dogeCoinTransactionInput) throws ApiException {
+        ApiResponse<DogeCoinAPIResponse> localVarResp = signDogeCoinTransactionWithHttpInfo(authorization, accountName, dogeCoinTransactionInput);
         return localVarResp.getData();
     }
 
@@ -582,7 +583,7 @@ public class DogeCoinApi {
      * @param authorization  (required)
      * @param accountName  (required)
      * @param dogeCoinTransactionInput  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;DogeCoinAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -590,9 +591,9 @@ public class DogeCoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> signDogeCoinTransactionWithHttpInfo(String authorization, String accountName, DogeCoinTransactionInput dogeCoinTransactionInput) throws ApiException {
+    public ApiResponse<DogeCoinAPIResponse> signDogeCoinTransactionWithHttpInfo(String authorization, String accountName, DogeCoinTransactionInput dogeCoinTransactionInput) throws ApiException {
         okhttp3.Call localVarCall = signDogeCoinTransactionValidateBeforeCall(authorization, accountName, dogeCoinTransactionInput, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<DogeCoinAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -611,10 +612,10 @@ public class DogeCoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call signDogeCoinTransactionAsync(String authorization, String accountName, DogeCoinTransactionInput dogeCoinTransactionInput, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call signDogeCoinTransactionAsync(String authorization, String accountName, DogeCoinTransactionInput dogeCoinTransactionInput, final ApiCallback<DogeCoinAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = signDogeCoinTransactionValidateBeforeCall(authorization, accountName, dogeCoinTransactionInput, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<DogeCoinAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

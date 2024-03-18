@@ -27,7 +27,8 @@ import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 
 
-import org.usemoonai.moonsdk.models.AccountControllerResponse;
+import org.usemoonai.moonsdk.models.AccountAPIResponse;
+import org.usemoonai.moonsdk.models.SolanaAPIResponse;
 import org.usemoonai.moonsdk.models.SolanaInput;
 import org.usemoonai.moonsdk.models.SolanaTransactionInput;
 
@@ -157,7 +158,7 @@ public class SolanaApi {
      * 
      * @param authorization  (required)
      * @param solanaInput  (required)
-     * @return AccountControllerResponse
+     * @return AccountAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -165,8 +166,8 @@ public class SolanaApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse createSolanaAccount(String authorization, SolanaInput solanaInput) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = createSolanaAccountWithHttpInfo(authorization, solanaInput);
+    public AccountAPIResponse createSolanaAccount(String authorization, SolanaInput solanaInput) throws ApiException {
+        ApiResponse<AccountAPIResponse> localVarResp = createSolanaAccountWithHttpInfo(authorization, solanaInput);
         return localVarResp.getData();
     }
 
@@ -175,7 +176,7 @@ public class SolanaApi {
      * 
      * @param authorization  (required)
      * @param solanaInput  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;AccountAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -183,9 +184,9 @@ public class SolanaApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> createSolanaAccountWithHttpInfo(String authorization, SolanaInput solanaInput) throws ApiException {
+    public ApiResponse<AccountAPIResponse> createSolanaAccountWithHttpInfo(String authorization, SolanaInput solanaInput) throws ApiException {
         okhttp3.Call localVarCall = createSolanaAccountValidateBeforeCall(authorization, solanaInput, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -203,10 +204,10 @@ public class SolanaApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call createSolanaAccountAsync(String authorization, SolanaInput solanaInput, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call createSolanaAccountAsync(String authorization, SolanaInput solanaInput, final ApiCallback<AccountAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = createSolanaAccountValidateBeforeCall(authorization, solanaInput, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -293,7 +294,7 @@ public class SolanaApi {
      * 
      * @param authorization  (required)
      * @param accountName  (required)
-     * @return AccountControllerResponse
+     * @return AccountAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -301,8 +302,8 @@ public class SolanaApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse getSolanaAccount(String authorization, String accountName) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = getSolanaAccountWithHttpInfo(authorization, accountName);
+    public AccountAPIResponse getSolanaAccount(String authorization, String accountName) throws ApiException {
+        ApiResponse<AccountAPIResponse> localVarResp = getSolanaAccountWithHttpInfo(authorization, accountName);
         return localVarResp.getData();
     }
 
@@ -311,7 +312,7 @@ public class SolanaApi {
      * 
      * @param authorization  (required)
      * @param accountName  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;AccountAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -319,9 +320,9 @@ public class SolanaApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> getSolanaAccountWithHttpInfo(String authorization, String accountName) throws ApiException {
+    public ApiResponse<AccountAPIResponse> getSolanaAccountWithHttpInfo(String authorization, String accountName) throws ApiException {
         okhttp3.Call localVarCall = getSolanaAccountValidateBeforeCall(authorization, accountName, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -339,10 +340,10 @@ public class SolanaApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getSolanaAccountAsync(String authorization, String accountName, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call getSolanaAccountAsync(String authorization, String accountName, final ApiCallback<AccountAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = getSolanaAccountValidateBeforeCall(authorization, accountName, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -421,7 +422,7 @@ public class SolanaApi {
      * 
      * 
      * @param authorization  (required)
-     * @return AccountControllerResponse
+     * @return AccountAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -429,8 +430,8 @@ public class SolanaApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse listSolanaAccounts(String authorization) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = listSolanaAccountsWithHttpInfo(authorization);
+    public AccountAPIResponse listSolanaAccounts(String authorization) throws ApiException {
+        ApiResponse<AccountAPIResponse> localVarResp = listSolanaAccountsWithHttpInfo(authorization);
         return localVarResp.getData();
     }
 
@@ -438,7 +439,7 @@ public class SolanaApi {
      * 
      * 
      * @param authorization  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;AccountAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -446,9 +447,9 @@ public class SolanaApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> listSolanaAccountsWithHttpInfo(String authorization) throws ApiException {
+    public ApiResponse<AccountAPIResponse> listSolanaAccountsWithHttpInfo(String authorization) throws ApiException {
         okhttp3.Call localVarCall = listSolanaAccountsValidateBeforeCall(authorization, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -465,10 +466,10 @@ public class SolanaApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call listSolanaAccountsAsync(String authorization, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call listSolanaAccountsAsync(String authorization, final ApiCallback<AccountAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = listSolanaAccountsValidateBeforeCall(authorization, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -563,7 +564,7 @@ public class SolanaApi {
      * @param authorization  (required)
      * @param accountName  (required)
      * @param solanaTransactionInput  (required)
-     * @return AccountControllerResponse
+     * @return SolanaAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -571,8 +572,8 @@ public class SolanaApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse signSolanaTransaction(String authorization, String accountName, SolanaTransactionInput solanaTransactionInput) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = signSolanaTransactionWithHttpInfo(authorization, accountName, solanaTransactionInput);
+    public SolanaAPIResponse signSolanaTransaction(String authorization, String accountName, SolanaTransactionInput solanaTransactionInput) throws ApiException {
+        ApiResponse<SolanaAPIResponse> localVarResp = signSolanaTransactionWithHttpInfo(authorization, accountName, solanaTransactionInput);
         return localVarResp.getData();
     }
 
@@ -582,7 +583,7 @@ public class SolanaApi {
      * @param authorization  (required)
      * @param accountName  (required)
      * @param solanaTransactionInput  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;SolanaAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -590,9 +591,9 @@ public class SolanaApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> signSolanaTransactionWithHttpInfo(String authorization, String accountName, SolanaTransactionInput solanaTransactionInput) throws ApiException {
+    public ApiResponse<SolanaAPIResponse> signSolanaTransactionWithHttpInfo(String authorization, String accountName, SolanaTransactionInput solanaTransactionInput) throws ApiException {
         okhttp3.Call localVarCall = signSolanaTransactionValidateBeforeCall(authorization, accountName, solanaTransactionInput, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<SolanaAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -611,10 +612,10 @@ public class SolanaApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call signSolanaTransactionAsync(String authorization, String accountName, SolanaTransactionInput solanaTransactionInput, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call signSolanaTransactionAsync(String authorization, String accountName, SolanaTransactionInput solanaTransactionInput, final ApiCallback<SolanaAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = signSolanaTransactionValidateBeforeCall(authorization, accountName, solanaTransactionInput, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<SolanaAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

@@ -27,7 +27,8 @@ import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 
 
-import org.usemoonai.moonsdk.models.AccountControllerResponse;
+import org.usemoonai.moonsdk.models.AccountAPIResponse;
+import org.usemoonai.moonsdk.models.LitecoinAPIResponse;
 import org.usemoonai.moonsdk.models.LitecoinInput;
 import org.usemoonai.moonsdk.models.LitecoinTransactionInput;
 
@@ -157,7 +158,7 @@ public class LitecoinApi {
      * 
      * @param authorization  (required)
      * @param litecoinInput  (required)
-     * @return AccountControllerResponse
+     * @return AccountAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -165,8 +166,8 @@ public class LitecoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse createLitecoinAccount(String authorization, LitecoinInput litecoinInput) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = createLitecoinAccountWithHttpInfo(authorization, litecoinInput);
+    public AccountAPIResponse createLitecoinAccount(String authorization, LitecoinInput litecoinInput) throws ApiException {
+        ApiResponse<AccountAPIResponse> localVarResp = createLitecoinAccountWithHttpInfo(authorization, litecoinInput);
         return localVarResp.getData();
     }
 
@@ -175,7 +176,7 @@ public class LitecoinApi {
      * 
      * @param authorization  (required)
      * @param litecoinInput  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;AccountAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -183,9 +184,9 @@ public class LitecoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> createLitecoinAccountWithHttpInfo(String authorization, LitecoinInput litecoinInput) throws ApiException {
+    public ApiResponse<AccountAPIResponse> createLitecoinAccountWithHttpInfo(String authorization, LitecoinInput litecoinInput) throws ApiException {
         okhttp3.Call localVarCall = createLitecoinAccountValidateBeforeCall(authorization, litecoinInput, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -203,10 +204,10 @@ public class LitecoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call createLitecoinAccountAsync(String authorization, LitecoinInput litecoinInput, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call createLitecoinAccountAsync(String authorization, LitecoinInput litecoinInput, final ApiCallback<AccountAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = createLitecoinAccountValidateBeforeCall(authorization, litecoinInput, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -293,7 +294,7 @@ public class LitecoinApi {
      * 
      * @param authorization  (required)
      * @param accountName  (required)
-     * @return AccountControllerResponse
+     * @return AccountAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -301,8 +302,8 @@ public class LitecoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse getLitecoinAccount(String authorization, String accountName) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = getLitecoinAccountWithHttpInfo(authorization, accountName);
+    public AccountAPIResponse getLitecoinAccount(String authorization, String accountName) throws ApiException {
+        ApiResponse<AccountAPIResponse> localVarResp = getLitecoinAccountWithHttpInfo(authorization, accountName);
         return localVarResp.getData();
     }
 
@@ -311,7 +312,7 @@ public class LitecoinApi {
      * 
      * @param authorization  (required)
      * @param accountName  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;AccountAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -319,9 +320,9 @@ public class LitecoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> getLitecoinAccountWithHttpInfo(String authorization, String accountName) throws ApiException {
+    public ApiResponse<AccountAPIResponse> getLitecoinAccountWithHttpInfo(String authorization, String accountName) throws ApiException {
         okhttp3.Call localVarCall = getLitecoinAccountValidateBeforeCall(authorization, accountName, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -339,10 +340,10 @@ public class LitecoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getLitecoinAccountAsync(String authorization, String accountName, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call getLitecoinAccountAsync(String authorization, String accountName, final ApiCallback<AccountAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = getLitecoinAccountValidateBeforeCall(authorization, accountName, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -421,7 +422,7 @@ public class LitecoinApi {
      * 
      * 
      * @param authorization  (required)
-     * @return AccountControllerResponse
+     * @return AccountAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -429,8 +430,8 @@ public class LitecoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse listLitecoinAccounts(String authorization) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = listLitecoinAccountsWithHttpInfo(authorization);
+    public AccountAPIResponse listLitecoinAccounts(String authorization) throws ApiException {
+        ApiResponse<AccountAPIResponse> localVarResp = listLitecoinAccountsWithHttpInfo(authorization);
         return localVarResp.getData();
     }
 
@@ -438,7 +439,7 @@ public class LitecoinApi {
      * 
      * 
      * @param authorization  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;AccountAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -446,9 +447,9 @@ public class LitecoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> listLitecoinAccountsWithHttpInfo(String authorization) throws ApiException {
+    public ApiResponse<AccountAPIResponse> listLitecoinAccountsWithHttpInfo(String authorization) throws ApiException {
         okhttp3.Call localVarCall = listLitecoinAccountsValidateBeforeCall(authorization, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -465,10 +466,10 @@ public class LitecoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call listLitecoinAccountsAsync(String authorization, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call listLitecoinAccountsAsync(String authorization, final ApiCallback<AccountAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = listLitecoinAccountsValidateBeforeCall(authorization, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -563,7 +564,7 @@ public class LitecoinApi {
      * @param authorization  (required)
      * @param accountName  (required)
      * @param litecoinTransactionInput  (required)
-     * @return AccountControllerResponse
+     * @return LitecoinAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -571,8 +572,8 @@ public class LitecoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse signLitecoinTransaction(String authorization, String accountName, LitecoinTransactionInput litecoinTransactionInput) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = signLitecoinTransactionWithHttpInfo(authorization, accountName, litecoinTransactionInput);
+    public LitecoinAPIResponse signLitecoinTransaction(String authorization, String accountName, LitecoinTransactionInput litecoinTransactionInput) throws ApiException {
+        ApiResponse<LitecoinAPIResponse> localVarResp = signLitecoinTransactionWithHttpInfo(authorization, accountName, litecoinTransactionInput);
         return localVarResp.getData();
     }
 
@@ -582,7 +583,7 @@ public class LitecoinApi {
      * @param authorization  (required)
      * @param accountName  (required)
      * @param litecoinTransactionInput  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;LitecoinAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -590,9 +591,9 @@ public class LitecoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> signLitecoinTransactionWithHttpInfo(String authorization, String accountName, LitecoinTransactionInput litecoinTransactionInput) throws ApiException {
+    public ApiResponse<LitecoinAPIResponse> signLitecoinTransactionWithHttpInfo(String authorization, String accountName, LitecoinTransactionInput litecoinTransactionInput) throws ApiException {
         okhttp3.Call localVarCall = signLitecoinTransactionValidateBeforeCall(authorization, accountName, litecoinTransactionInput, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<LitecoinAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -611,10 +612,10 @@ public class LitecoinApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call signLitecoinTransactionAsync(String authorization, String accountName, LitecoinTransactionInput litecoinTransactionInput, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call signLitecoinTransactionAsync(String authorization, String accountName, LitecoinTransactionInput litecoinTransactionInput, final ApiCallback<LitecoinAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = signLitecoinTransactionValidateBeforeCall(authorization, accountName, litecoinTransactionInput, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<LitecoinAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

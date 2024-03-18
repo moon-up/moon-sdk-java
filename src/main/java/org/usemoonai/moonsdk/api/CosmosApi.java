@@ -27,7 +27,8 @@ import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 
 
-import org.usemoonai.moonsdk.models.AccountControllerResponse;
+import org.usemoonai.moonsdk.models.AccountAPIResponse;
+import org.usemoonai.moonsdk.models.CosmosAPIResponse;
 import org.usemoonai.moonsdk.models.CosmosInput;
 import org.usemoonai.moonsdk.models.CosmosTransactionInput;
 
@@ -157,7 +158,7 @@ public class CosmosApi {
      * 
      * @param authorization  (required)
      * @param cosmosInput  (required)
-     * @return AccountControllerResponse
+     * @return AccountAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -165,8 +166,8 @@ public class CosmosApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse createCosmosAccount(String authorization, CosmosInput cosmosInput) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = createCosmosAccountWithHttpInfo(authorization, cosmosInput);
+    public AccountAPIResponse createCosmosAccount(String authorization, CosmosInput cosmosInput) throws ApiException {
+        ApiResponse<AccountAPIResponse> localVarResp = createCosmosAccountWithHttpInfo(authorization, cosmosInput);
         return localVarResp.getData();
     }
 
@@ -175,7 +176,7 @@ public class CosmosApi {
      * 
      * @param authorization  (required)
      * @param cosmosInput  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;AccountAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -183,9 +184,9 @@ public class CosmosApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> createCosmosAccountWithHttpInfo(String authorization, CosmosInput cosmosInput) throws ApiException {
+    public ApiResponse<AccountAPIResponse> createCosmosAccountWithHttpInfo(String authorization, CosmosInput cosmosInput) throws ApiException {
         okhttp3.Call localVarCall = createCosmosAccountValidateBeforeCall(authorization, cosmosInput, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -203,10 +204,10 @@ public class CosmosApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call createCosmosAccountAsync(String authorization, CosmosInput cosmosInput, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call createCosmosAccountAsync(String authorization, CosmosInput cosmosInput, final ApiCallback<AccountAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = createCosmosAccountValidateBeforeCall(authorization, cosmosInput, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -293,7 +294,7 @@ public class CosmosApi {
      * 
      * @param authorization  (required)
      * @param accountName  (required)
-     * @return AccountControllerResponse
+     * @return AccountAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -301,8 +302,8 @@ public class CosmosApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse getCosmosAccount(String authorization, String accountName) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = getCosmosAccountWithHttpInfo(authorization, accountName);
+    public AccountAPIResponse getCosmosAccount(String authorization, String accountName) throws ApiException {
+        ApiResponse<AccountAPIResponse> localVarResp = getCosmosAccountWithHttpInfo(authorization, accountName);
         return localVarResp.getData();
     }
 
@@ -311,7 +312,7 @@ public class CosmosApi {
      * 
      * @param authorization  (required)
      * @param accountName  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;AccountAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -319,9 +320,9 @@ public class CosmosApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> getCosmosAccountWithHttpInfo(String authorization, String accountName) throws ApiException {
+    public ApiResponse<AccountAPIResponse> getCosmosAccountWithHttpInfo(String authorization, String accountName) throws ApiException {
         okhttp3.Call localVarCall = getCosmosAccountValidateBeforeCall(authorization, accountName, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -339,10 +340,10 @@ public class CosmosApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getCosmosAccountAsync(String authorization, String accountName, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call getCosmosAccountAsync(String authorization, String accountName, final ApiCallback<AccountAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = getCosmosAccountValidateBeforeCall(authorization, accountName, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -421,7 +422,7 @@ public class CosmosApi {
      * 
      * 
      * @param authorization  (required)
-     * @return AccountControllerResponse
+     * @return AccountAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -429,8 +430,8 @@ public class CosmosApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse listCosmosAccounts(String authorization) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = listCosmosAccountsWithHttpInfo(authorization);
+    public AccountAPIResponse listCosmosAccounts(String authorization) throws ApiException {
+        ApiResponse<AccountAPIResponse> localVarResp = listCosmosAccountsWithHttpInfo(authorization);
         return localVarResp.getData();
     }
 
@@ -438,7 +439,7 @@ public class CosmosApi {
      * 
      * 
      * @param authorization  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;AccountAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -446,9 +447,9 @@ public class CosmosApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> listCosmosAccountsWithHttpInfo(String authorization) throws ApiException {
+    public ApiResponse<AccountAPIResponse> listCosmosAccountsWithHttpInfo(String authorization) throws ApiException {
         okhttp3.Call localVarCall = listCosmosAccountsValidateBeforeCall(authorization, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -465,10 +466,10 @@ public class CosmosApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call listCosmosAccountsAsync(String authorization, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call listCosmosAccountsAsync(String authorization, final ApiCallback<AccountAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = listCosmosAccountsValidateBeforeCall(authorization, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<AccountAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -563,7 +564,7 @@ public class CosmosApi {
      * @param authorization  (required)
      * @param accountName  (required)
      * @param cosmosTransactionInput  (required)
-     * @return AccountControllerResponse
+     * @return CosmosAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -571,8 +572,8 @@ public class CosmosApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse signCosmosTransaction(String authorization, String accountName, CosmosTransactionInput cosmosTransactionInput) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = signCosmosTransactionWithHttpInfo(authorization, accountName, cosmosTransactionInput);
+    public CosmosAPIResponse signCosmosTransaction(String authorization, String accountName, CosmosTransactionInput cosmosTransactionInput) throws ApiException {
+        ApiResponse<CosmosAPIResponse> localVarResp = signCosmosTransactionWithHttpInfo(authorization, accountName, cosmosTransactionInput);
         return localVarResp.getData();
     }
 
@@ -582,7 +583,7 @@ public class CosmosApi {
      * @param authorization  (required)
      * @param accountName  (required)
      * @param cosmosTransactionInput  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;CosmosAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -590,9 +591,9 @@ public class CosmosApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> signCosmosTransactionWithHttpInfo(String authorization, String accountName, CosmosTransactionInput cosmosTransactionInput) throws ApiException {
+    public ApiResponse<CosmosAPIResponse> signCosmosTransactionWithHttpInfo(String authorization, String accountName, CosmosTransactionInput cosmosTransactionInput) throws ApiException {
         okhttp3.Call localVarCall = signCosmosTransactionValidateBeforeCall(authorization, accountName, cosmosTransactionInput, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<CosmosAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -611,10 +612,10 @@ public class CosmosApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call signCosmosTransactionAsync(String authorization, String accountName, CosmosTransactionInput cosmosTransactionInput, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call signCosmosTransactionAsync(String authorization, String accountName, CosmosTransactionInput cosmosTransactionInput, final ApiCallback<CosmosAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = signCosmosTransactionValidateBeforeCall(authorization, accountName, cosmosTransactionInput, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<CosmosAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

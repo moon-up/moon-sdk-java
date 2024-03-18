@@ -6,7 +6,7 @@ info:
   title: moon-vault-api
   version: 1.0.0
 servers:
-- url: https://vault-api.usemoon.ai
+- url: https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app
 paths:
   /oneinch/tokens:
     post:
@@ -184,7 +184,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/NonceAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -223,7 +223,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/BalanceAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -261,7 +261,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -300,7 +300,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/SignMessageAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -339,7 +339,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -378,7 +378,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/SignMessageAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -404,7 +404,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AccountAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -434,7 +434,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AccountAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -467,7 +467,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AccountAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -498,7 +498,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AccountAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -536,7 +536,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -575,7 +575,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/BroadCastRawTransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -614,7 +614,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -653,7 +653,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -692,7 +692,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AaveReservesAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -731,7 +731,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -757,7 +757,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AccountAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -787,7 +787,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AccountAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -820,7 +820,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AccountAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -858,7 +858,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/BitcoinAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -884,7 +884,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AccountAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -914,7 +914,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AccountAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -947,7 +947,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AccountAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -985,7 +985,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/BitcoinCashAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -1050,7 +1050,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AccountAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -1080,7 +1080,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AccountAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -1113,7 +1113,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AccountAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -1151,7 +1151,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/CosmosAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -1177,7 +1177,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AccountAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -1207,7 +1207,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AccountAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -1240,7 +1240,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AccountAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -1278,7 +1278,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/DogeCoinAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -1310,7 +1310,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/EnsResolveAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -1336,7 +1336,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AccountAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -1366,7 +1366,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AccountAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -1399,7 +1399,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AccountAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -1437,7 +1437,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/EosAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -1476,7 +1476,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -1515,7 +1515,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -1554,7 +1554,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -1593,7 +1593,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -1632,7 +1632,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -1671,7 +1671,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -1710,7 +1710,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -1749,7 +1749,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -1788,7 +1788,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -1827,7 +1827,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -1866,7 +1866,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -1905,7 +1905,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -1944,7 +1944,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -1983,7 +1983,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -2022,7 +2022,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -2061,7 +2061,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AccountAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -2100,7 +2100,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -2139,7 +2139,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -2178,7 +2178,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -2217,7 +2217,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -2256,7 +2256,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -2295,7 +2295,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -2334,7 +2334,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -2373,7 +2373,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -2412,7 +2412,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -2451,7 +2451,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -2490,7 +2490,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -2529,7 +2529,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -2568,7 +2568,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -2594,7 +2594,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AccountAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -2624,7 +2624,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AccountAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -2657,7 +2657,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AccountAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -2695,7 +2695,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/LitecoinAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -3121,403 +3121,6 @@ paths:
       - onramper
       x-content-type: application/json
       x-accepts: application/json
-  /payment/chains:
-    get:
-      operationId: PaymentGetAvailableChains
-      parameters: []
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                items:
-                  type: string
-                type: array
-          description: Ok
-      security:
-      - BearerAuth: []
-      - Oauth2: []
-      - ApiKeyAuth: []
-      tags:
-      - payment
-      x-accepts: application/json
-  /payment:
-    get:
-      operationId: PaymentGetAllPaymentIntents
-      parameters:
-      - explode: false
-        in: header
-        name: Authorization
-        required: true
-        schema:
-          type: string
-        style: simple
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                items:
-                  $ref: '#/components/schemas/PaymentIntentResponse'
-                type: array
-          description: Ok
-      security:
-      - BearerAuth: []
-      - Oauth2: []
-      - ApiKeyAuth: []
-      tags:
-      - payment
-      x-accepts: application/json
-    post:
-      operationId: PaymentCreatePaymentIntent
-      parameters:
-      - explode: false
-        in: header
-        name: Authorization
-        required: true
-        schema:
-          type: string
-        style: simple
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/CreatePaymentIntentInput'
-        required: true
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/PaymentIntentResponse'
-          description: Ok
-      security:
-      - BearerAuth: []
-      - Oauth2: []
-      - ApiKeyAuth: []
-      tags:
-      - payment
-      x-content-type: application/json
-      x-accepts: application/json
-  /payment/{id}:
-    delete:
-      operationId: PaymentDeletePaymentIntent
-      parameters:
-      - explode: false
-        in: header
-        name: Authorization
-        required: true
-        schema:
-          type: string
-        style: simple
-      - explode: false
-        in: path
-        name: id
-        required: true
-        schema:
-          type: string
-        style: simple
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/PaymentIntentResponse'
-          description: Ok
-      security:
-      - BearerAuth: []
-      - Oauth2: []
-      - ApiKeyAuth: []
-      tags:
-      - payment
-      x-accepts: application/json
-    get:
-      operationId: PaymentGetPaymentIntent
-      parameters:
-      - explode: false
-        in: header
-        name: Authorization
-        required: true
-        schema:
-          type: string
-        style: simple
-      - explode: false
-        in: path
-        name: id
-        required: true
-        schema:
-          type: string
-        style: simple
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/PaymentIntentResponse'
-          description: Ok
-      security:
-      - BearerAuth: []
-      - Oauth2: []
-      - ApiKeyAuth: []
-      tags:
-      - payment
-      x-accepts: application/json
-    put:
-      operationId: PaymentUpdatePaymentIntent
-      parameters:
-      - explode: false
-        in: header
-        name: Authorization
-        required: true
-        schema:
-          type: string
-        style: simple
-      - explode: false
-        in: path
-        name: id
-        required: true
-        schema:
-          type: string
-        style: simple
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/CreatePaymentIntentInput'
-        required: true
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/PaymentIntentResponse'
-          description: Ok
-      security:
-      - BearerAuth: []
-      - Oauth2: []
-      - ApiKeyAuth: []
-      tags:
-      - payment
-      x-content-type: application/json
-      x-accepts: application/json
-  /payment/webhook/{id}:
-    post:
-      operationId: MoralisWebhook
-      parameters:
-      - explode: false
-        in: path
-        name: id
-        required: true
-        schema:
-          type: string
-        style: simple
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/IWebhook'
-        required: true
-      responses:
-        "200":
-          content:
-            application/json:
-              schema: {}
-          description: Ok
-      security:
-      - BearerAuth: []
-      - Oauth2: []
-      - ApiKeyAuth: []
-      tags:
-      - payment
-      x-content-type: application/json
-      x-accepts: application/json
-  /payment/webhook/tatum/{id}:
-    post:
-      operationId: TatumWebhook
-      parameters:
-      - explode: false
-        in: path
-        name: id
-        required: true
-        schema:
-          type: string
-        style: simple
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/TatumTransactionEvent'
-        required: true
-      responses:
-        "200":
-          content:
-            application/json:
-              schema: {}
-          description: Ok
-      security:
-      - BearerAuth: []
-      - Oauth2: []
-      - ApiKeyAuth: []
-      tags:
-      - payment
-      x-content-type: application/json
-      x-accepts: application/json
-  /payment/config:
-    get:
-      operationId: GetAllPaymentIntentConfigs
-      parameters:
-      - explode: false
-        in: header
-        name: Authorization
-        required: true
-        schema:
-          type: string
-        style: simple
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                items:
-                  $ref: '#/components/schemas/PaymentIntentResponse'
-                type: array
-          description: Ok
-      security:
-      - BearerAuth: []
-      - Oauth2: []
-      - ApiKeyAuth: []
-      tags:
-      - payment
-      x-accepts: application/json
-    post:
-      operationId: CreatePaymentIntentConfig
-      parameters:
-      - explode: false
-        in: header
-        name: Authorization
-        required: true
-        schema:
-          type: string
-        style: simple
-      requestBody:
-        content:
-          application/json:
-            schema: {}
-        required: true
-      responses:
-        "200":
-          content:
-            application/json:
-              schema: {}
-          description: Ok
-      security:
-      - BearerAuth: []
-      - Oauth2: []
-      - ApiKeyAuth: []
-      tags:
-      - payment
-      x-content-type: application/json
-      x-accepts: application/json
-  /payment/config/{id}:
-    delete:
-      operationId: DeletePaymentIntentConfig
-      parameters:
-      - explode: false
-        in: header
-        name: Authorization
-        required: true
-        schema:
-          type: string
-        style: simple
-      - explode: false
-        in: path
-        name: id
-        required: true
-        schema:
-          type: string
-        style: simple
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/PaymentIntentResponse'
-          description: Ok
-      security:
-      - BearerAuth: []
-      - Oauth2: []
-      - ApiKeyAuth: []
-      tags:
-      - payment
-      x-accepts: application/json
-    get:
-      operationId: GetOnePaymentIntentConfigs
-      parameters:
-      - explode: false
-        in: header
-        name: Authorization
-        required: true
-        schema:
-          type: string
-        style: simple
-      - explode: false
-        in: path
-        name: id
-        required: true
-        schema:
-          type: string
-        style: simple
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/PaymentIntentResponse'
-          description: Ok
-      security:
-      - BearerAuth: []
-      - Oauth2: []
-      - ApiKeyAuth: []
-      tags:
-      - payment
-      x-accepts: application/json
-    put:
-      operationId: UpdatePaymentIntentConfig
-      parameters:
-      - explode: false
-        in: header
-        name: Authorization
-        required: true
-        schema:
-          type: string
-        style: simple
-      - explode: false
-        in: path
-        name: id
-        required: true
-        schema:
-          type: string
-        style: simple
-      requestBody:
-        content:
-          application/json:
-            schema: {}
-        required: true
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/PaymentIntentResponse'
-          description: Ok
-      security:
-      - BearerAuth: []
-      - Oauth2: []
-      - ApiKeyAuth: []
-      tags:
-      - payment
-      x-content-type: application/json
-      x-accepts: application/json
   /ping:
     get:
       operationId: GetMessage
@@ -3547,7 +3150,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AccountAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -3577,7 +3180,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AccountAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -3610,7 +3213,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AccountAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -3648,7 +3251,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/RippleAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -3674,7 +3277,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AccountAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -3704,7 +3307,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AccountAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -3737,7 +3340,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AccountAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -3775,7 +3378,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/SolanaAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -3801,7 +3404,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AccountAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -3831,7 +3434,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AccountAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -3864,7 +3467,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/AccountAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -3902,7 +3505,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TronAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -3941,7 +3544,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -3980,7 +3583,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -4019,7 +3622,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -4058,7 +3661,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -4097,7 +3700,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -4136,7 +3739,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -4175,7 +3778,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -4214,7 +3817,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AccountControllerResponse'
+                $ref: '#/components/schemas/TransactionAPIResponse'
           description: Ok
       security:
       - BearerAuth: []
@@ -4312,6 +3915,8 @@ components:
       type: object
     NonceResponse:
       additionalProperties: false
+      example:
+        nonce: 0.8008281904610115
       properties:
         nonce:
           format: double
@@ -4319,13 +3924,51 @@ components:
       required:
       - nonce
       type: object
+    NonceAPIResponse:
+      additionalProperties: false
+      example:
+        data:
+          nonce: 0.8008281904610115
+        success: true
+        message: message
+      properties:
+        success:
+          type: boolean
+        message:
+          type: string
+        data:
+          $ref: '#/components/schemas/NonceResponse'
+      required:
+      - message
+      - success
+      type: object
     BalanceResponse:
       additionalProperties: false
+      example:
+        balance: balance
       properties:
         balance:
           type: string
       required:
       - balance
+      type: object
+    BalanceAPIResponse:
+      additionalProperties: false
+      example:
+        data:
+          balance: balance
+        success: true
+        message: message
+      properties:
+        success:
+          type: boolean
+        message:
+          type: string
+        data:
+          $ref: '#/components/schemas/BalanceResponse'
+      required:
+      - message
+      - success
       type: object
     Tx:
       additionalProperties: false
@@ -4334,12 +3977,12 @@ components:
         blob_hashes:
         - blob_hashes
         - blob_hashes
-        chain_id: 5.637376656633329
+        chain_id: 6.027456183070403
         data: data
         gas_fee_cap: gas_fee_cap
-        type: 5.962133916683182
+        type: 0.8008281904610115
         blob_gas_fee_cap: blob_gas_fee_cap
-        nonce: 2.3021358869347655
+        nonce: 1.4658129805029452
         r: r
         gas_tip_cap: gas_tip_cap
         s: s
@@ -4452,12 +4095,12 @@ components:
           blob_hashes:
           - blob_hashes
           - blob_hashes
-          chain_id: 5.637376656633329
+          chain_id: 6.027456183070403
           data: data
           gas_fee_cap: gas_fee_cap
-          type: 5.962133916683182
+          type: 0.8008281904610115
           blob_gas_fee_cap: blob_gas_fee_cap
-          nonce: 2.3021358869347655
+          nonce: 1.4658129805029452
           r: r
           gas_tip_cap: gas_tip_cap
           s: s
@@ -4528,12 +4171,12 @@ components:
             blob_hashes:
             - blob_hashes
             - blob_hashes
-            chain_id: 5.637376656633329
+            chain_id: 6.027456183070403
             data: data
             gas_fee_cap: gas_fee_cap
-            type: 5.962133916683182
+            type: 0.8008281904610115
             blob_gas_fee_cap: blob_gas_fee_cap
-            nonce: 2.3021358869347655
+            nonce: 1.4658129805029452
             r: r
             gas_tip_cap: gas_tip_cap
             s: s
@@ -4570,12 +4213,12 @@ components:
             blob_hashes:
             - blob_hashes
             - blob_hashes
-            chain_id: 5.637376656633329
+            chain_id: 6.027456183070403
             data: data
             gas_fee_cap: gas_fee_cap
-            type: 5.962133916683182
+            type: 0.8008281904610115
             blob_gas_fee_cap: blob_gas_fee_cap
-            nonce: 2.3021358869347655
+            nonce: 1.4658129805029452
             r: r
             gas_tip_cap: gas_tip_cap
             s: s
@@ -4607,12 +4250,12 @@ components:
           blob_hashes:
           - blob_hashes
           - blob_hashes
-          chain_id: 5.637376656633329
+          chain_id: 6.027456183070403
           data: data
           gas_fee_cap: gas_fee_cap
-          type: 5.962133916683182
+          type: 0.8008281904610115
           blob_gas_fee_cap: blob_gas_fee_cap
-          nonce: 2.3021358869347655
+          nonce: 1.4658129805029452
           r: r
           gas_tip_cap: gas_tip_cap
           s: s
@@ -4649,303 +4292,149 @@ components:
         userop_transaction:
           type: string
       type: object
-    AccountResponse:
-      additionalProperties: false
-      properties:
-        keys:
-          items:
-            type: string
-          type: array
-        address:
-          type: string
-      type: object
-    SignMessage:
+    TransactionAPIResponse:
       additionalProperties: false
       example:
-        data: data
-        name: name
-        header: true
-        signtype: true
-        encoding: encoding
-      properties:
-        name:
-          type: string
         data:
-          type: string
-        encoding:
-          type: string
-        header:
-          type: boolean
-        signtype:
-          type: boolean
-      required:
-      - data
-      type: object
-    EnsResolveResponse:
-      additionalProperties: false
-      properties:
-        address:
-          type: string
-      required:
-      - address
-      type: object
-    ENSReverseResolveResponse:
-      additionalProperties: false
-      properties:
-        domain:
-          type: string
-      required:
-      - domain
-      type: object
-    AaveReservesData:
-      additionalProperties: false
-      properties:
-        current_atoken_balance:
-          type: string
-        current_borrow_balance:
-          type: string
-        principal_borrow_balance:
-          type: string
-        borrow_rate_mode:
-          type: string
-        borrow_rate:
-          type: string
-        liquidity_rate:
-          type: string
-        origination_fee:
-          type: string
-        variable_borrow_index:
-          type: string
-        last_update_timestamp:
-          type: string
-        usage_as_collateral_enabled:
-          type: string
-      required:
-      - borrow_rate
-      - borrow_rate_mode
-      - current_atoken_balance
-      - current_borrow_balance
-      - last_update_timestamp
-      - liquidity_rate
-      - origination_fee
-      - principal_borrow_balance
-      - usage_as_collateral_enabled
-      - variable_borrow_index
-      type: object
-    Erc20Response:
-      additionalProperties: false
-      properties:
-        type:
-          format: double
-          type: number
-        chain_id:
-          format: double
-          type: number
-        data:
-          type: string
-        gas:
-          type: string
-        gas_price:
-          type: string
-        gas_tip_cap:
-          nullable: true
-          type: string
-        gas_fee_cap:
-          nullable: true
-          type: string
-        value:
-          type: string
-        nonce:
-          format: double
-          type: number
-        from:
-          type: string
-        to:
-          nullable: true
-          type: string
-        blob_gas:
-          nullable: true
-          type: string
-        blob_gas_fee_cap:
-          nullable: true
-          type: string
-        blob_hashes:
-          items:
-            type: string
-          nullable: true
-          type: array
-        v:
-          type: string
-        r:
-          type: string
-        s:
-          type: string
-        name:
-          type: string
-        symbol:
-          type: string
-        decimals:
-          type: string
-        totalSupply:
-          type: string
-        contract_address:
-          type: string
-        balanceOf:
-          type: string
-        allowance:
-          type: string
-      type: object
-    Erc1155Response:
-      additionalProperties: false
-      properties:
-        type:
-          format: double
-          type: number
-        chain_id:
-          format: double
-          type: number
-        data:
-          type: string
-        gas:
-          type: string
-        gas_price:
-          type: string
-        gas_tip_cap:
-          nullable: true
-          type: string
-        gas_fee_cap:
-          nullable: true
-          type: string
-        value:
-          type: string
-        nonce:
-          format: double
-          type: number
-        from:
-          type: string
-        to:
-          nullable: true
-          type: string
-        blob_gas:
-          nullable: true
-          type: string
-        blob_gas_fee_cap:
-          nullable: true
-          type: string
-        blob_hashes:
-          items:
-            type: string
-          nullable: true
-          type: array
-        v:
-          type: string
-        r:
-          type: string
-        s:
-          type: string
-        balance_of:
-          type: string
-        balance_of_batch:
-          type: string
-      type: object
-    BroadCastRawTransactionResponse:
-      additionalProperties: false
-      properties:
-        success:
-          type: boolean
-        message:
-          type: string
-        data:
-          type: string
-      required:
-      - data
-      - message
-      - success
-      type: object
-    BitcoinTransactionOutput:
-      additionalProperties: false
-      properties:
-        signedTx:
-          type: string
-        transaction_hash:
-          type: string
-      type: object
-    Erc721Response:
-      additionalProperties: false
-      properties:
-        type:
-          format: double
-          type: number
-        chain_id:
-          format: double
-          type: number
-        data:
-          type: string
-        gas:
-          type: string
-        gas_price:
-          type: string
-        gas_tip_cap:
-          nullable: true
-          type: string
-        gas_fee_cap:
-          nullable: true
-          type: string
-        value:
-          type: string
-        nonce:
-          format: double
-          type: number
-        from:
-          type: string
-        to:
-          nullable: true
-          type: string
-        blob_gas:
-          nullable: true
-          type: string
-        blob_gas_fee_cap:
-          nullable: true
-          type: string
-        blob_hashes:
-          items:
-            type: string
-          nullable: true
-          type: array
-        v:
-          type: string
-        r:
-          type: string
-        s:
-          type: string
-        name:
-          type: string
-        symbol:
-          type: string
-        balance_of:
-          type: string
-        owner_of:
-          type: string
-        token_uri:
-          type: string
-        contract_address:
-          type: string
-        isApprovedForAll:
-          type: string
-      type: object
-    AccountControllerResponse:
-      additionalProperties: false
-      example:
-        data: null
+          signed_transaction: signed_transaction
+          raw_transaction: raw_transaction
+          data: data
+          moon_scan_url: moon_scan_url
+          signature: signature
+          transactions:
+          - signed_transaction: signed_transaction
+            raw_transaction: raw_transaction
+            moon_scan_url: moon_scan_url
+            signature: signature
+            signed_message: signed_message
+            userop_transaction: userop_transaction
+            userOps:
+            - data: data
+              maxPriorityFeePerGas: maxPriorityFeePerGas
+              from: from
+              to: to
+              maxFeePerGas: maxFeePerGas
+              nonce: nonce
+              value: value
+            - data: data
+              maxPriorityFeePerGas: maxPriorityFeePerGas
+              from: from
+              to: to
+              maxFeePerGas: maxFeePerGas
+              nonce: nonce
+              value: value
+            transaction_hash: transaction_hash
+            transaction:
+              gas_price: gas_price
+              blob_hashes:
+              - blob_hashes
+              - blob_hashes
+              chain_id: 6.027456183070403
+              data: data
+              gas_fee_cap: gas_fee_cap
+              type: 0.8008281904610115
+              blob_gas_fee_cap: blob_gas_fee_cap
+              nonce: 1.4658129805029452
+              r: r
+              gas_tip_cap: gas_tip_cap
+              s: s
+              v: v
+              gas: gas
+              blob_gas: blob_gas
+              from: from
+              to: to
+              value: value
+          - signed_transaction: signed_transaction
+            raw_transaction: raw_transaction
+            moon_scan_url: moon_scan_url
+            signature: signature
+            signed_message: signed_message
+            userop_transaction: userop_transaction
+            userOps:
+            - data: data
+              maxPriorityFeePerGas: maxPriorityFeePerGas
+              from: from
+              to: to
+              maxFeePerGas: maxFeePerGas
+              nonce: nonce
+              value: value
+            - data: data
+              maxPriorityFeePerGas: maxPriorityFeePerGas
+              from: from
+              to: to
+              maxFeePerGas: maxFeePerGas
+              nonce: nonce
+              value: value
+            transaction_hash: transaction_hash
+            transaction:
+              gas_price: gas_price
+              blob_hashes:
+              - blob_hashes
+              - blob_hashes
+              chain_id: 6.027456183070403
+              data: data
+              gas_fee_cap: gas_fee_cap
+              type: 0.8008281904610115
+              blob_gas_fee_cap: blob_gas_fee_cap
+              nonce: 1.4658129805029452
+              r: r
+              gas_tip_cap: gas_tip_cap
+              s: s
+              v: v
+              gas: gas
+              blob_gas: blob_gas
+              from: from
+              to: to
+              value: value
+          userop_transaction: userop_transaction
+          userOps:
+          - data: data
+            maxPriorityFeePerGas: maxPriorityFeePerGas
+            from: from
+            to: to
+            maxFeePerGas: maxFeePerGas
+            nonce: nonce
+            value: value
+          - data: data
+            maxPriorityFeePerGas: maxPriorityFeePerGas
+            from: from
+            to: to
+            maxFeePerGas: maxFeePerGas
+            nonce: nonce
+            value: value
+          transaction_hash: transaction_hash
+          transaction:
+            gas_price: gas_price
+            blob_hashes:
+            - blob_hashes
+            - blob_hashes
+            chain_id: 6.027456183070403
+            data: data
+            gas_fee_cap: gas_fee_cap
+            type: 0.8008281904610115
+            blob_gas_fee_cap: blob_gas_fee_cap
+            nonce: 1.4658129805029452
+            r: r
+            gas_tip_cap: gas_tip_cap
+            s: s
+            v: v
+            gas: gas
+            blob_gas: blob_gas
+            from: from
+            to: to
+            value: value
         success: true
         message: message
       properties:
-        data:
-          $ref: '#/components/schemas/AccountControllerResponse_data'
         success:
           type: boolean
         message:
           type: string
+        data:
+          $ref: '#/components/schemas/Transaction'
+      required:
+      - message
+      - success
       type: object
     InputBody:
       additionalProperties: false
@@ -4997,6 +4486,87 @@ components:
         broadcast:
           type: boolean
       type: object
+    SignMessageAPIResponse:
+      additionalProperties: false
+      example:
+        data:
+          signed_transaction: signed_transaction
+          raw_transaction: raw_transaction
+          moon_scan_url: moon_scan_url
+          signature: signature
+          signed_message: signed_message
+          userop_transaction: userop_transaction
+          userOps:
+          - data: data
+            maxPriorityFeePerGas: maxPriorityFeePerGas
+            from: from
+            to: to
+            maxFeePerGas: maxFeePerGas
+            nonce: nonce
+            value: value
+          - data: data
+            maxPriorityFeePerGas: maxPriorityFeePerGas
+            from: from
+            to: to
+            maxFeePerGas: maxFeePerGas
+            nonce: nonce
+            value: value
+          transaction_hash: transaction_hash
+          transaction:
+            gas_price: gas_price
+            blob_hashes:
+            - blob_hashes
+            - blob_hashes
+            chain_id: 6.027456183070403
+            data: data
+            gas_fee_cap: gas_fee_cap
+            type: 0.8008281904610115
+            blob_gas_fee_cap: blob_gas_fee_cap
+            nonce: 1.4658129805029452
+            r: r
+            gas_tip_cap: gas_tip_cap
+            s: s
+            v: v
+            gas: gas
+            blob_gas: blob_gas
+            from: from
+            to: to
+            value: value
+        success: true
+        message: message
+      properties:
+        success:
+          type: boolean
+        message:
+          type: string
+        data:
+          $ref: '#/components/schemas/TransactionData'
+      required:
+      - message
+      - success
+      type: object
+    SignMessage:
+      additionalProperties: false
+      example:
+        data: data
+        name: name
+        header: true
+        signtype: true
+        encoding: encoding
+      properties:
+        name:
+          type: string
+        data:
+          type: string
+        encoding:
+          type: string
+        header:
+          type: boolean
+        signtype:
+          type: boolean
+      required:
+      - data
+      type: object
     SignTypedData:
       additionalProperties: false
       example:
@@ -5006,6 +4576,57 @@ components:
           type: string
       required:
       - data
+      type: object
+    AccountData:
+      additionalProperties: false
+      example:
+        address: address
+        keys:
+        - keys
+        - keys
+      properties:
+        keys:
+          items:
+            type: string
+          type: array
+        address:
+          type: string
+      type: object
+    AccountResponse:
+      additionalProperties: false
+      example:
+        data:
+          address: address
+          keys:
+          - keys
+          - keys
+      properties:
+        data:
+          $ref: '#/components/schemas/AccountData'
+      required:
+      - data
+      type: object
+    AccountAPIResponse:
+      additionalProperties: false
+      example:
+        data:
+          data:
+            address: address
+            keys:
+            - keys
+            - keys
+        success: true
+        message: message
+      properties:
+        success:
+          type: boolean
+        message:
+          type: string
+        data:
+          $ref: '#/components/schemas/AccountResponse'
+      required:
+      - message
+      - success
       type: object
     CreateAccountInput:
       additionalProperties: false
@@ -5034,6 +4655,44 @@ components:
       required:
       - abi
       - bytecode
+      type: object
+    BroadCastRawTransactionResponse:
+      additionalProperties: false
+      example:
+        data: data
+        success: true
+        message: message
+      properties:
+        success:
+          type: boolean
+        message:
+          type: string
+        data:
+          type: string
+      required:
+      - data
+      - message
+      - success
+      type: object
+    BroadCastRawTransactionAPIResponse:
+      additionalProperties: false
+      example:
+        data:
+          data: data
+          success: true
+          message: message
+        success: true
+        message: message
+      properties:
+        success:
+          type: boolean
+        message:
+          type: string
+        data:
+          $ref: '#/components/schemas/BroadCastRawTransactionResponse'
+      required:
+      - message
+      - success
       type: object
     BroadcastInput:
       additionalProperties: false
@@ -5114,6 +4773,79 @@ components:
         interest_rate_mode:
           type: string
       type: object
+    AaveReservesData:
+      additionalProperties: false
+      example:
+        current_borrow_balance: current_borrow_balance
+        borrow_rate: borrow_rate
+        origination_fee: origination_fee
+        last_update_timestamp: last_update_timestamp
+        current_atoken_balance: current_atoken_balance
+        borrow_rate_mode: borrow_rate_mode
+        usage_as_collateral_enabled: usage_as_collateral_enabled
+        principal_borrow_balance: principal_borrow_balance
+        liquidity_rate: liquidity_rate
+        variable_borrow_index: variable_borrow_index
+      properties:
+        current_atoken_balance:
+          type: string
+        current_borrow_balance:
+          type: string
+        principal_borrow_balance:
+          type: string
+        borrow_rate_mode:
+          type: string
+        borrow_rate:
+          type: string
+        liquidity_rate:
+          type: string
+        origination_fee:
+          type: string
+        variable_borrow_index:
+          type: string
+        last_update_timestamp:
+          type: string
+        usage_as_collateral_enabled:
+          type: string
+      required:
+      - borrow_rate
+      - borrow_rate_mode
+      - current_atoken_balance
+      - current_borrow_balance
+      - last_update_timestamp
+      - liquidity_rate
+      - origination_fee
+      - principal_borrow_balance
+      - usage_as_collateral_enabled
+      - variable_borrow_index
+      type: object
+    AaveReservesAPIResponse:
+      additionalProperties: false
+      example:
+        data:
+          current_borrow_balance: current_borrow_balance
+          borrow_rate: borrow_rate
+          origination_fee: origination_fee
+          last_update_timestamp: last_update_timestamp
+          current_atoken_balance: current_atoken_balance
+          borrow_rate_mode: borrow_rate_mode
+          usage_as_collateral_enabled: usage_as_collateral_enabled
+          principal_borrow_balance: principal_borrow_balance
+          liquidity_rate: liquidity_rate
+          variable_borrow_index: variable_borrow_index
+        success: true
+        message: message
+      properties:
+        success:
+          type: boolean
+        message:
+          type: string
+        data:
+          $ref: '#/components/schemas/AaveReservesData'
+      required:
+      - message
+      - success
+      type: object
     BitcoinInput:
       additionalProperties: false
       example:
@@ -5124,6 +4856,36 @@ components:
           type: string
         private_key:
           type: string
+      type: object
+    BitcoinTransactionOutput:
+      additionalProperties: false
+      example:
+        signedTx: signedTx
+        transaction_hash: transaction_hash
+      properties:
+        signedTx:
+          type: string
+        transaction_hash:
+          type: string
+      type: object
+    BitcoinAPIResponse:
+      additionalProperties: false
+      example:
+        data:
+          signedTx: signedTx
+          transaction_hash: transaction_hash
+        success: true
+        message: message
+      properties:
+        success:
+          type: boolean
+        message:
+          type: string
+        data:
+          $ref: '#/components/schemas/BitcoinTransactionOutput'
+      required:
+      - message
+      - success
       type: object
     BitcoinTransactionInput:
       additionalProperties: false
@@ -5153,6 +4915,36 @@ components:
           type: string
         private_key:
           type: string
+      type: object
+    BitcoinCashTransactionOutput:
+      additionalProperties: false
+      example:
+        signedTx: signedTx
+        transaction_hash: transaction_hash
+      properties:
+        signedTx:
+          type: string
+        transaction_hash:
+          type: string
+      type: object
+    BitcoinCashAPIResponse:
+      additionalProperties: false
+      example:
+        data:
+          signedTx: signedTx
+          transaction_hash: transaction_hash
+        success: true
+        message: message
+      properties:
+        success:
+          type: boolean
+        message:
+          type: string
+        data:
+          $ref: '#/components/schemas/BitcoinCashTransactionOutput'
+      required:
+      - message
+      - success
       type: object
     BitcoinCashTransactionInput:
       additionalProperties: false
@@ -5258,12 +5050,12 @@ components:
             blob_hashes:
             - blob_hashes
             - blob_hashes
-            chain_id: 5.637376656633329
+            chain_id: 6.027456183070403
             data: data
             gas_fee_cap: gas_fee_cap
-            type: 5.962133916683182
+            type: 0.8008281904610115
             blob_gas_fee_cap: blob_gas_fee_cap
-            nonce: 2.3021358869347655
+            nonce: 1.4658129805029452
             r: r
             gas_tip_cap: gas_tip_cap
             s: s
@@ -5332,12 +5124,12 @@ components:
               blob_hashes:
               - blob_hashes
               - blob_hashes
-              chain_id: 5.637376656633329
+              chain_id: 6.027456183070403
               data: data
               gas_fee_cap: gas_fee_cap
-              type: 5.962133916683182
+              type: 0.8008281904610115
               blob_gas_fee_cap: blob_gas_fee_cap
-              nonce: 2.3021358869347655
+              nonce: 1.4658129805029452
               r: r
               gas_tip_cap: gas_tip_cap
               s: s
@@ -5374,12 +5166,12 @@ components:
               blob_hashes:
               - blob_hashes
               - blob_hashes
-              chain_id: 5.637376656633329
+              chain_id: 6.027456183070403
               data: data
               gas_fee_cap: gas_fee_cap
-              type: 5.962133916683182
+              type: 0.8008281904610115
               blob_gas_fee_cap: blob_gas_fee_cap
-              nonce: 2.3021358869347655
+              nonce: 1.4658129805029452
               r: r
               gas_tip_cap: gas_tip_cap
               s: s
@@ -5411,12 +5203,12 @@ components:
             blob_hashes:
             - blob_hashes
             - blob_hashes
-            chain_id: 5.637376656633329
+            chain_id: 6.027456183070403
             data: data
             gas_fee_cap: gas_fee_cap
-            type: 5.962133916683182
+            type: 0.8008281904610115
             blob_gas_fee_cap: blob_gas_fee_cap
-            nonce: 2.3021358869347655
+            nonce: 1.4658129805029452
             r: r
             gas_tip_cap: gas_tip_cap
             s: s
@@ -5542,6 +5334,36 @@ components:
         private_key:
           type: string
       type: object
+    CosmosTransactionOutput:
+      additionalProperties: false
+      example:
+        signedTx: signedTx
+        transaction_hash: transaction_hash
+      properties:
+        signedTx:
+          type: string
+        transaction_hash:
+          type: string
+      type: object
+    CosmosAPIResponse:
+      additionalProperties: false
+      example:
+        data:
+          signedTx: signedTx
+          transaction_hash: transaction_hash
+        success: true
+        message: message
+      properties:
+        success:
+          type: boolean
+        message:
+          type: string
+        data:
+          $ref: '#/components/schemas/CosmosTransactionOutput'
+      required:
+      - message
+      - success
+      type: object
     CosmosTransactionInput:
       additionalProperties: false
       example:
@@ -5571,6 +5393,36 @@ components:
         private_key:
           type: string
       type: object
+    DogeCoinTransactionOutput:
+      additionalProperties: false
+      example:
+        signedTx: signedTx
+        transaction_hash: transaction_hash
+      properties:
+        signedTx:
+          type: string
+        transaction_hash:
+          type: string
+      type: object
+    DogeCoinAPIResponse:
+      additionalProperties: false
+      example:
+        data:
+          signedTx: signedTx
+          transaction_hash: transaction_hash
+        success: true
+        message: message
+      properties:
+        success:
+          type: boolean
+        message:
+          type: string
+        data:
+          $ref: '#/components/schemas/DogeCoinTransactionOutput'
+      required:
+      - message
+      - success
+      type: object
     DogeCoinTransactionInput:
       additionalProperties: false
       example:
@@ -5588,6 +5440,34 @@ components:
           type: string
         compress:
           type: boolean
+      type: object
+    EnsResolveResponse:
+      additionalProperties: false
+      example:
+        address: address
+      properties:
+        address:
+          type: string
+      required:
+      - address
+      type: object
+    EnsResolveAPIResponse:
+      additionalProperties: false
+      example:
+        data:
+          address: address
+        success: true
+        message: message
+      properties:
+        success:
+          type: boolean
+        message:
+          type: string
+        data:
+          $ref: '#/components/schemas/EnsResolveResponse'
+      required:
+      - message
+      - success
       type: object
     EnsResolveInput:
       additionalProperties: false
@@ -5613,6 +5493,36 @@ components:
           type: string
         private_key:
           type: string
+      type: object
+    EosTransactionOutput:
+      additionalProperties: false
+      example:
+        signedTx: signedTx
+        transaction_hash: transaction_hash
+      properties:
+        signedTx:
+          type: string
+        transaction_hash:
+          type: string
+      type: object
+    EosAPIResponse:
+      additionalProperties: false
+      example:
+        data:
+          signedTx: signedTx
+          transaction_hash: transaction_hash
+        success: true
+        message: message
+      properties:
+        success:
+          type: boolean
+        message:
+          type: string
+        data:
+          $ref: '#/components/schemas/EosTransactionOutput'
+      required:
+      - message
+      - success
       type: object
     EosTransactionInput:
       additionalProperties: false
@@ -5742,6 +5652,36 @@ components:
           type: string
         private_key:
           type: string
+      type: object
+    LitecoinTransactionOutput:
+      additionalProperties: false
+      example:
+        signedTx: signedTx
+        transaction_hash: transaction_hash
+      properties:
+        signedTx:
+          type: string
+        transaction_hash:
+          type: string
+      type: object
+    LitecoinAPIResponse:
+      additionalProperties: false
+      example:
+        data:
+          signedTx: signedTx
+          transaction_hash: transaction_hash
+        success: true
+        message: message
+      properties:
+        success:
+          type: boolean
+        message:
+          type: string
+        data:
+          $ref: '#/components/schemas/LitecoinTransactionOutput'
+      required:
+      - message
+      - success
       type: object
     LitecoinTransactionInput:
       additionalProperties: false
@@ -6264,1206 +6204,6 @@ components:
       - uuid
       - wallet
       type: object
-    PaymentIntentResponse:
-      example:
-        metadata:
-          key: metadata
-        amount: 0.8008281904610115
-        success: true
-        destination: destination
-        qr_code: qr_code
-        currency: currency
-        id: id
-        message: message
-        uri: uri
-        status: status
-        network: network
-      properties:
-        metadata:
-          additionalProperties:
-            type: string
-          properties: {}
-          type: object
-        uri:
-          type: string
-        qr_code:
-          type: string
-        status:
-          type: string
-        destination:
-          type: string
-        amount:
-          format: double
-          type: number
-        network:
-          type: string
-        currency:
-          type: string
-        id:
-          type: string
-        message:
-          type: string
-        success:
-          type: boolean
-      required:
-      - success
-      type: object
-    CreatePaymentIntentInput:
-      example:
-        metadata:
-          key: metadata
-        amount: 0.8008281904610115
-        currency: currency
-        config: config
-        network: network
-      properties:
-        config:
-          type: string
-        metadata:
-          additionalProperties:
-            type: string
-          properties: {}
-          type: object
-        network:
-          type: string
-        amount:
-          format: double
-          type: number
-        currency:
-          type: string
-      required:
-      - amount
-      - metadata
-      type: object
-    Block:
-      additionalProperties: false
-      example:
-        number: number
-        hash: hash
-        timestamp: timestamp
-      properties:
-        number:
-          type: string
-        hash:
-          type: string
-        timestamp:
-          type: string
-      required:
-      - hash
-      - number
-      - timestamp
-      type: object
-    TriggerOutput:
-      example:
-        name: name
-        value: ""
-      properties:
-        value: {}
-        name:
-          type: string
-      required:
-      - name
-      - value
-      type: object
-    Log:
-      additionalProperties: false
-      example:
-        topic1: topic1
-        topic2: topic2
-        logIndex: logIndex
-        address: address
-        topic0: topic0
-        data: data
-        topic3: topic3
-        triggers:
-        - name: name
-          value: ""
-        - name: name
-          value: ""
-        transactionHash: transactionHash
-      properties:
-        triggers:
-          items:
-            $ref: '#/components/schemas/TriggerOutput'
-          type: array
-        logIndex:
-          type: string
-        transactionHash:
-          type: string
-        address:
-          type: string
-        data:
-          type: string
-        topic0:
-          nullable: true
-          type: string
-        topic1:
-          nullable: true
-          type: string
-        topic2:
-          nullable: true
-          type: string
-        topic3:
-          nullable: true
-          type: string
-      required:
-      - address
-      - data
-      - logIndex
-      - topic0
-      - topic1
-      - topic2
-      - topic3
-      - transactionHash
-      type: object
-    InternalTransaction:
-      additionalProperties: false
-      example:
-        gas: gas
-        from: from
-        to: to
-        value: value
-        transactionHash: transactionHash
-      properties:
-        from:
-          nullable: true
-          type: string
-        to:
-          nullable: true
-          type: string
-        value:
-          nullable: true
-          type: string
-        transactionHash:
-          type: string
-        gas:
-          nullable: true
-          type: string
-      required:
-      - from
-      - gas
-      - to
-      - transactionHash
-      - value
-      type: object
-    AbiInput:
-      additionalProperties: false
-      properties:
-        name:
-          type: string
-        type:
-          type: string
-        indexed:
-          type: boolean
-        components:
-          items:
-            $ref: '#/components/schemas/AbiInput'
-          type: array
-        internalType:
-          type: string
-      required:
-      - name
-      - type
-      type: object
-    AbiOutput:
-      additionalProperties: false
-      properties:
-        name:
-          type: string
-        type:
-          type: string
-        components:
-          items:
-            $ref: '#/components/schemas/AbiOutput'
-          type: array
-        internalType:
-          type: string
-      required:
-      - name
-      - type
-      type: object
-    AbiItem:
-      additionalProperties: false
-      description: The abi to parse the log object of the contract
-      example: {}
-      properties:
-        anonymous:
-          type: boolean
-        constant:
-          type: boolean
-        inputs:
-          items:
-            $ref: '#/components/schemas/AbiInput'
-          type: array
-        name:
-          type: string
-        outputs:
-          items:
-            $ref: '#/components/schemas/AbiOutput'
-          type: array
-        payable:
-          type: boolean
-        stateMutability:
-          type: string
-        type:
-          type: string
-        gas:
-          format: double
-          type: number
-      required:
-      - type
-      type: object
-    IERC20Transfer:
-      additionalProperties: false
-      example:
-        logIndex: logIndex
-        tokenSymbol: tokenSymbol
-        tokenDecimals: tokenDecimals
-        contract: contract
-        tokenName: tokenName
-        valueWithDecimals: valueWithDecimals
-        from: from
-        to: to
-        triggers:
-        - name: name
-          value: ""
-        - name: name
-          value: ""
-        value: value
-        transactionHash: transactionHash
-      properties:
-        transactionHash:
-          type: string
-        contract:
-          type: string
-        logIndex:
-          type: string
-        from:
-          type: string
-        to:
-          type: string
-        value:
-          type: string
-        tokenDecimals:
-          type: string
-        tokenName:
-          type: string
-        tokenSymbol:
-          type: string
-        valueWithDecimals:
-          type: string
-        triggers:
-          items:
-            $ref: '#/components/schemas/TriggerOutput'
-          type: array
-      required:
-      - contract
-      - from
-      - logIndex
-      - to
-      - tokenDecimals
-      - tokenName
-      - tokenSymbol
-      - transactionHash
-      - value
-      type: object
-    IERC20Approval:
-      additionalProperties: false
-      example:
-        owner: owner
-        logIndex: logIndex
-        tokenSymbol: tokenSymbol
-        spender: spender
-        tokenDecimals: tokenDecimals
-        contract: contract
-        tokenName: tokenName
-        valueWithDecimals: valueWithDecimals
-        triggers:
-        - name: name
-          value: ""
-        - name: name
-          value: ""
-        value: value
-        transactionHash: transactionHash
-      properties:
-        transactionHash:
-          type: string
-        contract:
-          type: string
-        logIndex:
-          type: string
-        owner:
-          type: string
-        spender:
-          type: string
-        value:
-          type: string
-        tokenDecimals:
-          type: string
-        tokenName:
-          type: string
-        tokenSymbol:
-          type: string
-        valueWithDecimals:
-          type: string
-        triggers:
-          items:
-            $ref: '#/components/schemas/TriggerOutput'
-          type: array
-      required:
-      - contract
-      - logIndex
-      - owner
-      - spender
-      - tokenDecimals
-      - tokenName
-      - tokenSymbol
-      - transactionHash
-      - value
-      type: object
-    INFTTransfer:
-      additionalProperties: false
-      example:
-        amount: amount
-        logIndex: logIndex
-        tokenSymbol: tokenSymbol
-        tokenId: tokenId
-        tokenContractType: tokenContractType
-        contract: contract
-        tokenName: tokenName
-        from: from
-        to: to
-        triggers:
-        - name: name
-          value: ""
-        - name: name
-          value: ""
-        transactionHash: transactionHash
-        operator: operator
-      properties:
-        transactionHash:
-          type: string
-        contract:
-          type: string
-        logIndex:
-          type: string
-        tokenContractType:
-          type: string
-        tokenName:
-          type: string
-        tokenSymbol:
-          type: string
-        triggers:
-          items:
-            $ref: '#/components/schemas/TriggerOutput'
-          type: array
-        operator:
-          nullable: true
-          type: string
-        from:
-          type: string
-        to:
-          type: string
-        tokenId:
-          type: string
-        amount:
-          type: string
-      required:
-      - amount
-      - contract
-      - from
-      - logIndex
-      - operator
-      - to
-      - tokenContractType
-      - tokenId
-      - tokenName
-      - tokenSymbol
-      - transactionHash
-      type: object
-    INativeBalance:
-      additionalProperties: false
-      example:
-        address: address
-        balance: balance
-      properties:
-        address:
-          type: string
-        balance:
-          type: string
-      required:
-      - address
-      - balance
-      type: object
-    INFTApprovalERC721:
-      additionalProperties: false
-      example:
-        owner: owner
-        approved: approved
-        logIndex: logIndex
-        tokenId: tokenId
-        tokenSymbol: tokenSymbol
-        tokenContractType: tokenContractType
-        contract: contract
-        tokenName: tokenName
-        transactionHash: transactionHash
-      properties:
-        transactionHash:
-          type: string
-        contract:
-          type: string
-        logIndex:
-          type: string
-        owner:
-          type: string
-        approved:
-          type: string
-        tokenId:
-          type: string
-        tokenContractType:
-          type: string
-        tokenName:
-          type: string
-        tokenSymbol:
-          type: string
-      required:
-      - approved
-      - contract
-      - logIndex
-      - owner
-      - tokenContractType
-      - tokenId
-      - tokenName
-      - tokenSymbol
-      - transactionHash
-      type: object
-    INFTApprovalERC1155:
-      additionalProperties: false
-      example:
-        approved: true
-        logIndex: logIndex
-        tokenSymbol: tokenSymbol
-        tokenContractType: tokenContractType
-        contract: contract
-        tokenName: tokenName
-        transactionHash: transactionHash
-        account: account
-        operator: operator
-      properties:
-        transactionHash:
-          type: string
-        contract:
-          type: string
-        logIndex:
-          type: string
-        account:
-          type: string
-        operator:
-          type: string
-        approved:
-          type: boolean
-        tokenContractType:
-          type: string
-        tokenName:
-          type: string
-        tokenSymbol:
-          type: string
-      required:
-      - account
-      - approved
-      - contract
-      - logIndex
-      - operator
-      - tokenContractType
-      - tokenName
-      - tokenSymbol
-      - transactionHash
-      type: object
-    IOldNFTApproval:
-      additionalProperties: false
-      example:
-        ERC721:
-        - owner: owner
-          approved: approved
-          logIndex: logIndex
-          tokenId: tokenId
-          tokenSymbol: tokenSymbol
-          tokenContractType: tokenContractType
-          contract: contract
-          tokenName: tokenName
-          transactionHash: transactionHash
-        - owner: owner
-          approved: approved
-          logIndex: logIndex
-          tokenId: tokenId
-          tokenSymbol: tokenSymbol
-          tokenContractType: tokenContractType
-          contract: contract
-          tokenName: tokenName
-          transactionHash: transactionHash
-        ERC1155:
-        - approved: true
-          logIndex: logIndex
-          tokenSymbol: tokenSymbol
-          tokenContractType: tokenContractType
-          contract: contract
-          tokenName: tokenName
-          transactionHash: transactionHash
-          account: account
-          operator: operator
-        - approved: true
-          logIndex: logIndex
-          tokenSymbol: tokenSymbol
-          tokenContractType: tokenContractType
-          contract: contract
-          tokenName: tokenName
-          transactionHash: transactionHash
-          account: account
-          operator: operator
-      properties:
-        ERC721:
-          items:
-            $ref: '#/components/schemas/INFTApprovalERC721'
-          type: array
-        ERC1155:
-          items:
-            $ref: '#/components/schemas/INFTApprovalERC1155'
-          type: array
-      required:
-      - ERC1155
-      - ERC721
-      type: object
-    INFTApproval:
-      additionalProperties: false
-      example:
-        logIndex: logIndex
-        tokenSymbol: tokenSymbol
-        tokenId: tokenId
-        tokenContractType: tokenContractType
-        contract: contract
-        approvedAll: true
-        tokenName: tokenName
-        transactionHash: transactionHash
-        account: account
-        operator: operator
-      properties:
-        transactionHash:
-          type: string
-        contract:
-          type: string
-        logIndex:
-          type: string
-        tokenContractType:
-          type: string
-        tokenName:
-          type: string
-        tokenSymbol:
-          type: string
-        account:
-          type: string
-        operator:
-          type: string
-        approvedAll:
-          type: boolean
-        tokenId:
-          nullable: true
-          type: string
-      required:
-      - account
-      - approvedAll
-      - contract
-      - logIndex
-      - operator
-      - tokenContractType
-      - tokenId
-      - tokenName
-      - tokenSymbol
-      - transactionHash
-      type: object
-    IWebhook:
-      additionalProperties: false
-      example:
-        nftApprovals:
-          ERC721:
-          - owner: owner
-            approved: approved
-            logIndex: logIndex
-            tokenId: tokenId
-            tokenSymbol: tokenSymbol
-            tokenContractType: tokenContractType
-            contract: contract
-            tokenName: tokenName
-            transactionHash: transactionHash
-          - owner: owner
-            approved: approved
-            logIndex: logIndex
-            tokenId: tokenId
-            tokenSymbol: tokenSymbol
-            tokenContractType: tokenContractType
-            contract: contract
-            tokenName: tokenName
-            transactionHash: transactionHash
-          ERC1155:
-          - approved: true
-            logIndex: logIndex
-            tokenSymbol: tokenSymbol
-            tokenContractType: tokenContractType
-            contract: contract
-            tokenName: tokenName
-            transactionHash: transactionHash
-            account: account
-            operator: operator
-          - approved: true
-            logIndex: logIndex
-            tokenSymbol: tokenSymbol
-            tokenContractType: tokenContractType
-            contract: contract
-            tokenName: tokenName
-            transactionHash: transactionHash
-            account: account
-            operator: operator
-        streamId: streamId
-        nftTransfers:
-        - amount: amount
-          logIndex: logIndex
-          tokenSymbol: tokenSymbol
-          tokenId: tokenId
-          tokenContractType: tokenContractType
-          contract: contract
-          tokenName: tokenName
-          from: from
-          to: to
-          triggers:
-          - name: name
-            value: ""
-          - name: name
-            value: ""
-          transactionHash: transactionHash
-          operator: operator
-        - amount: amount
-          logIndex: logIndex
-          tokenSymbol: tokenSymbol
-          tokenId: tokenId
-          tokenContractType: tokenContractType
-          contract: contract
-          tokenName: tokenName
-          from: from
-          to: to
-          triggers:
-          - name: name
-            value: ""
-          - name: name
-            value: ""
-          transactionHash: transactionHash
-          operator: operator
-        abi:
-        - {}
-        - {}
-        txsInternal:
-        - gas: gas
-          from: from
-          to: to
-          value: value
-          transactionHash: transactionHash
-        - gas: gas
-          from: from
-          to: to
-          value: value
-          transactionHash: transactionHash
-        erc20Approvals:
-        - owner: owner
-          logIndex: logIndex
-          tokenSymbol: tokenSymbol
-          spender: spender
-          tokenDecimals: tokenDecimals
-          contract: contract
-          tokenName: tokenName
-          valueWithDecimals: valueWithDecimals
-          triggers:
-          - name: name
-            value: ""
-          - name: name
-            value: ""
-          value: value
-          transactionHash: transactionHash
-        - owner: owner
-          logIndex: logIndex
-          tokenSymbol: tokenSymbol
-          spender: spender
-          tokenDecimals: tokenDecimals
-          contract: contract
-          tokenName: tokenName
-          valueWithDecimals: valueWithDecimals
-          triggers:
-          - name: name
-            value: ""
-          - name: name
-            value: ""
-          value: value
-          transactionHash: transactionHash
-        confirmed: true
-        txs:
-        - signed_transaction: signed_transaction
-          raw_transaction: raw_transaction
-          data: data
-          moon_scan_url: moon_scan_url
-          signature: signature
-          transactions:
-          - signed_transaction: signed_transaction
-            raw_transaction: raw_transaction
-            moon_scan_url: moon_scan_url
-            signature: signature
-            signed_message: signed_message
-            userop_transaction: userop_transaction
-            userOps:
-            - data: data
-              maxPriorityFeePerGas: maxPriorityFeePerGas
-              from: from
-              to: to
-              maxFeePerGas: maxFeePerGas
-              nonce: nonce
-              value: value
-            - data: data
-              maxPriorityFeePerGas: maxPriorityFeePerGas
-              from: from
-              to: to
-              maxFeePerGas: maxFeePerGas
-              nonce: nonce
-              value: value
-            transaction_hash: transaction_hash
-            transaction:
-              gas_price: gas_price
-              blob_hashes:
-              - blob_hashes
-              - blob_hashes
-              chain_id: 5.637376656633329
-              data: data
-              gas_fee_cap: gas_fee_cap
-              type: 5.962133916683182
-              blob_gas_fee_cap: blob_gas_fee_cap
-              nonce: 2.3021358869347655
-              r: r
-              gas_tip_cap: gas_tip_cap
-              s: s
-              v: v
-              gas: gas
-              blob_gas: blob_gas
-              from: from
-              to: to
-              value: value
-          - signed_transaction: signed_transaction
-            raw_transaction: raw_transaction
-            moon_scan_url: moon_scan_url
-            signature: signature
-            signed_message: signed_message
-            userop_transaction: userop_transaction
-            userOps:
-            - data: data
-              maxPriorityFeePerGas: maxPriorityFeePerGas
-              from: from
-              to: to
-              maxFeePerGas: maxFeePerGas
-              nonce: nonce
-              value: value
-            - data: data
-              maxPriorityFeePerGas: maxPriorityFeePerGas
-              from: from
-              to: to
-              maxFeePerGas: maxFeePerGas
-              nonce: nonce
-              value: value
-            transaction_hash: transaction_hash
-            transaction:
-              gas_price: gas_price
-              blob_hashes:
-              - blob_hashes
-              - blob_hashes
-              chain_id: 5.637376656633329
-              data: data
-              gas_fee_cap: gas_fee_cap
-              type: 5.962133916683182
-              blob_gas_fee_cap: blob_gas_fee_cap
-              nonce: 2.3021358869347655
-              r: r
-              gas_tip_cap: gas_tip_cap
-              s: s
-              v: v
-              gas: gas
-              blob_gas: blob_gas
-              from: from
-              to: to
-              value: value
-          userop_transaction: userop_transaction
-          userOps:
-          - data: data
-            maxPriorityFeePerGas: maxPriorityFeePerGas
-            from: from
-            to: to
-            maxFeePerGas: maxFeePerGas
-            nonce: nonce
-            value: value
-          - data: data
-            maxPriorityFeePerGas: maxPriorityFeePerGas
-            from: from
-            to: to
-            maxFeePerGas: maxFeePerGas
-            nonce: nonce
-            value: value
-          transaction_hash: transaction_hash
-          transaction:
-            gas_price: gas_price
-            blob_hashes:
-            - blob_hashes
-            - blob_hashes
-            chain_id: 5.637376656633329
-            data: data
-            gas_fee_cap: gas_fee_cap
-            type: 5.962133916683182
-            blob_gas_fee_cap: blob_gas_fee_cap
-            nonce: 2.3021358869347655
-            r: r
-            gas_tip_cap: gas_tip_cap
-            s: s
-            v: v
-            gas: gas
-            blob_gas: blob_gas
-            from: from
-            to: to
-            value: value
-        - signed_transaction: signed_transaction
-          raw_transaction: raw_transaction
-          data: data
-          moon_scan_url: moon_scan_url
-          signature: signature
-          transactions:
-          - signed_transaction: signed_transaction
-            raw_transaction: raw_transaction
-            moon_scan_url: moon_scan_url
-            signature: signature
-            signed_message: signed_message
-            userop_transaction: userop_transaction
-            userOps:
-            - data: data
-              maxPriorityFeePerGas: maxPriorityFeePerGas
-              from: from
-              to: to
-              maxFeePerGas: maxFeePerGas
-              nonce: nonce
-              value: value
-            - data: data
-              maxPriorityFeePerGas: maxPriorityFeePerGas
-              from: from
-              to: to
-              maxFeePerGas: maxFeePerGas
-              nonce: nonce
-              value: value
-            transaction_hash: transaction_hash
-            transaction:
-              gas_price: gas_price
-              blob_hashes:
-              - blob_hashes
-              - blob_hashes
-              chain_id: 5.637376656633329
-              data: data
-              gas_fee_cap: gas_fee_cap
-              type: 5.962133916683182
-              blob_gas_fee_cap: blob_gas_fee_cap
-              nonce: 2.3021358869347655
-              r: r
-              gas_tip_cap: gas_tip_cap
-              s: s
-              v: v
-              gas: gas
-              blob_gas: blob_gas
-              from: from
-              to: to
-              value: value
-          - signed_transaction: signed_transaction
-            raw_transaction: raw_transaction
-            moon_scan_url: moon_scan_url
-            signature: signature
-            signed_message: signed_message
-            userop_transaction: userop_transaction
-            userOps:
-            - data: data
-              maxPriorityFeePerGas: maxPriorityFeePerGas
-              from: from
-              to: to
-              maxFeePerGas: maxFeePerGas
-              nonce: nonce
-              value: value
-            - data: data
-              maxPriorityFeePerGas: maxPriorityFeePerGas
-              from: from
-              to: to
-              maxFeePerGas: maxFeePerGas
-              nonce: nonce
-              value: value
-            transaction_hash: transaction_hash
-            transaction:
-              gas_price: gas_price
-              blob_hashes:
-              - blob_hashes
-              - blob_hashes
-              chain_id: 5.637376656633329
-              data: data
-              gas_fee_cap: gas_fee_cap
-              type: 5.962133916683182
-              blob_gas_fee_cap: blob_gas_fee_cap
-              nonce: 2.3021358869347655
-              r: r
-              gas_tip_cap: gas_tip_cap
-              s: s
-              v: v
-              gas: gas
-              blob_gas: blob_gas
-              from: from
-              to: to
-              value: value
-          userop_transaction: userop_transaction
-          userOps:
-          - data: data
-            maxPriorityFeePerGas: maxPriorityFeePerGas
-            from: from
-            to: to
-            maxFeePerGas: maxFeePerGas
-            nonce: nonce
-            value: value
-          - data: data
-            maxPriorityFeePerGas: maxPriorityFeePerGas
-            from: from
-            to: to
-            maxFeePerGas: maxFeePerGas
-            nonce: nonce
-            value: value
-          transaction_hash: transaction_hash
-          transaction:
-            gas_price: gas_price
-            blob_hashes:
-            - blob_hashes
-            - blob_hashes
-            chain_id: 5.637376656633329
-            data: data
-            gas_fee_cap: gas_fee_cap
-            type: 5.962133916683182
-            blob_gas_fee_cap: blob_gas_fee_cap
-            nonce: 2.3021358869347655
-            r: r
-            gas_tip_cap: gas_tip_cap
-            s: s
-            v: v
-            gas: gas
-            blob_gas: blob_gas
-            from: from
-            to: to
-            value: value
-        retries: 0.8008281904610115
-        nftTokenApprovals:
-        - logIndex: logIndex
-          tokenSymbol: tokenSymbol
-          tokenId: tokenId
-          tokenContractType: tokenContractType
-          contract: contract
-          approvedAll: true
-          tokenName: tokenName
-          transactionHash: transactionHash
-          account: account
-          operator: operator
-        - logIndex: logIndex
-          tokenSymbol: tokenSymbol
-          tokenId: tokenId
-          tokenContractType: tokenContractType
-          contract: contract
-          approvedAll: true
-          tokenName: tokenName
-          transactionHash: transactionHash
-          account: account
-          operator: operator
-        chainId: chainId
-        nativeBalances:
-        - address: address
-          balance: balance
-        - address: address
-          balance: balance
-        erc20Transfers:
-        - logIndex: logIndex
-          tokenSymbol: tokenSymbol
-          tokenDecimals: tokenDecimals
-          contract: contract
-          tokenName: tokenName
-          valueWithDecimals: valueWithDecimals
-          from: from
-          to: to
-          triggers:
-          - name: name
-            value: ""
-          - name: name
-            value: ""
-          value: value
-          transactionHash: transactionHash
-        - logIndex: logIndex
-          tokenSymbol: tokenSymbol
-          tokenDecimals: tokenDecimals
-          contract: contract
-          tokenName: tokenName
-          valueWithDecimals: valueWithDecimals
-          from: from
-          to: to
-          triggers:
-          - name: name
-            value: ""
-          - name: name
-            value: ""
-          value: value
-          transactionHash: transactionHash
-        block:
-          number: number
-          hash: hash
-          timestamp: timestamp
-        tag: tag
-        logs:
-        - topic1: topic1
-          topic2: topic2
-          logIndex: logIndex
-          address: address
-          topic0: topic0
-          data: data
-          topic3: topic3
-          triggers:
-          - name: name
-            value: ""
-          - name: name
-            value: ""
-          transactionHash: transactionHash
-        - topic1: topic1
-          topic2: topic2
-          logIndex: logIndex
-          address: address
-          topic0: topic0
-          data: data
-          topic3: topic3
-          triggers:
-          - name: name
-            value: ""
-          - name: name
-            value: ""
-          transactionHash: transactionHash
-      properties:
-        block:
-          $ref: '#/components/schemas/Block'
-        chainId:
-          type: string
-        logs:
-          items:
-            $ref: '#/components/schemas/Log'
-          type: array
-        txs:
-          items:
-            $ref: '#/components/schemas/Transaction'
-          type: array
-        txsInternal:
-          items:
-            $ref: '#/components/schemas/InternalTransaction'
-          type: array
-        abi:
-          items:
-            $ref: '#/components/schemas/AbiItem'
-          type: array
-        retries:
-          format: double
-          type: number
-        confirmed:
-          type: boolean
-        tag:
-          type: string
-        streamId:
-          type: string
-        erc20Transfers:
-          items:
-            $ref: '#/components/schemas/IERC20Transfer'
-          type: array
-        erc20Approvals:
-          items:
-            $ref: '#/components/schemas/IERC20Approval'
-          type: array
-        nftTransfers:
-          items:
-            $ref: '#/components/schemas/INFTTransfer'
-          type: array
-        nativeBalances:
-          items:
-            $ref: '#/components/schemas/INativeBalance'
-          type: array
-        nftApprovals:
-          $ref: '#/components/schemas/IOldNFTApproval'
-        nftTokenApprovals:
-          items:
-            $ref: '#/components/schemas/INFTApproval'
-          type: array
-      required:
-      - abi
-      - block
-      - chainId
-      - confirmed
-      - erc20Approvals
-      - erc20Transfers
-      - logs
-      - nativeBalances
-      - nftApprovals
-      - nftTokenApprovals
-      - nftTransfers
-      - retries
-      - streamId
-      - tag
-      - txs
-      - txsInternal
-      type: object
-    TatumTransactionEvent:
-      example:
-        amount: amount
-        chain: chain
-        address: address
-        test: true
-        mempool: true
-        subscriptionType: subscriptionType
-        blockNumber: 0.8008281904610115
-        txId: txId
-        currency: currency
-        counterAddress: counterAddress
-      properties:
-        amount:
-          type: string
-        test:
-          type: boolean
-        counterAddress:
-          type: string
-        address:
-          type: string
-        mempool:
-          type: boolean
-        subscriptionType:
-          type: string
-        blockNumber:
-          format: double
-          type: number
-        txId:
-          type: string
-        chain:
-          type: string
-        currency:
-          type: string
-      required:
-      - address
-      - amount
-      - blockNumber
-      - chain
-      - counterAddress
-      - currency
-      - mempool
-      - subscriptionType
-      - test
-      - txId
-      type: object
     PingResponse:
       additionalProperties: false
       example:
@@ -7484,6 +6224,36 @@ components:
           type: string
         private_key:
           type: string
+      type: object
+    RippleTransactionOutput:
+      additionalProperties: false
+      example:
+        signedTx: signedTx
+        transaction_hash: transaction_hash
+      properties:
+        signedTx:
+          type: string
+        transaction_hash:
+          type: string
+      type: object
+    RippleAPIResponse:
+      additionalProperties: false
+      example:
+        data:
+          signedTx: signedTx
+          transaction_hash: transaction_hash
+        success: true
+        message: message
+      properties:
+        success:
+          type: boolean
+        message:
+          type: string
+        data:
+          $ref: '#/components/schemas/RippleTransactionOutput'
+      required:
+      - message
+      - success
       type: object
     RippleTransactionInput:
       additionalProperties: false
@@ -7514,6 +6284,36 @@ components:
         private_key:
           type: string
       type: object
+    SolanaTransactionOutput:
+      additionalProperties: false
+      example:
+        signedTx: signedTx
+        transaction_hash: transaction_hash
+      properties:
+        signedTx:
+          type: string
+        transaction_hash:
+          type: string
+      type: object
+    SolanaAPIResponse:
+      additionalProperties: false
+      example:
+        data:
+          signedTx: signedTx
+          transaction_hash: transaction_hash
+        success: true
+        message: message
+      properties:
+        success:
+          type: boolean
+        message:
+          type: string
+        data:
+          $ref: '#/components/schemas/SolanaTransactionOutput'
+      required:
+      - message
+      - success
+      type: object
     SolanaTransactionInput:
       additionalProperties: false
       example:
@@ -7542,6 +6342,36 @@ components:
           type: string
         private_key:
           type: string
+      type: object
+    TronTransactionOutput:
+      additionalProperties: false
+      example:
+        signedTx: signedTx
+        transaction_hash: transaction_hash
+      properties:
+        signedTx:
+          type: string
+        transaction_hash:
+          type: string
+      type: object
+    TronAPIResponse:
+      additionalProperties: false
+      example:
+        data:
+          signedTx: signedTx
+          transaction_hash: transaction_hash
+        success: true
+        message: message
+      properties:
+        success:
+          type: boolean
+        message:
+          type: string
+        data:
+          $ref: '#/components/schemas/TronTransactionOutput'
+      required:
+      - message
+      - success
       type: object
     TronTransactionInput:
       additionalProperties: false
@@ -7623,21 +6453,6 @@ components:
         amount_b:
           type: string
       type: object
-    AccountControllerResponse_data:
-      anyOf:
-      - $ref: '#/components/schemas/NonceResponse'
-      - $ref: '#/components/schemas/BalanceResponse'
-      - $ref: '#/components/schemas/Transaction'
-      - $ref: '#/components/schemas/AccountResponse'
-      - $ref: '#/components/schemas/SignMessage'
-      - $ref: '#/components/schemas/EnsResolveResponse'
-      - $ref: '#/components/schemas/ENSReverseResolveResponse'
-      - $ref: '#/components/schemas/AaveReservesData'
-      - $ref: '#/components/schemas/Erc20Response'
-      - $ref: '#/components/schemas/Erc1155Response'
-      - $ref: '#/components/schemas/BroadCastRawTransactionResponse'
-      - $ref: '#/components/schemas/BitcoinTransactionOutput'
-      - $ref: '#/components/schemas/Erc721Response'
     TransactionResponse_tx:
       example:
         data: data

@@ -1,6 +1,6 @@
 # EnsApi
 
-All URIs are relative to *https://vault-api.usemoon.ai*
+All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -9,7 +9,7 @@ All URIs are relative to *https://vault-api.usemoon.ai*
 
 <a id="resolve"></a>
 # **resolve**
-> AccountControllerResponse resolve(authorization, ensResolveInput)
+> EnsResolveAPIResponse resolve(authorization, ensResolveInput)
 
 
 
@@ -26,7 +26,7 @@ import org.usemoonai.moonsdk.api.EnsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -44,7 +44,7 @@ public class Example {
     String authorization = "authorization_example"; // String | 
     EnsResolveInput ensResolveInput = new EnsResolveInput(); // EnsResolveInput | 
     try {
-      AccountControllerResponse result = apiInstance.resolve(authorization, ensResolveInput);
+      EnsResolveAPIResponse result = apiInstance.resolve(authorization, ensResolveInput);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling EnsApi#resolve");
@@ -66,7 +66,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**EnsResolveAPIResponse**](EnsResolveAPIResponse.md)
 
 ### Authorization
 

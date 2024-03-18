@@ -1,6 +1,6 @@
 # YearnApi
 
-All URIs are relative to *https://vault-api.usemoon.ai*
+All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -12,7 +12,7 @@ All URIs are relative to *https://vault-api.usemoon.ai*
 
 <a id="addLiquidity"></a>
 # **addLiquidity**
-> AccountControllerResponse addLiquidity(authorization, name, inputBody)
+> TransactionAPIResponse addLiquidity(authorization, name, inputBody)
 
 
 
@@ -29,7 +29,7 @@ import org.usemoonai.moonsdk.api.YearnApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -48,7 +48,7 @@ public class Example {
     String name = "name_example"; // String | 
     InputBody inputBody = new InputBody(); // InputBody | 
     try {
-      AccountControllerResponse result = apiInstance.addLiquidity(authorization, name, inputBody);
+      TransactionAPIResponse result = apiInstance.addLiquidity(authorization, name, inputBody);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling YearnApi#addLiquidity");
@@ -71,7 +71,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 
@@ -89,7 +89,7 @@ public class Example {
 
 <a id="addLiquidityWeth"></a>
 # **addLiquidityWeth**
-> AccountControllerResponse addLiquidityWeth(authorization, name, inputBody)
+> TransactionAPIResponse addLiquidityWeth(authorization, name, inputBody)
 
 
 
@@ -106,7 +106,7 @@ import org.usemoonai.moonsdk.api.YearnApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -125,7 +125,7 @@ public class Example {
     String name = "name_example"; // String | 
     InputBody inputBody = new InputBody(); // InputBody | 
     try {
-      AccountControllerResponse result = apiInstance.addLiquidityWeth(authorization, name, inputBody);
+      TransactionAPIResponse result = apiInstance.addLiquidityWeth(authorization, name, inputBody);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling YearnApi#addLiquidityWeth");
@@ -148,7 +148,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 
@@ -166,7 +166,7 @@ public class Example {
 
 <a id="removeLiquidity"></a>
 # **removeLiquidity**
-> AccountControllerResponse removeLiquidity(authorization, name, inputBody)
+> TransactionAPIResponse removeLiquidity(authorization, name, inputBody)
 
 
 
@@ -183,7 +183,7 @@ import org.usemoonai.moonsdk.api.YearnApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -202,7 +202,7 @@ public class Example {
     String name = "name_example"; // String | 
     InputBody inputBody = new InputBody(); // InputBody | 
     try {
-      AccountControllerResponse result = apiInstance.removeLiquidity(authorization, name, inputBody);
+      TransactionAPIResponse result = apiInstance.removeLiquidity(authorization, name, inputBody);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling YearnApi#removeLiquidity");
@@ -225,7 +225,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 
@@ -243,7 +243,7 @@ public class Example {
 
 <a id="removeLiquidityWeth"></a>
 # **removeLiquidityWeth**
-> AccountControllerResponse removeLiquidityWeth(authorization, name, inputBody)
+> TransactionAPIResponse removeLiquidityWeth(authorization, name, inputBody)
 
 
 
@@ -260,7 +260,7 @@ import org.usemoonai.moonsdk.api.YearnApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -279,7 +279,7 @@ public class Example {
     String name = "name_example"; // String | 
     InputBody inputBody = new InputBody(); // InputBody | 
     try {
-      AccountControllerResponse result = apiInstance.removeLiquidityWeth(authorization, name, inputBody);
+      TransactionAPIResponse result = apiInstance.removeLiquidityWeth(authorization, name, inputBody);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling YearnApi#removeLiquidityWeth");
@@ -302,7 +302,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 

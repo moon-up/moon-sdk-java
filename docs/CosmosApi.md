@@ -1,6 +1,6 @@
 # CosmosApi
 
-All URIs are relative to *https://vault-api.usemoon.ai*
+All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -12,7 +12,7 @@ All URIs are relative to *https://vault-api.usemoon.ai*
 
 <a id="createCosmosAccount"></a>
 # **createCosmosAccount**
-> AccountControllerResponse createCosmosAccount(authorization, cosmosInput)
+> AccountAPIResponse createCosmosAccount(authorization, cosmosInput)
 
 
 
@@ -29,7 +29,7 @@ import org.usemoonai.moonsdk.api.CosmosApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -47,7 +47,7 @@ public class Example {
     String authorization = "authorization_example"; // String | 
     CosmosInput cosmosInput = new CosmosInput(); // CosmosInput | 
     try {
-      AccountControllerResponse result = apiInstance.createCosmosAccount(authorization, cosmosInput);
+      AccountAPIResponse result = apiInstance.createCosmosAccount(authorization, cosmosInput);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling CosmosApi#createCosmosAccount");
@@ -69,7 +69,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**AccountAPIResponse**](AccountAPIResponse.md)
 
 ### Authorization
 
@@ -87,7 +87,7 @@ public class Example {
 
 <a id="getCosmosAccount"></a>
 # **getCosmosAccount**
-> AccountControllerResponse getCosmosAccount(authorization, accountName)
+> AccountAPIResponse getCosmosAccount(authorization, accountName)
 
 
 
@@ -104,7 +104,7 @@ import org.usemoonai.moonsdk.api.CosmosApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -122,7 +122,7 @@ public class Example {
     String authorization = "authorization_example"; // String | 
     String accountName = "accountName_example"; // String | 
     try {
-      AccountControllerResponse result = apiInstance.getCosmosAccount(authorization, accountName);
+      AccountAPIResponse result = apiInstance.getCosmosAccount(authorization, accountName);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling CosmosApi#getCosmosAccount");
@@ -144,7 +144,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**AccountAPIResponse**](AccountAPIResponse.md)
 
 ### Authorization
 
@@ -162,7 +162,7 @@ public class Example {
 
 <a id="listCosmosAccounts"></a>
 # **listCosmosAccounts**
-> AccountControllerResponse listCosmosAccounts(authorization)
+> AccountAPIResponse listCosmosAccounts(authorization)
 
 
 
@@ -179,7 +179,7 @@ import org.usemoonai.moonsdk.api.CosmosApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -196,7 +196,7 @@ public class Example {
     CosmosApi apiInstance = new CosmosApi(defaultClient);
     String authorization = "authorization_example"; // String | 
     try {
-      AccountControllerResponse result = apiInstance.listCosmosAccounts(authorization);
+      AccountAPIResponse result = apiInstance.listCosmosAccounts(authorization);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling CosmosApi#listCosmosAccounts");
@@ -217,7 +217,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**AccountAPIResponse**](AccountAPIResponse.md)
 
 ### Authorization
 
@@ -235,7 +235,7 @@ public class Example {
 
 <a id="signCosmosTransaction"></a>
 # **signCosmosTransaction**
-> AccountControllerResponse signCosmosTransaction(authorization, accountName, cosmosTransactionInput)
+> CosmosAPIResponse signCosmosTransaction(authorization, accountName, cosmosTransactionInput)
 
 
 
@@ -252,7 +252,7 @@ import org.usemoonai.moonsdk.api.CosmosApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -271,7 +271,7 @@ public class Example {
     String accountName = "accountName_example"; // String | 
     CosmosTransactionInput cosmosTransactionInput = new CosmosTransactionInput(); // CosmosTransactionInput | 
     try {
-      AccountControllerResponse result = apiInstance.signCosmosTransaction(authorization, accountName, cosmosTransactionInput);
+      CosmosAPIResponse result = apiInstance.signCosmosTransaction(authorization, accountName, cosmosTransactionInput);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling CosmosApi#signCosmosTransaction");
@@ -294,7 +294,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**CosmosAPIResponse**](CosmosAPIResponse.md)
 
 ### Authorization
 

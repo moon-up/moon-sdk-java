@@ -1,6 +1,6 @@
 # LitecoinApi
 
-All URIs are relative to *https://vault-api.usemoon.ai*
+All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -12,7 +12,7 @@ All URIs are relative to *https://vault-api.usemoon.ai*
 
 <a id="createLitecoinAccount"></a>
 # **createLitecoinAccount**
-> AccountControllerResponse createLitecoinAccount(authorization, litecoinInput)
+> AccountAPIResponse createLitecoinAccount(authorization, litecoinInput)
 
 
 
@@ -29,7 +29,7 @@ import org.usemoonai.moonsdk.api.LitecoinApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -47,7 +47,7 @@ public class Example {
     String authorization = "authorization_example"; // String | 
     LitecoinInput litecoinInput = new LitecoinInput(); // LitecoinInput | 
     try {
-      AccountControllerResponse result = apiInstance.createLitecoinAccount(authorization, litecoinInput);
+      AccountAPIResponse result = apiInstance.createLitecoinAccount(authorization, litecoinInput);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling LitecoinApi#createLitecoinAccount");
@@ -69,7 +69,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**AccountAPIResponse**](AccountAPIResponse.md)
 
 ### Authorization
 
@@ -87,7 +87,7 @@ public class Example {
 
 <a id="getLitecoinAccount"></a>
 # **getLitecoinAccount**
-> AccountControllerResponse getLitecoinAccount(authorization, accountName)
+> AccountAPIResponse getLitecoinAccount(authorization, accountName)
 
 
 
@@ -104,7 +104,7 @@ import org.usemoonai.moonsdk.api.LitecoinApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -122,7 +122,7 @@ public class Example {
     String authorization = "authorization_example"; // String | 
     String accountName = "accountName_example"; // String | 
     try {
-      AccountControllerResponse result = apiInstance.getLitecoinAccount(authorization, accountName);
+      AccountAPIResponse result = apiInstance.getLitecoinAccount(authorization, accountName);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling LitecoinApi#getLitecoinAccount");
@@ -144,7 +144,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**AccountAPIResponse**](AccountAPIResponse.md)
 
 ### Authorization
 
@@ -162,7 +162,7 @@ public class Example {
 
 <a id="listLitecoinAccounts"></a>
 # **listLitecoinAccounts**
-> AccountControllerResponse listLitecoinAccounts(authorization)
+> AccountAPIResponse listLitecoinAccounts(authorization)
 
 
 
@@ -179,7 +179,7 @@ import org.usemoonai.moonsdk.api.LitecoinApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -196,7 +196,7 @@ public class Example {
     LitecoinApi apiInstance = new LitecoinApi(defaultClient);
     String authorization = "authorization_example"; // String | 
     try {
-      AccountControllerResponse result = apiInstance.listLitecoinAccounts(authorization);
+      AccountAPIResponse result = apiInstance.listLitecoinAccounts(authorization);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling LitecoinApi#listLitecoinAccounts");
@@ -217,7 +217,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**AccountAPIResponse**](AccountAPIResponse.md)
 
 ### Authorization
 
@@ -235,7 +235,7 @@ public class Example {
 
 <a id="signLitecoinTransaction"></a>
 # **signLitecoinTransaction**
-> AccountControllerResponse signLitecoinTransaction(authorization, accountName, litecoinTransactionInput)
+> LitecoinAPIResponse signLitecoinTransaction(authorization, accountName, litecoinTransactionInput)
 
 
 
@@ -252,7 +252,7 @@ import org.usemoonai.moonsdk.api.LitecoinApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -271,7 +271,7 @@ public class Example {
     String accountName = "accountName_example"; // String | 
     LitecoinTransactionInput litecoinTransactionInput = new LitecoinTransactionInput(); // LitecoinTransactionInput | 
     try {
-      AccountControllerResponse result = apiInstance.signLitecoinTransaction(authorization, accountName, litecoinTransactionInput);
+      LitecoinAPIResponse result = apiInstance.signLitecoinTransaction(authorization, accountName, litecoinTransactionInput);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling LitecoinApi#signLitecoinTransaction");
@@ -294,7 +294,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**LitecoinAPIResponse**](LitecoinAPIResponse.md)
 
 ### Authorization
 

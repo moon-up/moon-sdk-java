@@ -1,6 +1,6 @@
 # Erc721Api
 
-All URIs are relative to *https://vault-api.usemoon.ai*
+All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -20,7 +20,7 @@ All URIs are relative to *https://vault-api.usemoon.ai*
 
 <a id="approve"></a>
 # **approve**
-> AccountControllerResponse approve(authorization, name, erc721Request)
+> TransactionAPIResponse approve(authorization, name, erc721Request)
 
 
 
@@ -37,7 +37,7 @@ import org.usemoonai.moonsdk.api.Erc721Api;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -56,7 +56,7 @@ public class Example {
     String name = "name_example"; // String | 
     Erc721Request erc721Request = new Erc721Request(); // Erc721Request | 
     try {
-      AccountControllerResponse result = apiInstance.approve(authorization, name, erc721Request);
+      TransactionAPIResponse result = apiInstance.approve(authorization, name, erc721Request);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling Erc721Api#approve");
@@ -79,7 +79,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 
@@ -97,7 +97,7 @@ public class Example {
 
 <a id="balanceOf"></a>
 # **balanceOf**
-> AccountControllerResponse balanceOf(authorization, name, erc721Request)
+> TransactionAPIResponse balanceOf(authorization, name, erc721Request)
 
 
 
@@ -114,7 +114,7 @@ import org.usemoonai.moonsdk.api.Erc721Api;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -133,7 +133,7 @@ public class Example {
     String name = "name_example"; // String | 
     Erc721Request erc721Request = new Erc721Request(); // Erc721Request | 
     try {
-      AccountControllerResponse result = apiInstance.balanceOf(authorization, name, erc721Request);
+      TransactionAPIResponse result = apiInstance.balanceOf(authorization, name, erc721Request);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling Erc721Api#balanceOf");
@@ -156,7 +156,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 
@@ -174,7 +174,7 @@ public class Example {
 
 <a id="getApproved"></a>
 # **getApproved**
-> AccountControllerResponse getApproved(authorization, name, erc721Request)
+> TransactionAPIResponse getApproved(authorization, name, erc721Request)
 
 
 
@@ -191,7 +191,7 @@ import org.usemoonai.moonsdk.api.Erc721Api;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -210,7 +210,7 @@ public class Example {
     String name = "name_example"; // String | 
     Erc721Request erc721Request = new Erc721Request(); // Erc721Request | 
     try {
-      AccountControllerResponse result = apiInstance.getApproved(authorization, name, erc721Request);
+      TransactionAPIResponse result = apiInstance.getApproved(authorization, name, erc721Request);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling Erc721Api#getApproved");
@@ -233,7 +233,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 
@@ -251,7 +251,7 @@ public class Example {
 
 <a id="isApprovedForAll"></a>
 # **isApprovedForAll**
-> AccountControllerResponse isApprovedForAll(authorization, name, erc721Request)
+> TransactionAPIResponse isApprovedForAll(authorization, name, erc721Request)
 
 
 
@@ -268,7 +268,7 @@ import org.usemoonai.moonsdk.api.Erc721Api;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -287,7 +287,7 @@ public class Example {
     String name = "name_example"; // String | 
     Erc721Request erc721Request = new Erc721Request(); // Erc721Request | 
     try {
-      AccountControllerResponse result = apiInstance.isApprovedForAll(authorization, name, erc721Request);
+      TransactionAPIResponse result = apiInstance.isApprovedForAll(authorization, name, erc721Request);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling Erc721Api#isApprovedForAll");
@@ -310,7 +310,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 
@@ -328,7 +328,7 @@ public class Example {
 
 <a id="name"></a>
 # **name**
-> AccountControllerResponse name(authorization, name, erc721Request)
+> TransactionAPIResponse name(authorization, name, erc721Request)
 
 
 
@@ -345,7 +345,7 @@ import org.usemoonai.moonsdk.api.Erc721Api;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -364,7 +364,7 @@ public class Example {
     String name = "name_example"; // String | 
     Erc721Request erc721Request = new Erc721Request(); // Erc721Request | 
     try {
-      AccountControllerResponse result = apiInstance.name(authorization, name, erc721Request);
+      TransactionAPIResponse result = apiInstance.name(authorization, name, erc721Request);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling Erc721Api#name");
@@ -387,7 +387,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 
@@ -405,7 +405,7 @@ public class Example {
 
 <a id="ownerOf"></a>
 # **ownerOf**
-> AccountControllerResponse ownerOf(authorization, name, erc721Request)
+> TransactionAPIResponse ownerOf(authorization, name, erc721Request)
 
 
 
@@ -422,7 +422,7 @@ import org.usemoonai.moonsdk.api.Erc721Api;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -441,7 +441,7 @@ public class Example {
     String name = "name_example"; // String | 
     Erc721Request erc721Request = new Erc721Request(); // Erc721Request | 
     try {
-      AccountControllerResponse result = apiInstance.ownerOf(authorization, name, erc721Request);
+      TransactionAPIResponse result = apiInstance.ownerOf(authorization, name, erc721Request);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling Erc721Api#ownerOf");
@@ -464,7 +464,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 
@@ -482,7 +482,7 @@ public class Example {
 
 <a id="safeTransferFrom"></a>
 # **safeTransferFrom**
-> AccountControllerResponse safeTransferFrom(authorization, name, erc721Request)
+> TransactionAPIResponse safeTransferFrom(authorization, name, erc721Request)
 
 
 
@@ -499,7 +499,7 @@ import org.usemoonai.moonsdk.api.Erc721Api;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -518,7 +518,7 @@ public class Example {
     String name = "name_example"; // String | 
     Erc721Request erc721Request = new Erc721Request(); // Erc721Request | 
     try {
-      AccountControllerResponse result = apiInstance.safeTransferFrom(authorization, name, erc721Request);
+      TransactionAPIResponse result = apiInstance.safeTransferFrom(authorization, name, erc721Request);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling Erc721Api#safeTransferFrom");
@@ -541,7 +541,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 
@@ -559,7 +559,7 @@ public class Example {
 
 <a id="setApprovalForAll"></a>
 # **setApprovalForAll**
-> AccountControllerResponse setApprovalForAll(authorization, name, erc721Request)
+> TransactionAPIResponse setApprovalForAll(authorization, name, erc721Request)
 
 
 
@@ -576,7 +576,7 @@ import org.usemoonai.moonsdk.api.Erc721Api;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -595,7 +595,7 @@ public class Example {
     String name = "name_example"; // String | 
     Erc721Request erc721Request = new Erc721Request(); // Erc721Request | 
     try {
-      AccountControllerResponse result = apiInstance.setApprovalForAll(authorization, name, erc721Request);
+      TransactionAPIResponse result = apiInstance.setApprovalForAll(authorization, name, erc721Request);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling Erc721Api#setApprovalForAll");
@@ -618,7 +618,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 
@@ -636,7 +636,7 @@ public class Example {
 
 <a id="symbol"></a>
 # **symbol**
-> AccountControllerResponse symbol(authorization, name, erc721Request)
+> TransactionAPIResponse symbol(authorization, name, erc721Request)
 
 
 
@@ -653,7 +653,7 @@ import org.usemoonai.moonsdk.api.Erc721Api;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -672,7 +672,7 @@ public class Example {
     String name = "name_example"; // String | 
     Erc721Request erc721Request = new Erc721Request(); // Erc721Request | 
     try {
-      AccountControllerResponse result = apiInstance.symbol(authorization, name, erc721Request);
+      TransactionAPIResponse result = apiInstance.symbol(authorization, name, erc721Request);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling Erc721Api#symbol");
@@ -695,7 +695,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 
@@ -713,7 +713,7 @@ public class Example {
 
 <a id="tokenUri"></a>
 # **tokenUri**
-> AccountControllerResponse tokenUri(authorization, name, erc721Request)
+> TransactionAPIResponse tokenUri(authorization, name, erc721Request)
 
 
 
@@ -730,7 +730,7 @@ import org.usemoonai.moonsdk.api.Erc721Api;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -749,7 +749,7 @@ public class Example {
     String name = "name_example"; // String | 
     Erc721Request erc721Request = new Erc721Request(); // Erc721Request | 
     try {
-      AccountControllerResponse result = apiInstance.tokenUri(authorization, name, erc721Request);
+      TransactionAPIResponse result = apiInstance.tokenUri(authorization, name, erc721Request);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling Erc721Api#tokenUri");
@@ -772,7 +772,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 
@@ -790,7 +790,7 @@ public class Example {
 
 <a id="transfer"></a>
 # **transfer**
-> AccountControllerResponse transfer(authorization, name, erc721Request)
+> TransactionAPIResponse transfer(authorization, name, erc721Request)
 
 
 
@@ -807,7 +807,7 @@ import org.usemoonai.moonsdk.api.Erc721Api;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -826,7 +826,7 @@ public class Example {
     String name = "name_example"; // String | 
     Erc721Request erc721Request = new Erc721Request(); // Erc721Request | 
     try {
-      AccountControllerResponse result = apiInstance.transfer(authorization, name, erc721Request);
+      TransactionAPIResponse result = apiInstance.transfer(authorization, name, erc721Request);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling Erc721Api#transfer");
@@ -849,7 +849,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 
@@ -867,7 +867,7 @@ public class Example {
 
 <a id="transferFrom"></a>
 # **transferFrom**
-> AccountControllerResponse transferFrom(authorization, name, erc721Request)
+> TransactionAPIResponse transferFrom(authorization, name, erc721Request)
 
 
 
@@ -884,7 +884,7 @@ import org.usemoonai.moonsdk.api.Erc721Api;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -903,7 +903,7 @@ public class Example {
     String name = "name_example"; // String | 
     Erc721Request erc721Request = new Erc721Request(); // Erc721Request | 
     try {
-      AccountControllerResponse result = apiInstance.transferFrom(authorization, name, erc721Request);
+      TransactionAPIResponse result = apiInstance.transferFrom(authorization, name, erc721Request);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling Erc721Api#transferFrom");
@@ -926,7 +926,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 

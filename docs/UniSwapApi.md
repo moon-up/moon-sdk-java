@@ -1,6 +1,6 @@
 # UniSwapApi
 
-All URIs are relative to *https://vault-api.usemoon.ai*
+All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -12,7 +12,7 @@ All URIs are relative to *https://vault-api.usemoon.ai*
 
 <a id="addLiquidity"></a>
 # **addLiquidity**
-> AccountControllerResponse addLiquidity(authorization, name, uniswapInput)
+> TransactionAPIResponse addLiquidity(authorization, name, uniswapInput)
 
 
 
@@ -29,7 +29,7 @@ import org.usemoonai.moonsdk.api.UniSwapApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -48,7 +48,7 @@ public class Example {
     String name = "name_example"; // String | 
     UniswapInput uniswapInput = new UniswapInput(); // UniswapInput | 
     try {
-      AccountControllerResponse result = apiInstance.addLiquidity(authorization, name, uniswapInput);
+      TransactionAPIResponse result = apiInstance.addLiquidity(authorization, name, uniswapInput);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling UniSwapApi#addLiquidity");
@@ -71,7 +71,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 
@@ -89,7 +89,7 @@ public class Example {
 
 <a id="removeLiquidity"></a>
 # **removeLiquidity**
-> AccountControllerResponse removeLiquidity(authorization, name, uniswapInput)
+> TransactionAPIResponse removeLiquidity(authorization, name, uniswapInput)
 
 
 
@@ -106,7 +106,7 @@ import org.usemoonai.moonsdk.api.UniSwapApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -125,7 +125,7 @@ public class Example {
     String name = "name_example"; // String | 
     UniswapInput uniswapInput = new UniswapInput(); // UniswapInput | 
     try {
-      AccountControllerResponse result = apiInstance.removeLiquidity(authorization, name, uniswapInput);
+      TransactionAPIResponse result = apiInstance.removeLiquidity(authorization, name, uniswapInput);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling UniSwapApi#removeLiquidity");
@@ -148,7 +148,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 
@@ -166,7 +166,7 @@ public class Example {
 
 <a id="swapExactETHForTokens"></a>
 # **swapExactETHForTokens**
-> AccountControllerResponse swapExactETHForTokens(authorization, name, uniswapInput)
+> TransactionAPIResponse swapExactETHForTokens(authorization, name, uniswapInput)
 
 
 
@@ -183,7 +183,7 @@ import org.usemoonai.moonsdk.api.UniSwapApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -202,7 +202,7 @@ public class Example {
     String name = "name_example"; // String | 
     UniswapInput uniswapInput = new UniswapInput(); // UniswapInput | 
     try {
-      AccountControllerResponse result = apiInstance.swapExactETHForTokens(authorization, name, uniswapInput);
+      TransactionAPIResponse result = apiInstance.swapExactETHForTokens(authorization, name, uniswapInput);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling UniSwapApi#swapExactETHForTokens");
@@ -225,7 +225,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 
@@ -243,7 +243,7 @@ public class Example {
 
 <a id="swapExactTokensForTokens"></a>
 # **swapExactTokensForTokens**
-> AccountControllerResponse swapExactTokensForTokens(authorization, name, uniswapInput)
+> TransactionAPIResponse swapExactTokensForTokens(authorization, name, uniswapInput)
 
 
 
@@ -260,7 +260,7 @@ import org.usemoonai.moonsdk.api.UniSwapApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -279,7 +279,7 @@ public class Example {
     String name = "name_example"; // String | 
     UniswapInput uniswapInput = new UniswapInput(); // UniswapInput | 
     try {
-      AccountControllerResponse result = apiInstance.swapExactTokensForTokens(authorization, name, uniswapInput);
+      TransactionAPIResponse result = apiInstance.swapExactTokensForTokens(authorization, name, uniswapInput);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling UniSwapApi#swapExactTokensForTokens");
@@ -302,7 +302,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 

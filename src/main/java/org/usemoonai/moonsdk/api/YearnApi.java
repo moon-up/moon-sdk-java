@@ -27,8 +27,8 @@ import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 
 
-import org.usemoonai.moonsdk.models.AccountControllerResponse;
 import org.usemoonai.moonsdk.models.InputBody;
+import org.usemoonai.moonsdk.models.TransactionAPIResponse;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -164,7 +164,7 @@ public class YearnApi {
      * @param authorization  (required)
      * @param name  (required)
      * @param inputBody  (required)
-     * @return AccountControllerResponse
+     * @return TransactionAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -172,8 +172,8 @@ public class YearnApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse addLiquidity(String authorization, String name, InputBody inputBody) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = addLiquidityWithHttpInfo(authorization, name, inputBody);
+    public TransactionAPIResponse addLiquidity(String authorization, String name, InputBody inputBody) throws ApiException {
+        ApiResponse<TransactionAPIResponse> localVarResp = addLiquidityWithHttpInfo(authorization, name, inputBody);
         return localVarResp.getData();
     }
 
@@ -183,7 +183,7 @@ public class YearnApi {
      * @param authorization  (required)
      * @param name  (required)
      * @param inputBody  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;TransactionAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -191,9 +191,9 @@ public class YearnApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> addLiquidityWithHttpInfo(String authorization, String name, InputBody inputBody) throws ApiException {
+    public ApiResponse<TransactionAPIResponse> addLiquidityWithHttpInfo(String authorization, String name, InputBody inputBody) throws ApiException {
         okhttp3.Call localVarCall = addLiquidityValidateBeforeCall(authorization, name, inputBody, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -212,10 +212,10 @@ public class YearnApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call addLiquidityAsync(String authorization, String name, InputBody inputBody, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call addLiquidityAsync(String authorization, String name, InputBody inputBody, final ApiCallback<TransactionAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = addLiquidityValidateBeforeCall(authorization, name, inputBody, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -310,7 +310,7 @@ public class YearnApi {
      * @param authorization  (required)
      * @param name  (required)
      * @param inputBody  (required)
-     * @return AccountControllerResponse
+     * @return TransactionAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -318,8 +318,8 @@ public class YearnApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse addLiquidityWeth(String authorization, String name, InputBody inputBody) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = addLiquidityWethWithHttpInfo(authorization, name, inputBody);
+    public TransactionAPIResponse addLiquidityWeth(String authorization, String name, InputBody inputBody) throws ApiException {
+        ApiResponse<TransactionAPIResponse> localVarResp = addLiquidityWethWithHttpInfo(authorization, name, inputBody);
         return localVarResp.getData();
     }
 
@@ -329,7 +329,7 @@ public class YearnApi {
      * @param authorization  (required)
      * @param name  (required)
      * @param inputBody  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;TransactionAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -337,9 +337,9 @@ public class YearnApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> addLiquidityWethWithHttpInfo(String authorization, String name, InputBody inputBody) throws ApiException {
+    public ApiResponse<TransactionAPIResponse> addLiquidityWethWithHttpInfo(String authorization, String name, InputBody inputBody) throws ApiException {
         okhttp3.Call localVarCall = addLiquidityWethValidateBeforeCall(authorization, name, inputBody, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -358,10 +358,10 @@ public class YearnApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call addLiquidityWethAsync(String authorization, String name, InputBody inputBody, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call addLiquidityWethAsync(String authorization, String name, InputBody inputBody, final ApiCallback<TransactionAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = addLiquidityWethValidateBeforeCall(authorization, name, inputBody, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -456,7 +456,7 @@ public class YearnApi {
      * @param authorization  (required)
      * @param name  (required)
      * @param inputBody  (required)
-     * @return AccountControllerResponse
+     * @return TransactionAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -464,8 +464,8 @@ public class YearnApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse removeLiquidity(String authorization, String name, InputBody inputBody) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = removeLiquidityWithHttpInfo(authorization, name, inputBody);
+    public TransactionAPIResponse removeLiquidity(String authorization, String name, InputBody inputBody) throws ApiException {
+        ApiResponse<TransactionAPIResponse> localVarResp = removeLiquidityWithHttpInfo(authorization, name, inputBody);
         return localVarResp.getData();
     }
 
@@ -475,7 +475,7 @@ public class YearnApi {
      * @param authorization  (required)
      * @param name  (required)
      * @param inputBody  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;TransactionAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -483,9 +483,9 @@ public class YearnApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> removeLiquidityWithHttpInfo(String authorization, String name, InputBody inputBody) throws ApiException {
+    public ApiResponse<TransactionAPIResponse> removeLiquidityWithHttpInfo(String authorization, String name, InputBody inputBody) throws ApiException {
         okhttp3.Call localVarCall = removeLiquidityValidateBeforeCall(authorization, name, inputBody, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -504,10 +504,10 @@ public class YearnApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call removeLiquidityAsync(String authorization, String name, InputBody inputBody, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call removeLiquidityAsync(String authorization, String name, InputBody inputBody, final ApiCallback<TransactionAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = removeLiquidityValidateBeforeCall(authorization, name, inputBody, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -602,7 +602,7 @@ public class YearnApi {
      * @param authorization  (required)
      * @param name  (required)
      * @param inputBody  (required)
-     * @return AccountControllerResponse
+     * @return TransactionAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -610,8 +610,8 @@ public class YearnApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse removeLiquidityWeth(String authorization, String name, InputBody inputBody) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = removeLiquidityWethWithHttpInfo(authorization, name, inputBody);
+    public TransactionAPIResponse removeLiquidityWeth(String authorization, String name, InputBody inputBody) throws ApiException {
+        ApiResponse<TransactionAPIResponse> localVarResp = removeLiquidityWethWithHttpInfo(authorization, name, inputBody);
         return localVarResp.getData();
     }
 
@@ -621,7 +621,7 @@ public class YearnApi {
      * @param authorization  (required)
      * @param name  (required)
      * @param inputBody  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;TransactionAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -629,9 +629,9 @@ public class YearnApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> removeLiquidityWethWithHttpInfo(String authorization, String name, InputBody inputBody) throws ApiException {
+    public ApiResponse<TransactionAPIResponse> removeLiquidityWethWithHttpInfo(String authorization, String name, InputBody inputBody) throws ApiException {
         okhttp3.Call localVarCall = removeLiquidityWethValidateBeforeCall(authorization, name, inputBody, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -650,10 +650,10 @@ public class YearnApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call removeLiquidityWethAsync(String authorization, String name, InputBody inputBody, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call removeLiquidityWethAsync(String authorization, String name, InputBody inputBody, final ApiCallback<TransactionAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = removeLiquidityWethValidateBeforeCall(authorization, name, inputBody, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

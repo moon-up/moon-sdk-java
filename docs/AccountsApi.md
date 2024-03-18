@@ -1,6 +1,6 @@
 # AccountsApi
 
-All URIs are relative to *https://vault-api.usemoon.ai*
+All URIs are relative to *https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -20,7 +20,7 @@ All URIs are relative to *https://vault-api.usemoon.ai*
 
 <a id="broadcastTx"></a>
 # **broadcastTx**
-> AccountControllerResponse broadcastTx(authorization, accountName, broadcastInput)
+> BroadCastRawTransactionAPIResponse broadcastTx(authorization, accountName, broadcastInput)
 
 
 
@@ -37,7 +37,7 @@ import org.usemoonai.moonsdk.api.AccountsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -56,7 +56,7 @@ public class Example {
     String accountName = "accountName_example"; // String | 
     BroadcastInput broadcastInput = new BroadcastInput(); // BroadcastInput | 
     try {
-      AccountControllerResponse result = apiInstance.broadcastTx(authorization, accountName, broadcastInput);
+      BroadCastRawTransactionAPIResponse result = apiInstance.broadcastTx(authorization, accountName, broadcastInput);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AccountsApi#broadcastTx");
@@ -79,7 +79,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**BroadCastRawTransactionAPIResponse**](BroadCastRawTransactionAPIResponse.md)
 
 ### Authorization
 
@@ -97,7 +97,7 @@ public class Example {
 
 <a id="createAccount"></a>
 # **createAccount**
-> AccountControllerResponse createAccount(authorization, createAccountInput)
+> AccountAPIResponse createAccount(authorization, createAccountInput)
 
 
 
@@ -114,7 +114,7 @@ import org.usemoonai.moonsdk.api.AccountsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -132,7 +132,7 @@ public class Example {
     String authorization = "authorization_example"; // String | 
     CreateAccountInput createAccountInput = new CreateAccountInput(); // CreateAccountInput | 
     try {
-      AccountControllerResponse result = apiInstance.createAccount(authorization, createAccountInput);
+      AccountAPIResponse result = apiInstance.createAccount(authorization, createAccountInput);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AccountsApi#createAccount");
@@ -154,7 +154,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**AccountAPIResponse**](AccountAPIResponse.md)
 
 ### Authorization
 
@@ -172,7 +172,7 @@ public class Example {
 
 <a id="deleteAccount"></a>
 # **deleteAccount**
-> AccountControllerResponse deleteAccount(authorization, accountName)
+> AccountAPIResponse deleteAccount(authorization, accountName)
 
 
 
@@ -189,7 +189,7 @@ import org.usemoonai.moonsdk.api.AccountsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -207,7 +207,7 @@ public class Example {
     String authorization = "authorization_example"; // String | 
     String accountName = "accountName_example"; // String | 
     try {
-      AccountControllerResponse result = apiInstance.deleteAccount(authorization, accountName);
+      AccountAPIResponse result = apiInstance.deleteAccount(authorization, accountName);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AccountsApi#deleteAccount");
@@ -229,7 +229,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**AccountAPIResponse**](AccountAPIResponse.md)
 
 ### Authorization
 
@@ -247,7 +247,7 @@ public class Example {
 
 <a id="deployContract"></a>
 # **deployContract**
-> AccountControllerResponse deployContract(authorization, accountName, deployInput)
+> TransactionAPIResponse deployContract(authorization, accountName, deployInput)
 
 
 
@@ -264,7 +264,7 @@ import org.usemoonai.moonsdk.api.AccountsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -283,7 +283,7 @@ public class Example {
     String accountName = "accountName_example"; // String | 
     DeployInput deployInput = new DeployInput(); // DeployInput | 
     try {
-      AccountControllerResponse result = apiInstance.deployContract(authorization, accountName, deployInput);
+      TransactionAPIResponse result = apiInstance.deployContract(authorization, accountName, deployInput);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AccountsApi#deployContract");
@@ -306,7 +306,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 
@@ -324,7 +324,7 @@ public class Example {
 
 <a id="getAccount"></a>
 # **getAccount**
-> AccountControllerResponse getAccount(authorization, accountName)
+> AccountAPIResponse getAccount(authorization, accountName)
 
 
 
@@ -341,7 +341,7 @@ import org.usemoonai.moonsdk.api.AccountsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -359,7 +359,7 @@ public class Example {
     String authorization = "authorization_example"; // String | 
     String accountName = "accountName_example"; // String | 
     try {
-      AccountControllerResponse result = apiInstance.getAccount(authorization, accountName);
+      AccountAPIResponse result = apiInstance.getAccount(authorization, accountName);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AccountsApi#getAccount");
@@ -381,7 +381,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**AccountAPIResponse**](AccountAPIResponse.md)
 
 ### Authorization
 
@@ -399,7 +399,7 @@ public class Example {
 
 <a id="getBalance"></a>
 # **getBalance**
-> AccountControllerResponse getBalance(accountName, authorization, chainId)
+> BalanceAPIResponse getBalance(accountName, authorization, chainId)
 
 
 
@@ -416,7 +416,7 @@ import org.usemoonai.moonsdk.api.AccountsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -435,7 +435,7 @@ public class Example {
     String authorization = "authorization_example"; // String | 
     String chainId = "chainId_example"; // String | 
     try {
-      AccountControllerResponse result = apiInstance.getBalance(accountName, authorization, chainId);
+      BalanceAPIResponse result = apiInstance.getBalance(accountName, authorization, chainId);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AccountsApi#getBalance");
@@ -458,7 +458,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**BalanceAPIResponse**](BalanceAPIResponse.md)
 
 ### Authorization
 
@@ -476,7 +476,7 @@ public class Example {
 
 <a id="getNonce"></a>
 # **getNonce**
-> AccountControllerResponse getNonce(accountName, authorization)
+> NonceAPIResponse getNonce(accountName, authorization)
 
 
 
@@ -493,7 +493,7 @@ import org.usemoonai.moonsdk.api.AccountsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -511,7 +511,7 @@ public class Example {
     String accountName = "accountName_example"; // String | 
     String authorization = "authorization_example"; // String | 
     try {
-      AccountControllerResponse result = apiInstance.getNonce(accountName, authorization);
+      NonceAPIResponse result = apiInstance.getNonce(accountName, authorization);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AccountsApi#getNonce");
@@ -533,7 +533,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**NonceAPIResponse**](NonceAPIResponse.md)
 
 ### Authorization
 
@@ -551,7 +551,7 @@ public class Example {
 
 <a id="listAccounts"></a>
 # **listAccounts**
-> AccountControllerResponse listAccounts(authorization)
+> AccountAPIResponse listAccounts(authorization)
 
 
 
@@ -568,7 +568,7 @@ import org.usemoonai.moonsdk.api.AccountsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -585,7 +585,7 @@ public class Example {
     AccountsApi apiInstance = new AccountsApi(defaultClient);
     String authorization = "authorization_example"; // String | 
     try {
-      AccountControllerResponse result = apiInstance.listAccounts(authorization);
+      AccountAPIResponse result = apiInstance.listAccounts(authorization);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AccountsApi#listAccounts");
@@ -606,7 +606,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**AccountAPIResponse**](AccountAPIResponse.md)
 
 ### Authorization
 
@@ -624,7 +624,7 @@ public class Example {
 
 <a id="signMessage"></a>
 # **signMessage**
-> AccountControllerResponse signMessage(accountName, authorization, signMessage)
+> SignMessageAPIResponse signMessage(accountName, authorization, signMessage)
 
 
 
@@ -641,7 +641,7 @@ import org.usemoonai.moonsdk.api.AccountsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -660,7 +660,7 @@ public class Example {
     String authorization = "authorization_example"; // String | 
     SignMessage signMessage = new SignMessage(); // SignMessage | 
     try {
-      AccountControllerResponse result = apiInstance.signMessage(accountName, authorization, signMessage);
+      SignMessageAPIResponse result = apiInstance.signMessage(accountName, authorization, signMessage);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AccountsApi#signMessage");
@@ -683,7 +683,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**SignMessageAPIResponse**](SignMessageAPIResponse.md)
 
 ### Authorization
 
@@ -701,7 +701,7 @@ public class Example {
 
 <a id="signTransaction"></a>
 # **signTransaction**
-> AccountControllerResponse signTransaction(accountName, authorization, inputBody)
+> TransactionAPIResponse signTransaction(accountName, authorization, inputBody)
 
 
 
@@ -718,7 +718,7 @@ import org.usemoonai.moonsdk.api.AccountsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -737,7 +737,7 @@ public class Example {
     String authorization = "authorization_example"; // String | 
     InputBody inputBody = new InputBody(); // InputBody | 
     try {
-      AccountControllerResponse result = apiInstance.signTransaction(accountName, authorization, inputBody);
+      TransactionAPIResponse result = apiInstance.signTransaction(accountName, authorization, inputBody);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AccountsApi#signTransaction");
@@ -760,7 +760,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 
@@ -778,7 +778,7 @@ public class Example {
 
 <a id="signTypedData"></a>
 # **signTypedData**
-> AccountControllerResponse signTypedData(accountName, authorization, signTypedData)
+> SignMessageAPIResponse signTypedData(accountName, authorization, signTypedData)
 
 
 
@@ -795,7 +795,7 @@ import org.usemoonai.moonsdk.api.AccountsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -814,7 +814,7 @@ public class Example {
     String authorization = "authorization_example"; // String | 
     SignTypedData signTypedData = new SignTypedData(); // SignTypedData | 
     try {
-      AccountControllerResponse result = apiInstance.signTypedData(accountName, authorization, signTypedData);
+      SignMessageAPIResponse result = apiInstance.signTypedData(accountName, authorization, signTypedData);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AccountsApi#signTypedData");
@@ -837,7 +837,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**SignMessageAPIResponse**](SignMessageAPIResponse.md)
 
 ### Authorization
 
@@ -855,7 +855,7 @@ public class Example {
 
 <a id="transferEth"></a>
 # **transferEth**
-> AccountControllerResponse transferEth(accountName, authorization, inputBody)
+> TransactionAPIResponse transferEth(accountName, authorization, inputBody)
 
 
 
@@ -872,7 +872,7 @@ import org.usemoonai.moonsdk.api.AccountsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://vault-api.usemoon.ai");
+    defaultClient.setBasePath("https://moon-vault-api-git-ew-supabase-migration-moonup.vercel.app");
     
     // Configure API key authorization: ApiKeyAuth
     ApiKeyAuth ApiKeyAuth = (ApiKeyAuth) defaultClient.getAuthentication("ApiKeyAuth");
@@ -891,7 +891,7 @@ public class Example {
     String authorization = "authorization_example"; // String | 
     InputBody inputBody = new InputBody(); // InputBody | 
     try {
-      AccountControllerResponse result = apiInstance.transferEth(accountName, authorization, inputBody);
+      TransactionAPIResponse result = apiInstance.transferEth(accountName, authorization, inputBody);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AccountsApi#transferEth");
@@ -914,7 +914,7 @@ public class Example {
 
 ### Return type
 
-[**AccountControllerResponse**](AccountControllerResponse.md)
+[**TransactionAPIResponse**](TransactionAPIResponse.md)
 
 ### Authorization
 

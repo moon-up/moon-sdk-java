@@ -27,7 +27,7 @@ import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 
 
-import org.usemoonai.moonsdk.models.AccountControllerResponse;
+import org.usemoonai.moonsdk.models.TransactionAPIResponse;
 import org.usemoonai.moonsdk.models.UniswapInput;
 
 import java.lang.reflect.Type;
@@ -164,7 +164,7 @@ public class UniSwapApi {
      * @param authorization  (required)
      * @param name  (required)
      * @param uniswapInput  (required)
-     * @return AccountControllerResponse
+     * @return TransactionAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -172,8 +172,8 @@ public class UniSwapApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse addLiquidity(String authorization, String name, UniswapInput uniswapInput) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = addLiquidityWithHttpInfo(authorization, name, uniswapInput);
+    public TransactionAPIResponse addLiquidity(String authorization, String name, UniswapInput uniswapInput) throws ApiException {
+        ApiResponse<TransactionAPIResponse> localVarResp = addLiquidityWithHttpInfo(authorization, name, uniswapInput);
         return localVarResp.getData();
     }
 
@@ -183,7 +183,7 @@ public class UniSwapApi {
      * @param authorization  (required)
      * @param name  (required)
      * @param uniswapInput  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;TransactionAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -191,9 +191,9 @@ public class UniSwapApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> addLiquidityWithHttpInfo(String authorization, String name, UniswapInput uniswapInput) throws ApiException {
+    public ApiResponse<TransactionAPIResponse> addLiquidityWithHttpInfo(String authorization, String name, UniswapInput uniswapInput) throws ApiException {
         okhttp3.Call localVarCall = addLiquidityValidateBeforeCall(authorization, name, uniswapInput, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -212,10 +212,10 @@ public class UniSwapApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call addLiquidityAsync(String authorization, String name, UniswapInput uniswapInput, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call addLiquidityAsync(String authorization, String name, UniswapInput uniswapInput, final ApiCallback<TransactionAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = addLiquidityValidateBeforeCall(authorization, name, uniswapInput, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -310,7 +310,7 @@ public class UniSwapApi {
      * @param authorization  (required)
      * @param name  (required)
      * @param uniswapInput  (required)
-     * @return AccountControllerResponse
+     * @return TransactionAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -318,8 +318,8 @@ public class UniSwapApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse removeLiquidity(String authorization, String name, UniswapInput uniswapInput) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = removeLiquidityWithHttpInfo(authorization, name, uniswapInput);
+    public TransactionAPIResponse removeLiquidity(String authorization, String name, UniswapInput uniswapInput) throws ApiException {
+        ApiResponse<TransactionAPIResponse> localVarResp = removeLiquidityWithHttpInfo(authorization, name, uniswapInput);
         return localVarResp.getData();
     }
 
@@ -329,7 +329,7 @@ public class UniSwapApi {
      * @param authorization  (required)
      * @param name  (required)
      * @param uniswapInput  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;TransactionAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -337,9 +337,9 @@ public class UniSwapApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> removeLiquidityWithHttpInfo(String authorization, String name, UniswapInput uniswapInput) throws ApiException {
+    public ApiResponse<TransactionAPIResponse> removeLiquidityWithHttpInfo(String authorization, String name, UniswapInput uniswapInput) throws ApiException {
         okhttp3.Call localVarCall = removeLiquidityValidateBeforeCall(authorization, name, uniswapInput, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -358,10 +358,10 @@ public class UniSwapApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call removeLiquidityAsync(String authorization, String name, UniswapInput uniswapInput, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call removeLiquidityAsync(String authorization, String name, UniswapInput uniswapInput, final ApiCallback<TransactionAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = removeLiquidityValidateBeforeCall(authorization, name, uniswapInput, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -456,7 +456,7 @@ public class UniSwapApi {
      * @param authorization  (required)
      * @param name  (required)
      * @param uniswapInput  (required)
-     * @return AccountControllerResponse
+     * @return TransactionAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -464,8 +464,8 @@ public class UniSwapApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse swapExactETHForTokens(String authorization, String name, UniswapInput uniswapInput) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = swapExactETHForTokensWithHttpInfo(authorization, name, uniswapInput);
+    public TransactionAPIResponse swapExactETHForTokens(String authorization, String name, UniswapInput uniswapInput) throws ApiException {
+        ApiResponse<TransactionAPIResponse> localVarResp = swapExactETHForTokensWithHttpInfo(authorization, name, uniswapInput);
         return localVarResp.getData();
     }
 
@@ -475,7 +475,7 @@ public class UniSwapApi {
      * @param authorization  (required)
      * @param name  (required)
      * @param uniswapInput  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;TransactionAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -483,9 +483,9 @@ public class UniSwapApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> swapExactETHForTokensWithHttpInfo(String authorization, String name, UniswapInput uniswapInput) throws ApiException {
+    public ApiResponse<TransactionAPIResponse> swapExactETHForTokensWithHttpInfo(String authorization, String name, UniswapInput uniswapInput) throws ApiException {
         okhttp3.Call localVarCall = swapExactETHForTokensValidateBeforeCall(authorization, name, uniswapInput, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -504,10 +504,10 @@ public class UniSwapApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call swapExactETHForTokensAsync(String authorization, String name, UniswapInput uniswapInput, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call swapExactETHForTokensAsync(String authorization, String name, UniswapInput uniswapInput, final ApiCallback<TransactionAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = swapExactETHForTokensValidateBeforeCall(authorization, name, uniswapInput, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -602,7 +602,7 @@ public class UniSwapApi {
      * @param authorization  (required)
      * @param name  (required)
      * @param uniswapInput  (required)
-     * @return AccountControllerResponse
+     * @return TransactionAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -610,8 +610,8 @@ public class UniSwapApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public AccountControllerResponse swapExactTokensForTokens(String authorization, String name, UniswapInput uniswapInput) throws ApiException {
-        ApiResponse<AccountControllerResponse> localVarResp = swapExactTokensForTokensWithHttpInfo(authorization, name, uniswapInput);
+    public TransactionAPIResponse swapExactTokensForTokens(String authorization, String name, UniswapInput uniswapInput) throws ApiException {
+        ApiResponse<TransactionAPIResponse> localVarResp = swapExactTokensForTokensWithHttpInfo(authorization, name, uniswapInput);
         return localVarResp.getData();
     }
 
@@ -621,7 +621,7 @@ public class UniSwapApi {
      * @param authorization  (required)
      * @param name  (required)
      * @param uniswapInput  (required)
-     * @return ApiResponse&lt;AccountControllerResponse&gt;
+     * @return ApiResponse&lt;TransactionAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -629,9 +629,9 @@ public class UniSwapApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccountControllerResponse> swapExactTokensForTokensWithHttpInfo(String authorization, String name, UniswapInput uniswapInput) throws ApiException {
+    public ApiResponse<TransactionAPIResponse> swapExactTokensForTokensWithHttpInfo(String authorization, String name, UniswapInput uniswapInput) throws ApiException {
         okhttp3.Call localVarCall = swapExactTokensForTokensValidateBeforeCall(authorization, name, uniswapInput, null);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -650,10 +650,10 @@ public class UniSwapApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call swapExactTokensForTokensAsync(String authorization, String name, UniswapInput uniswapInput, final ApiCallback<AccountControllerResponse> _callback) throws ApiException {
+    public okhttp3.Call swapExactTokensForTokensAsync(String authorization, String name, UniswapInput uniswapInput, final ApiCallback<TransactionAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = swapExactTokensForTokensValidateBeforeCall(authorization, name, uniswapInput, _callback);
-        Type localVarReturnType = new TypeToken<AccountControllerResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<TransactionAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
